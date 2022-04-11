@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@100;200;300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Lexend Peta', sans-serif;
+    background-color: #D2C07D;
+    box-sizing: border-box
+}
+
+/*HEADER*/
+header {
+    margin-bottom: 8px;
+}
+
+body {
+    margin: 6%;
+
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 200%;
+    color: #ffff;
+    margin-bottom: 12px;
+
+}
+
+nav {
+    color: #343333
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 80%;
+    font-weight: 300;
+    color: #343333;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.li-contacto{
+    margin-left: 15%;
+}
+
+/*HOME*/
+.home {
+    border: 2px solid #ffff;
+    border-radius: 4px;
+    block-size: 600px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 18%;
+    
+}
+
+.mockup {
+  width: 35%;
+  order: 1;
+  justify-self: flex-end;
+  flex-wrap: wrap;
+
+}
+
+
+.home-txt {
+    color: #ffff;
+    font-size: 18px;
+    order: -1;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+/*FOOTER*/
+/*Linkedin*/
+.linkedin{
+   display: flex;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    justify-content: center;
+}
+.icono-lin {
+  width: 50%;
+}
+/*copyright*/
+.small-txt {
+    display: flex;
+    color: #343333;
+    font-size: 12px;
+    justify-content: center;
+
+} 
