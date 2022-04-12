@@ -39,9 +39,7 @@ ul {
     flex-wrap: wrap;
 }
 
-li:hover{
-color: #BA0404;
-}
+
 .li-contacto {
     margin-left: 15%;
 }

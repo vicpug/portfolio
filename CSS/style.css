@@ -31,6 +31,10 @@ nav {
     color: #343333
 }
 
+li:hover{
+    color: #BA0404;
+    }
+
 ul {
     display: flex;
     list-style-type: none;
