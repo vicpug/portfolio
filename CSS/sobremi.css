@@ -9,6 +9,21 @@
     background-color: #D2C07D
 }
 
+li:hover{
+    color: #BA0404;
+    }
+li{
+    color: #ffff;
+}
+
+li a:hover{
+    color: #BA0404;
+    }
+
+li a{
+        color: #ffff;
+    }
+
 nav ul li {
     
     color: #343333;

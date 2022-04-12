@@ -7,6 +7,21 @@
     box-sizing: border-box
 }
 
+li:hover{
+    color: #BA0404;
+    }
+li{
+    color: #ffff;
+}
+
+li a:hover{
+    color: #BA0404;
+    }
+
+li a{
+        color: #ffff;
+    }
+
 .home-arte{
     border: 2px solid #ffff;
     border-radius: 4px;
