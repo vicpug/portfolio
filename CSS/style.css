@@ -75,9 +75,8 @@ ul {
 .mockup {
   width: 35%;
   order: 1;
-  justify-self: flex-end;
-  flex-wrap: wrap;
-  
+ 
+transition: all 1.5s ease-out;
 
 }
 
