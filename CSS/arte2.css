@@ -43,7 +43,13 @@ body {
     background-image: url("https://images.pexels.com/photos/129207/pexels-photo-129207.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
     color: #fff;
 }
-
+.a4 {
+    background-image: url("https://images.pexels.com/photos/240038/pexels-photo-240038.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    color: #fff;
+}
+.a5 {
+    background-image: url("https://images.pexels.com/photos/220994/pexels-photo-220994.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); 
+}
 p {
     font-weight: normal;
     font-family: 'Exo 2', sans-serif;
