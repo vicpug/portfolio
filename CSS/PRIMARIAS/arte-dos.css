@@ -101,8 +101,6 @@ ul {
 .col{
     padding: 0 2%;
     text-align: center;
-    
-
 }
 
 .row{
@@ -136,10 +134,13 @@ img{
 }
 .text-muted{
     background-color: transparent;
-    color:#fd7e14
-        
+   color: #343333;
+}
+.card-footer:hover{
+    background-color: #fa9d50;
     
 }
+
 /*FOOTER*/
 /*Linkedin*/
 .linkedin {
