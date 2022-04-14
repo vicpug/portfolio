@@ -35,6 +35,7 @@ li:hover{
     }
 li{
     color: #ffff;
+    font-size: 100%;
 }
 
 li a:hover{
@@ -48,7 +49,7 @@ li a{
 ul {
     display: flex;
     list-style-type: none;
-    font-size: 80%;
+    font-size: 100%;
     font-weight: 300;
     color: #343333;
     flex-direction: row;

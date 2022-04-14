@@ -26,7 +26,7 @@ li:hover{
 li{
     color: #ffff;
     text-decoration: none;
- 
+    font-size: 100%;
 
 }
 
@@ -57,12 +57,15 @@ nav {
 ul {
     display: flex;
     list-style-type: none;
-    font-size: 80%;
+    font-size: 100%;
     font-weight: 300;
     color: #343333;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    padding-inline-start: 0;
 }
 
 .li-contacto {
