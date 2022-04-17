@@ -53,8 +53,7 @@ h1 {
 nav {
     color: #343333
 }
-<<<<<<< HEAD:CSS/SECUNDARIAS/arteyescenografia.css
-=======
+
 
 nav ul li a:hover {
     color: #BA0404;
@@ -63,7 +62,6 @@ nav ul li a:hover {
 li a {
     color: #ffff;
 }
->>>>>>> nueva-rama:CSS/style.css
 
 ul {
     display: flex;
@@ -105,14 +103,10 @@ ul {
     justify-content: space-around;
     padding: 0px 18%;
     align-items: center;
-<<<<<<< HEAD:CSS/SECUNDARIAS/arteyescenografia.css
-    
-=======
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 18%;
     justify-content: flex-end;
-
 }
 
 .contenedor-animacion {
@@ -173,8 +167,6 @@ ul {
     
     100%{margin-top: 0;}
 
-    
-
 }
 
 .mockup {
@@ -183,7 +175,6 @@ ul {
     justify-self: flex-end;
     flex-wrap: wrap;
     animation: mostrar 1s forwards;
-
 }
 
 @keyframes mostrar {
@@ -229,6 +220,4 @@ ul {
     color: #343333;
     font-size: 12px;
     justify-content: center;
-
->>>>>>> nueva-rama:CSS/style.css
 }
