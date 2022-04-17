@@ -122,12 +122,10 @@ ul {
                     margin-top: 0;
                 }
 
-@keyframes cambiar {
-                    0% {
-                        margin-top: o;
-                    }
+@keyframes cambiar{
+    0% {margin-top: 0;            }
 
-                    20% {
+  20% {
                         margin-top: 0;
                     }
 
