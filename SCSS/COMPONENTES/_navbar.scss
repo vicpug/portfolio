@@ -44,7 +44,9 @@ body{
                 &-contacto{
                     margin-left: 15%;
                 }
-
+                &-ux-activo a {
+                    color: #BA0404;
+                }
                 }
             }
 }
@@ -53,16 +55,15 @@ body{
    
 }
 
-
-
-*--------------SOBRE MI------------*/
+.li-arte a{
+    color: #BA0404;
+}
+/*--------------SOBRE MI------------*/
 .sobre-mi-activo{
     color: #BA0404;
 }  
 /*--------------UX-----------------*/
-.li-ux a {
-    color: #BA0404;
-}
+
 /*--------WEB--------------*/
 
 .li-web a{
