@@ -1,0 +1,20 @@
+{
+  "name": "portfoliopugliese",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Hi 👋, I'm Victoria Pugliese</h1> <h3 align=\"center\">from Buenos Aires</h3>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch scss/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vicpug/portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vicpug/portfolio/issues"
+  },
+  "homepage": "https://github.com/vicpug/portfolio#readme"
+}

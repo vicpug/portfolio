@@ -582,46 +582,6 @@ body {
 header {
     margin-bottom: 8px;
 }
-
-li:hover{
-    color: #BA0404;
-    }
-li{
-    color: #ffff;
-    text-decoration: none;
-    font-size: 100%;
-
-}
-h1 a{
-    color: white;
-}
-h1 a:hover{
-    color: lightseagreen;
-}
-
-
-
-h1 {
-    font-weight: 300;
-    font-size: 200%;
-    color: #ffff;
-    margin-bottom: 12px;
-
-}
-
-nav {
-    color: #343333
-}
-
-
-nav ul li a:hover {
-    color: #BA0404;
-}
-
-li a {
-    color: #ffff;
-}
-
 ul {
     display: flex;
     list-style-type: none;

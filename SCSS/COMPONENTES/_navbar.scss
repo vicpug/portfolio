@@ -1,0 +1,70 @@
+body{
+    margin: 6%;
+    background-color: transparent;
+    
+    header {
+            margin-bottom: 8px;
+           
+            h1 {
+                font-weight: 300;
+                font-size: 200%;
+                color: #ffff;
+                margin-bottom: 12px;
+            }
+            & a{
+                color: white;
+                text-decoration: none;
+            }
+            & a:hover{
+                color: lightseagreen;
+            }
+
+            nav{
+               ul {
+                display: flex;
+                list-style-type: none;
+                font-size: 16px;
+                font-weight: 300;
+                color: #343333;
+                flex-direction: row;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+            }   
+                li{
+                   color: #ffff;
+                   text-decoration: none;
+                   font-size: 100%;
+                & a:hover {
+                    color: #BA0404;
+                    }
+                & a{
+                    color: #ffff;
+                    text-decoration: none;
+                }
+                &-contacto{
+                    margin-left: 15%;
+                }
+
+                }
+            }
+}
+
+
+   
+}
+
+
+
+*--------------SOBRE MI------------*/
+.sobre-mi-activo{
+    color: #BA0404;
+}  
+/*--------------UX-----------------*/
+.li-ux a {
+    color: #BA0404;
+}
+/*--------WEB--------------*/
+
+.li-web a{
+    color: #BA0404;
+}
