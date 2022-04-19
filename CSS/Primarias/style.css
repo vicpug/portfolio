@@ -40,12 +40,11 @@ li {
     font-size: 100%;
 }
 
-li a:hover {
-    color: #BA0404;
+h1 a{
+    color: white;
 }
-
-li a {
-    color: #ffff;
+h1 a:hover{
+    color: lightseagreen;
 }
 
 ul {
@@ -186,7 +185,7 @@ ul {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-end;
     padding: 0 18%;
 }
 
@@ -194,6 +193,7 @@ ul {
     width: 35%;
     order: 1;
     transition: all 1.5s ease-out;
+    
 }
 
 

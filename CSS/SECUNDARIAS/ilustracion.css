@@ -30,15 +30,14 @@ li{
 
 }
 
-li a:hover{
-    color: #BA0404;
-    }
-
-li a{
-        color: #ffff;
-      
-        text-decoration: none;
-    }
+h1 a{
+    color: white;
+    text-decoration: none;
+}
+h1 a:hover{
+    color: lightseagreen;
+}
+       
 
 
 

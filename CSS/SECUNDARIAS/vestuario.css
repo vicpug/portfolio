@@ -71,7 +71,14 @@ ul {
 .li-contacto {
     margin-left: 15%;
 }
-
+h1 a{
+    color: white;
+    text-decoration: none;
+}
+h1 a:hover{
+    color: lightseagreen;
+}
+       
 /*HOME*/
 
 

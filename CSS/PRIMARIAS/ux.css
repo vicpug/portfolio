@@ -23,6 +23,12 @@ h1 {
     margin-bottom: 12px;
 
 }
+h1 a{
+    color: white;
+}
+h1 a:hover{
+    color: lightseagreen;
+}
 
 nav {
     color: #343333
@@ -40,9 +46,6 @@ ul {
 }
 
 
-li:hover{
-    color: #BA0404;
-    }
 li{
     color: #ffff;
 }
@@ -59,7 +62,7 @@ li a{
     margin-left: 15%;
 }
 
-.li-ux {
+.li-ux a {
     color: #BA0404;
 }
 
@@ -72,7 +75,7 @@ li a{
     padding: 10px;
     font-weight: 300;
     color: #343333;
- 
+    padding: 4% 0;
     background-color: #ffff;
 
 
@@ -86,7 +89,7 @@ li a{
 
 }
 .img-intro {
-    width: 80%;
+    width: 74%;
     border-radius: 6px;
     order: 1;
     background-color: #ffff;
@@ -97,8 +100,9 @@ li a{
     display: flex;
     align-content: center;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 5%;
   
 }
 .descripcion-txt{
@@ -110,19 +114,23 @@ li a{
     font-size: 12px;
     color: black;
     order: -1;
-    font-size: 14px;
+    font-size: 16px;
     background-color:#ffff;
-    padding-left: 2%;
+    padding-left: 4%;
+    font-weight: 400;
+}
+p{
+    background-color:#ffff;
 }
 
-.iconos{
-    padding: 10% 20%;
-    margin-right: 5%;
-    width: 25%;
+.iconos {
+    width: 20%;
     display: flex;
-    align-items: flex-end;  
-  background-color: #ffff;
-}
+    background-color: #ffff;
+    padding-top: 0;
+    align-items: center;
+    size: 50%;
+    align-content: center;}
 
 .figma{
     width: 40%; 
@@ -156,19 +164,145 @@ li a{
 
 /*BLOQUE 3*/
 .img-ux3-contenedor {
-    width: 70%;
-  display: flex;
+    width: 100%;
+    display: flex;
     padding: 2%;
     background-color: #ffff;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 
 }
 .img-ux3{
-    width: 966px;
+    width: 90%;
     height: auto;
     order: 1;
     background-color: #ffff;
 }
 .txt-ux3{
+    background-color: #ffff;
+    border: 2px solid lightseagreen ;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+/*BLOQUE 4*/
+.img-ux4-contenedor{
+    width: 100%;
+    display: flex;
+    padding: 2%;
+    background-color: #ffff;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+}
+.img-ux4{
+    width: 80%;
+    height: auto;
+    order: 1;
+    background-color: #ffff;
+}
+.txt-ux4{
+    background-color: #ffff;
+    border: 2px solid lightseagreen ;
+    border-radius: 10px;
+    padding: 8px;
+}
+/*BLOQUE 5*/
+.img-ux5-contenedor{
+    width: 100%;
+    display: flex;
+    padding: 2%;
+    background-color: #ffff;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+}
+.img-ux5{
+    width: 88%;
+    height: auto;
+    order: 1;
+    background-color: #ffff;
+}
+.txt-ux5{
+    background-color: #ffff;
+    border: 2px solid lightseagreen ;
+    border-radius: 10px;
+    padding: 8px;
+}
+/*BLOQUE 6*/
+.img-ux6-contenedor{
+    width: 100%;
+    display: flex;
+    padding: 2%;
+    background-color: #ffff;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+}
+.img-ux6{
+    width: 80%;
+    height: auto;
+    order: 1;
+    background-color: #ffff;
+}
+.txt-ux6{
+    background-color: #ffff;
+    border: 2px solid lightseagreen ;
+    border-radius: 10px;
+    padding: 8px;
+}
+/*BLOQUE 7*/
+.img-ux7-contenedor{
+    width: 100%;
+    display: flex;
+    padding: 2%;
+    background-color: #ffff;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+}
+.img-ux7{
+    width: 80%;
+    height: auto;
+    order: 1;
+    background-color: #ffff;
+}
+.txt-ux7{
+    background-color: #ffff;
+    border: 2px solid lightseagreen ;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.txt-ux8{
+    width: 80%;
+    height: auto;
+    padding: 0 20%;
+
+}
+.txt-ux9{
+    width: 31%;
+    height: auto;
+    text-align: center;
+    padding-left: 34%;
+}
+
+.behance{
+    background-color: #ffff;
+    width: 10%;
+    height: auto;
+}
+.behance-enlace{
     background-color: #ffff;
 }
 
@@ -191,5 +325,6 @@ li a{
     color: #343333;
     font-size: 12px;
     justify-content: center;
+    background-color: transparent;
 
 }

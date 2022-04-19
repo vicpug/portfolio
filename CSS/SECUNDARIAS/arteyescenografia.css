@@ -29,16 +29,12 @@ li{
     font-size: 100%;
 
 }
-
-li a:hover{
-    color: #BA0404;
-    }
-
-li a{
-        color: #ffff;
-      
-        text-decoration: none;
-    }
+h1 a{
+    color: white;
+}
+h1 a:hover{
+    color: lightseagreen;
+}
 
 
 
