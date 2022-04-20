@@ -29,7 +29,7 @@ body{
                 flex-direction: row;
                 justify-content: space-evenly;
                 flex-wrap: wrap;
-            }   
+                }   
                 li{
                    color: #ffff;
                    text-decoration: none;
@@ -44,9 +44,26 @@ body{
                 &-contacto{
                     margin-left: 15%;
                 }
+                /*chequear si agarro como .li-ux-activo*/
                 &-ux-activo a {
                     color: #BA0404;
                 }
+                &-web-activo a{
+                        color: #BA0404;
+                    }
+                &-sobremi-activo{
+                    color: #BA0404;
+                }    
+                &-arte-activo{
+                    color: #BA0404;
+                }    
+                &-contacto-activo{
+                    color: #BA0404;
+                }          
+                &-arte-activo{
+                    color: #BA0404;
+                }                
+
                 }
             }
 }
@@ -55,17 +72,7 @@ body{
    
 }
 
-.li-arte a{
-    color: #BA0404;
-}
-/*--------------SOBRE MI------------*/
-.sobre-mi-activo{
-    color: #BA0404;
-}  
-/*--------------UX-----------------*/
 
-/*--------WEB--------------*/
 
-.li-web a{
-    color: #BA0404;
-}
+
+
