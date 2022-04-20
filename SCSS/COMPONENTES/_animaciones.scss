@@ -1,0 +1,85 @@
+
+.home {
+    border: 2px solid #ffff;
+    border-radius: 6px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    font-weight: 300;
+    color: #343333;
+    padding: 4% 0;
+    background-color: #ffff;
+    .mockup {
+        width: 35%;
+        order: 1;
+        transition: all 1.5s ease-out;
+        width: 35%;
+        order: 1;
+        justify-self: flex-end;
+        flex-wrap: wrap;
+        animation: mostrar 1s forwards;
+        }
+          @keyframes cambiar {
+                            0% {margin-top: o;}
+                            50% {margin-top: 0;}
+                             }
+        .contenedor-animacion {
+            width: 40%;
+            height: 30px;
+            font-size: 20px;
+            font-family: 'Lexend Peta', sans-serif;
+            line-height: 40px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            left: 0px;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            margin: 28% 60% auto 13%;
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            .home-txt {
+                color: #ffff;
+                font-size: 18px;
+                order: -1;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                margin: 0;
+            }    
+            .animacion-soluciones {
+                    list-style: none;
+                    animation: cambiar 7s;
+                    width: 185px;
+                    margin: 0;
+                }
+                @keyframes cambiar {
+                    0% {margin-top: 0;}
+                    20% {margin-top: 0;}
+                
+                    25% {margin-top: -40px;}
+                    50% {margin-top: -40px;}
+                
+                    55% {margin-top: -80px;}
+                    80% {margin-top: -80px;}
+                    
+                    85% {margin-top: -40px;}
+                    95% {margin-top: -40px;}
+
+                    100% {margin-top: 0;}
+                }
+                
+                .enlace-animacion {
+                    color: #ffff;
+                    font-size: 20px;
+                    font-family: 'Lexend Peta', sans-serif;
+                }
+            }
+            }
+        
+        
+    
+
+

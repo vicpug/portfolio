@@ -1,11 +1,205 @@
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 2 \2502  @import \"./COMPONENTES/navbar\";\a   \2502          ^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   scss/style.scss 2:9  root stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@100;200;300;400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Lexend Peta", sans-serif;
+  background-color: #D2C07D;
+  box-sizing: border-box;
 }
+
+body {
+  margin: 6%;
+  background-color: transparent;
+}
+
+body {
+  margin: 6%;
+  background-color: transparent;
+}
+body header {
+  margin-bottom: 8px;
+}
+body header h1 {
+  font-weight: 300;
+  font-size: 200%;
+  color: white;
+  margin-bottom: 12px;
+}
+body header a {
+  color: white;
+  text-decoration: none;
+}
+body header a:hover {
+  color: lightseagreen;
+}
+body header nav ul {
+  display: flex;
+  list-style-type: none;
+  font-size: 16px;
+  font-weight: 300;
+  color: #343333;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+body header nav li {
+  color: white;
+  text-decoration: none;
+  font-size: 100%;
+  /*chequear si agarro como .li-ux-activo*/
+}
+body header nav li a:hover {
+  color: #BA0404;
+}
+body header nav li a {
+  color: white;
+  text-decoration: none;
+}
+body header nav li-contacto {
+  margin-left: 15%;
+}
+body header nav li-ux-activo a {
+  color: #BA0404;
+}
+body header nav li-web-activo a {
+  color: #BA0404;
+}
+body header nav li-sobremi-activo {
+  color: #BA0404;
+}
+body header nav li-arte-activo {
+  color: #BA0404;
+}
+body header nav li-contacto-activo {
+  color: #BA0404;
+}
+body header nav li-arte-activo {
+  color: #BA0404;
+}
+
+footer .linkedin {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  justify-content: center;
+}
+footer .linkedin .icono-lin {
+  width: 50%;
+}
+footer .small-txt {
+  display: flex;
+  color: #343333;
+  font-size: 12px;
+  justify-content: center;
+}
+
+.home {
+  border: 2px solid white;
+  border-radius: 4px;
+  block-size: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0px 18%;
+  align-items: center;
+}
+
+.home {
+  border: 2px solid white;
+  border-radius: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  font-weight: 300;
+  color: #343333;
+  padding: 4% 0;
+  background-color: white;
+}
+.home .mockup {
+  width: 35%;
+  order: 1;
+  transition: all 1.5s ease-out;
+  width: 35%;
+  order: 1;
+  justify-self: flex-end;
+  flex-wrap: wrap;
+  animation: mostrar 1s forwards;
+}
+@keyframes cambiar {
+  0% {
+    margin-top: o;
+  }
+  50% {
+    margin-top: 0;
+  }
+}
+.home .contenedor-animacion {
+  width: 40%;
+  height: 30px;
+  font-size: 20px;
+  font-family: "Lexend Peta", sans-serif;
+  line-height: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  left: 0px;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  margin: 28% 60% auto 13%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.home .contenedor-animacion .home-txt {
+  color: white;
+  font-size: 18px;
+  order: -1;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0;
+}
+.home .contenedor-animacion .animacion-soluciones {
+  list-style: none;
+  animation: cambiar 7s;
+  width: 185px;
+  margin: 0;
+}
+@keyframes cambiar {
+  0% {
+    margin-top: 0;
+  }
+  20% {
+    margin-top: 0;
+  }
+  25% {
+    margin-top: -40px;
+  }
+  50% {
+    margin-top: -40px;
+  }
+  55% {
+    margin-top: -80px;
+  }
+  80% {
+    margin-top: -80px;
+  }
+  85% {
+    margin-top: -40px;
+  }
+  95% {
+    margin-top: -40px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+.home .contenedor-animacion .enlace-animacion {
+  color: white;
+  font-size: 20px;
+  font-family: "Lexend Peta", sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */
