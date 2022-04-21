@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@100;200;300;400;600;700&display=swap');
 
-@import "./BASE/_reset.scss";
-@import "./COMPONENTEs/_header";
-@import "./COMPONENTES/footer";
-@import "./COMPONENTES/_home";
-@import "./componentes/_animaciones";
+@import "./base/reset";
+@import "./componentes/header";
+@import "./componentes/home";
+@import "./componentes/animaciones";
+@import "./componentes/footer";
+@import "./componentes/variables";
 

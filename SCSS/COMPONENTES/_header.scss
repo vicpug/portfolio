@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@100;200;300;400;600;700&display=swap');
+@import "./variables";
+
 body{
     margin: 6%;
     background-color: transparent;
@@ -9,16 +10,18 @@ body{
             h1 {
                 font-weight: 300;
                 font-size: 200%;
-                color: #ffff;
+                color: $font-color-principal;
                 margin-bottom: 12px;
+                
+                a{
+                    color: $font-color-principal;
+                    text-decoration: none;
+                    &:hover{
+                        color:$h1-color-hover;
+                    }
+                }
             }
-            & a{
-                color: white;
-                text-decoration: none;
-            }
-            & a:hover{
-                color: lightseagreen;
-            }
+           
 
             nav{
                ul {
@@ -26,55 +29,55 @@ body{
                 list-style-type: none;
                 font-size: 16px;
                 font-weight: 300;
-                color: #343333;
+                color: $font-color-terciario;
                 flex-direction: row;
                 justify-content: space-evenly;
                 flex-wrap: wrap;
                 margin: 0;
                 padding: 0;
                 padding-inline-start: 0;
-                }   
+                  
                 li{
-                   color: #ffff;
+                   color: $font-color-principal;
                    text-decoration: none;
                    font-size: 100%;
-                & a:hover {
-                    color: #BA0404;
-                    }
-                & a{
-                    color: #ffff;
+                    
+                    a{
+                    color: $font-color-principal;
                     text-decoration: none;
-                }
-                &-contacto{
-                    margin-left: 15%;
-                }
-                /*chequear si agarro como .li-ux-activo*/
-                &-ux-activo a {
-                    color: #BA0404;
-                }
-                &-web-activo a{
-                        color: #BA0404;
+                    
+                    &:hover {
+                        color: $font-hover ;
+                        }    
                     }
-                &-sobremi-activo{
-                    color: #BA0404;
-                }    
-                &-arte-activo{
-                    color: #BA0404;
-                }    
-                &-contacto-activo{
-                    color: #BA0404;
-                }          
-                &-arte-activo{
-                    color: #BA0404;
-                }                
-
+                   
+                    &-contacto{
+                        margin-left: 15%;
+                    }
+                    /*chequear si agarro como .li-ux-activo*/
+                    &-ux-activo a {
+                    color: $font-hover;
+                    }
+                    &-web-activo a{
+                        color: $font-hover;
+                    }
+                    &-sobremi-activo{
+                    color: $font-hover;
+                    }    
+                    &-arte-activo{
+                    color: $font-hover;
+                    }    
+                    &-contacto-activo{
+                    color: $font-hover;
+                    }          
+                  }               
                 }
             }
 }
-
+}
 
    
-}
+
 
 
 

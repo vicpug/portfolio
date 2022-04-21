@@ -1,6 +1,7 @@
+@import "./variables";
 
 .home {
-    border: 2px solid #ffff;
+    border: 2px solid $border-color;
     border-radius: 4px;
     block-size: 600px;
     display: flex;
@@ -11,7 +12,7 @@
     justify-content: flex-end;
     
     &-arte{
-        border: 2px solid #ffff;
+        border: 2px solid $border-color;
         border-radius: 4px;
         block-size: 600px;
         padding: 5% 10%;
@@ -20,15 +21,15 @@
     .img-intro-contenedor {
         display: flex;
         flex-direction: row;
-        background-color: #ffff;
+        background-color: $background-color;
         .img-intro {
             width: 74%;
             border-radius: 6px;
             order: 1;
-            background-color: #ffff;
+            background-color: $background-color;
         }
             .lateral{
-                background-color: #ffff;
+                background-color: $background-color;
                 display: flex;
                 align-content: center;
                 flex-direction: column;
@@ -37,21 +38,21 @@
                 margin-left: 5%;
                 .intro-txt {
                     font-size: 12px;
-                    color: black;
+                    color: $font-color-secundario;
                     order: -1;
                     font-size: 16px;
-                    background-color:#ffff;
+                    background-color:$background-color;
                     padding-left: 4%;
                     font-weight: 400;
                 }
 
                 .descripcion-txt{
-                    background-color: #ffff;
+                    background-color: $background-color;
                     font-size: 16px;
-                    color: #343333;
+                    color: $font-color-terciaria;
                 }
                 p{
-                 background-color:#ffff;
+                 background-color:$background-color;
                 }
             }
         
@@ -59,7 +60,7 @@
     .iconos {
             width: 20%;
             display: flex;
-            background-color: #ffff;
+            background-color: $background-color;
             padding-top: 0;
             align-items: center;
             size: 50%;
@@ -68,25 +69,25 @@
             .figma{
                width: 40%; 
                padding: 15%;
-               background-color: #ffff;
+               background-color: $background-color;
                }
             .mac{
                width: 55%;
                padding: 10%;
-               background-color: #ffff;
+               background-color: $background-color;
                 }
 
             .photoshop{
                width: 70%;
                padding: 10%;
-               background-color: #ffff;
+               background-color: $background-color
             }    
         }
             .img-ux3-contenedor {
                 width: 100%;
                 display: flex;
                 padding: 2%;
-                background-color: #ffff;
+                background-color:$background-color;
                 flex-direction: column;
                 align-content: center;
                 justify-content: center;
@@ -95,11 +96,11 @@
                     width: 90%;
                     height: auto;
                     order: 1;
-                    background-color: #ffff;
+                    background-color: $background-color;
                 }
                 .txt-ux3{
-                    background-color: #ffff;
-                    border: 2px solid lightseagreen ;
+                    background-color: $background-color;
+                    border: 2px solid $font-hover ;
                     border-radius: 10px;
                     padding: 8px;
                 }
@@ -108,7 +109,7 @@
                 width: 100%;
                 display: flex;
                 padding: 2%;
-                background-color: #ffff;
+                background-color: $background-color;
                 flex-direction: column;
                 align-content: center;
                 justify-content: center;
@@ -118,11 +119,11 @@
                     width: 80%;
                     height: auto;
                     order: 1;
-                    background-color: #ffff;
+                    background-color: $background-color;
                 }
                 .txt-ux4{
-                    background-color: #ffff;
-                    border: 2px solid lightseagreen ;
+                    background-color: $background-color;
+                    border: 2px solid $font-hover ;
                     border-radius: 10px;
                     padding: 8px;
                 }  
@@ -131,7 +132,7 @@
                 width: 100%;
                 display: flex;
                 padding: 2%;
-                background-color: #ffff;
+                background-color: $background-color;
                 flex-direction: column;
                 align-content: center;
                 justify-content: center;
@@ -140,11 +141,11 @@
                   width: 88%;
                   height: auto;
                   order: 1;
-                  background-color: #ffff;
+                  background-color: $background-color;
                   }
                 .txt-ux5{
-                   background-color: #ffff;
-                   border: 2px solid lightseagreen ;
+                   background-color: $background-color;
+                   border: 2px solid $font-hover ;
                    border-radius: 10px;
                    padding: 8px;
                   } }
@@ -152,7 +153,7 @@
                     width: 100%;
                     display: flex;
                     padding: 2%;
-                    background-color: #ffff;
+                    background-color:$background-color;
                     flex-direction: column;
                     align-content: center;
                     justify-content: center;
@@ -161,11 +162,11 @@
                         width: 80%;
                         height: auto;
                         order: 1;
-                        background-color: #ffff;
+                        background-color: $background-color;
                     }
                     .txt-ux6{
-                        background-color: #ffff;
-                        border: 2px solid lightseagreen ;
+                        background-color: $background-color;
+                        border: 2px solid $font-hover ;
                         border-radius: 10px;
                         padding: 8px;
                     }
@@ -174,24 +175,25 @@
                     width: 100%;
                     display: flex;
                     padding: 2%;
-                    background-color: #ffff;
+                    background-color: $background-color;
                     flex-direction: column;
                     align-content: center;
                     justify-content: center;
                     align-items: center;
+            
                     .img-ux7{
                         width: 80%;
                         height: auto;
                         order: 1;
-                        background-color: #ffff;
+                        background-color: $background-color;
                         }
                     .txt-ux7{
-                        background-color: #ffff;
-                        border: 2px solid lightseagreen ;
+                        background-color: $background-color;
+                        border: 2px solid $font-hover;
                         border-radius: 10px;
                         padding: 8px;
                         }
-                }
+                
                 .img-ux8-contenedor{
                     .txt-ux8{
                         width: 80%;
@@ -207,13 +209,13 @@
                  padding-left: 34%;
                     
                 .behance-enlace{
-                    background-color: #ffff;
+                    background-color: $background-color;
                     .behance{
-                        background-color: #ffff;
+                        background-color: $background-color ;
                         width: 10%;
                         height: auto;
                     }
-                }}}
+                }}
         
     
     .row{ 
@@ -223,12 +225,12 @@
             text-align: center;
             .card .h-100{
                 img{
-                    background-color: white;
-                    border: 4px solid white;
+                    background-color: $background-color;
+                    border: 4px solid $border-color ;
                     } 
                 .text-muted{
                     background-color: transparent;
-                   color: #343333;
+                   color: $font-color-terciario ;
                 }
                 .card-footer:hover{
                     background-color: #fa9d50;
@@ -239,37 +241,26 @@
                     margin-top: 20%;
                     padding-left: 4px;
                     padding-right: 4px;
-                    background-color: #ffff;
+                    background-color: $background-color;
                     }
                 .card-body{
-                    background-color: #ffff;
+                    background-color: $background-color;
                     
                 .card-footer{
-                    background-color: rgb(241, 245, 249)
-                }   
-                &:hover{
-                    background-color: #fa9d50;
-                    }
+                    background-color: rgb(241, 245, 249);
+                    &:hover{
+                        background-color: #fa9d50;
+                        } 
+                    }   
+               
                     .text-muted{
                         background-color: transparent;
-                        color: #343333;
+                        color: $font-color-terciario;
                     }
-                     
-                    
-                  
-             
-
-
-
+                
 
                 }
             }
         }
     }
-
-
-
-
-
-
- 
+}}
