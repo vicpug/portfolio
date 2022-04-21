@@ -1,14 +1,4 @@
 
-.home {
-    border: 2px solid #ffff;
-    border-radius: 6px;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-    font-weight: 300;
-    color: #343333;
-    padding: 4% 0;
-    background-color: #ffff;
     .mockup {
         width: 35%;
         order: 1;
@@ -42,7 +32,7 @@
             flex-direction: row;
             justify-content: flex-start;
             .home-txt {
-                color: #ffff;
+                color: $font-color-principal;
                 font-size: 18px;
                 order: -1;
                 justify-content: flex-start;
@@ -72,12 +62,12 @@
                 }
                 
                 .enlace-animacion {
-                    color: #ffff;
+                    color: $font-color-principal;
                     font-size: 20px;
                     font-family: 'Lexend Peta', sans-serif;
                 }
             }
-            }
+            
         
         
     
