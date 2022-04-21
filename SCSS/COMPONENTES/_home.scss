@@ -1,4 +1,4 @@
-@import "./variables";
+@import "../base/variables";
 
 .home {
     border: 2px solid $border-color;
@@ -49,7 +49,7 @@
                 .descripcion-txt{
                     background-color: $background-color;
                     font-size: 16px;
-                    color: $font-color-terciaria;
+                    color: $font-color-terciario;
                 }
                 p{
                  background-color:$background-color;
@@ -216,21 +216,32 @@
                         height: auto;
                     }
                 }}
+            }}
         
+.home-arte{
+    border: 2px solid $border-color;
+    border-radius: 4px;
+    block-size: 600px;
+    padding: 10% 25%;
     
-    .row{ 
-        width: 80%;
+
+        
         .col{ 
-            padding: 0 2%;
+            padding: 0 5%;
             text-align: center;
             .card .h-100{
                 img{
                     background-color: $background-color;
                     border: 4px solid $border-color ;
+                   
                     } 
                 .text-muted{
                     background-color: transparent;
-                   color: $font-color-terciario ;
+                    color: $font-color-terciario ;
+                
+                }
+                .card-footer{
+                    background-color: $background-color;
                 }
                 .card-footer:hover{
                     background-color: #fa9d50;
@@ -263,4 +274,3 @@
             }
         }
     }
-}}
