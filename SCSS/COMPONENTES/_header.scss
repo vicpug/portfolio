@@ -40,12 +40,24 @@ body{
                 li{
                    color: $font-color-principal;
                    text-decoration: none;
-                   font-size: 100%;
+                   font-size: 100%;}
                 
                 .li-contacto{
                     margin-left: 15%
                     }    
-                    
+                .li-sobremi-activo a{
+                    color: $font-hover;
+                    }    
+                .li-ux-activo a {
+                    color: $font-hover;
+                     }
+                .li-web-activo a{
+                            color: $font-hover;
+                        }
+                .li-arte-activo a{
+                    color: $font-hover;
+                }
+                        
                     a{
                     color: $font-color-principal;
                     text-decoration: none;
@@ -53,35 +65,9 @@ body{
                     &:hover {
                         color: $font-hover ;
                         }    
-                    }
-                   
-                    
-                    /*chequear si agarro como .li-ux-activo*/
-                    &-ux-activo a {
-                    color: $font-hover;
-                    }
-                    &-web-activo a{
-                        color: $font-hover;
-                    }
-                    &-sobremi-activo{
-                    color: $font-hover;
-                    }    
-                    &-arte-activo{
-                    color: $font-hover;
-                    }    
-                    &-contacto-activo{
-                    color: $font-hover;
-                    }          
+                    }         
                   }               
                 }
             }
 }
-}
-
-   
-
-
-
-
-
 

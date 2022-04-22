@@ -52,31 +52,27 @@ body header nav ul li {
   color: white;
   text-decoration: none;
   font-size: 100%;
-  /*chequear si agarro como .li-ux-activo*/
 }
-body header nav ul li .li-contacto {
+body header nav ul .li-contacto {
   margin-left: 15%;
 }
-body header nav ul li a {
+body header nav ul .li-sobremi-activo a {
+  color: #BA0404;
+}
+body header nav ul .li-ux-activo a {
+  color: #BA0404;
+}
+body header nav ul .li-web-activo a {
+  color: #BA0404;
+}
+body header nav ul .li-arte-activo a {
+  color: #BA0404;
+}
+body header nav ul a {
   color: white;
   text-decoration: none;
 }
-body header nav ul li a:hover {
-  color: #BA0404;
-}
-body header nav ul li-ux-activo a {
-  color: #BA0404;
-}
-body header nav ul li-web-activo a {
-  color: #BA0404;
-}
-body header nav ul li-sobremi-activo {
-  color: #BA0404;
-}
-body header nav ul li-arte-activo {
-  color: #BA0404;
-}
-body header nav ul li-contacto-activo {
+body header nav ul a:hover {
   color: #BA0404;
 }
 
@@ -303,14 +299,8 @@ body header nav ul li-contacto-activo {
   border: 4px solid white;
 }
 .home-arte .col .card .h-100 .text-muted {
-  background-color: transparent;
-  color: #343333;
-}
-.home-arte .col .card .h-100 .card-footer {
   background-color: white;
-}
-.home-arte .col .card .h-100 .card-footer:hover {
-  background-color: #fa9d50;
+  color: #343333;
 }
 .home-arte .col .card .h-100 .card-img-top {
   margin-top: 20%;
@@ -327,9 +317,30 @@ body header nav ul li-contacto-activo {
 .home-arte .col .card .h-100 .card-body .card-footer:hover {
   background-color: #fa9d50;
 }
-.home-arte .col .card .h-100 .card-body .text-muted {
-  background-color: transparent;
-  color: #343333;
+
+.home-sobremi {
+  border: 2px solid white;
+  border-radius: 4px;
+  block-size: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0px 18%;
+  align-items: center;
+  justify-content: flex-end;
+}
+.home-sobremi .foto-perfil {
+  width: 35%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid white;
+  padding: 2px;
+}
+.home-sobremi .text-perfil {
+  width: 65%;
+  height: auto;
+  padding: 0 3%;
+  order: -1;
 }
 
 .mockup {
