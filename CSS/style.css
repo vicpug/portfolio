@@ -343,6 +343,17 @@ body header nav ul a:hover {
   order: -1;
 }
 
+.home-web {
+  border: 2px solid white;
+  border-radius: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 50px;
+}
+
 .mockup {
   width: 35%;
   order: 1;

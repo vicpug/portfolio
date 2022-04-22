@@ -10,7 +10,8 @@
     padding: 0px 18%;
     align-items: center;
     justify-content: flex-end;
-
+   
+   
 
     &-arte {
         border: 2px solid $border-color;
@@ -315,4 +316,14 @@
         padding: 0 3%;
         order: -1;
     }
+}
+.home-web{
+        border: 2px solid white;
+        border-radius: 4px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 50px;
 }
