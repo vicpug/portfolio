@@ -86,6 +86,8 @@ body header nav ul a:hover {
   padding: 0px 18%;
   align-items: center;
   justify-content: flex-end;
+  /*----Sobre mi------*/
+  /*-----Web----*/
 }
 .home-arte {
   border: 2px solid white;
@@ -93,232 +95,40 @@ body header nav ul a:hover {
   block-size: 600px;
   padding: 5% 10%;
 }
-.home .img-intro-contenedor {
-  display: flex;
-  flex-direction: row;
-  background-color: white;
-}
-.home .img-intro-contenedor .img-intro {
-  width: 74%;
-  border-radius: 6px;
-  order: 1;
-  background-color: white;
-}
-.home .img-intro-contenedor .lateral {
-  background-color: white;
-  display: flex;
-  align-content: center;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  margin-left: 5%;
-}
-.home .img-intro-contenedor .lateral .intro-txt {
-  font-size: 12px;
-  color: black;
-  order: -1;
-  font-size: 16px;
-  background-color: white;
-  padding-left: 4%;
-  font-weight: 400;
-}
-.home .img-intro-contenedor .lateral .descripcion-txt {
-  background-color: white;
-  font-size: 16px;
-  color: #343333;
-}
-.home .img-intro-contenedor .lateral p {
-  background-color: white;
-}
-.home .img-intro-contenedor .iconos {
-  width: 20%;
-  display: flex;
-  background-color: white;
-  padding-top: 0;
-  align-items: center;
-  size: 50%;
-  align-content: center;
-}
-.home .img-intro-contenedor .figma {
-  width: 40%;
-  padding: 15%;
-  background-color: white;
-}
-.home .img-intro-contenedor .mac {
-  width: 55%;
-  padding: 10%;
-  background-color: white;
-}
-.home .img-intro-contenedor .photoshop {
-  width: 70%;
-  padding: 10%;
-  background-color: white;
-}
-.home .img-ux3-contenedor {
-  width: 100%;
-  display: flex;
-  padding: 2%;
-  background-color: white;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-}
-.home .img-ux3-contenedor .img-ux3 {
-  width: 90%;
-  height: auto;
-  order: 1;
-  background-color: white;
-}
-.home .img-ux3-contenedor .txt-ux3 {
-  background-color: white;
-  border: 2px solid #BA0404;
-  border-radius: 10px;
-  padding: 8px;
-}
-.home .img-ux4-contenedor {
-  width: 100%;
-  display: flex;
-  padding: 2%;
-  background-color: white;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-}
-.home .img-ux4-contenedor .img-ux4 {
-  width: 80%;
-  height: auto;
-  order: 1;
-  background-color: white;
-}
-.home .img-ux4-contenedor .txt-ux4 {
-  background-color: white;
-  border: 2px solid #BA0404;
-  border-radius: 10px;
-  padding: 8px;
-}
-.home .img-ux5-contenedor {
-  width: 100%;
-  display: flex;
-  padding: 2%;
-  background-color: white;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-}
-.home .img-ux5-contenedor .img-ux5 {
-  width: 88%;
-  height: auto;
-  order: 1;
-  background-color: white;
-}
-.home .img-ux5-contenedor .txt-ux5 {
-  background-color: white;
-  border: 2px solid #BA0404;
-  border-radius: 10px;
-  padding: 8px;
-}
-.home .img-ux6-contenedor {
-  width: 100%;
-  display: flex;
-  padding: 2%;
-  background-color: white;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-}
-.home .img-ux6-contenedor .img-ux6 {
-  width: 80%;
-  height: auto;
-  order: 1;
-  background-color: white;
-}
-.home .img-ux6-contenedor .txt-ux6 {
-  background-color: white;
-  border: 2px solid #BA0404;
-  border-radius: 10px;
-  padding: 8px;
-}
-.home .img-ux7-contenedor {
-  width: 100%;
-  display: flex;
-  padding: 2%;
-  background-color: white;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-}
-.home .img-ux7-contenedor .img-ux7 {
-  width: 80%;
-  height: auto;
-  order: 1;
-  background-color: white;
-}
-.home .img-ux7-contenedor .txt-ux7 {
-  background-color: white;
-  border: 2px solid #BA0404;
-  border-radius: 10px;
-  padding: 8px;
-}
-.home .img-ux7-contenedor .img-ux8-contenedor .txt-ux8 {
-  width: 80%;
-  height: auto;
-  padding: 0 20%;
-}
-.home .img-ux7-contenedor .txt-ux9 {
-  width: 31%;
-  height: auto;
-  text-align: center;
-  padding-left: 34%;
-}
-.home .img-ux7-contenedor .txt-ux9 .behance-enlace {
-  background-color: white;
-}
-.home .img-ux7-contenedor .txt-ux9 .behance-enlace .behance {
-  background-color: white;
-  width: 10%;
-  height: auto;
-}
-
-.home-arte {
+.home .home-arte {
   border: 2px solid white;
   border-radius: 4px;
   block-size: 600px;
   padding: 10% 25%;
 }
-.home-arte .col {
+.home .home-arte .col {
   padding: 0 5%;
   text-align: center;
 }
-.home-arte .col .card .h-100 img {
+.home .home-arte .col .card .h-100 img {
   background-color: white;
   border: 4px solid white;
 }
-.home-arte .col .card .h-100 .text-muted {
+.home .home-arte .col .card .h-100 .text-muted {
   background-color: white;
   color: #343333;
 }
-.home-arte .col .card .h-100 .card-img-top {
+.home .home-arte .col .card .h-100 .card-img-top {
   margin-top: 20%;
   padding-left: 4px;
   padding-right: 4px;
   background-color: white;
 }
-.home-arte .col .card .h-100 .card-body {
+.home .home-arte .col .card .h-100 .card-body {
   background-color: white;
 }
-.home-arte .col .card .h-100 .card-body .card-footer {
+.home .home-arte .col .card .h-100 .card-body .card-footer {
   background-color: rgb(241, 245, 249);
 }
-.home-arte .col .card .h-100 .card-body .card-footer:hover {
+.home .home-arte .col .card .h-100 .card-body .card-footer:hover {
   background-color: #fa9d50;
 }
-
-.home-sobremi {
+.home .home-sobremi {
   border: 2px solid white;
   border-radius: 4px;
   block-size: 600px;
@@ -329,21 +139,20 @@ body header nav ul a:hover {
   align-items: center;
   justify-content: flex-end;
 }
-.home-sobremi .foto-perfil {
+.home .home-sobremi .foto-perfil {
   width: 35%;
   height: auto;
   border-radius: 8px;
   border: 1px solid white;
   padding: 2px;
 }
-.home-sobremi .text-perfil {
+.home .home-sobremi .text-perfil {
   width: 65%;
   height: auto;
   padding: 0 3%;
   order: -1;
 }
-
-.home-web {
+.home .home-web {
   border: 2px solid white;
   border-radius: 4px;
   display: flex;
@@ -352,6 +161,216 @@ body header nav ul a:hover {
   align-items: center;
   justify-content: flex-end;
   padding: 50px;
+}
+
+/*-----UX----------------*/
+.home-ux {
+  border: 2px solid white;
+  border-radius: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0px 8%;
+  align-items: center;
+  justify-content: flex-end;
+}
+.home-ux .img-intro-contenedor {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  margin-top: 8%;
+}
+.home-ux .img-intro-contenedor .img-intro {
+  width: 80%;
+  height: auto;
+  border-radius: 6px;
+  order: 1;
+  background-color: white;
+}
+.home-ux .lateral {
+  background-color: white;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 3%;
+  padding-top: 5%;
+  font-weight: 300;
+}
+.home-ux .lateral .intro-txt {
+  font-size: 12px;
+  color: black;
+  order: -1;
+  font-size: 16px;
+  background-color: white;
+  padding-left: 18%;
+  font-weight: 400;
+}
+.home-ux .lateral .descripcion-txt {
+  background-color: white;
+  font-size: 16px;
+  color: #343333;
+  font-weight: 300;
+}
+.home-ux .lateral p {
+  background-color: white;
+}
+.home-ux .iconos {
+  width: 20%;
+  display: flex;
+  background-color: white;
+  padding-top: 0;
+  align-items: center;
+  size: 50%;
+  align-content: center;
+}
+.home-ux .figma {
+  width: 55%;
+  padding: 15%;
+  background-color: white;
+}
+.home-ux .mac {
+  width: 55%;
+  padding: 10%;
+  background-color: white;
+}
+.home-ux .photoshop {
+  width: 70%;
+  padding: 10%;
+  background-color: white;
+}
+.home-ux .img-ux3-contenedor {
+  width: 100%;
+  display: flex;
+  padding: 6% 0;
+  background-color: white;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.home-ux .img-ux3-contenedor .img-ux3 {
+  width: 90%;
+  height: auto;
+  order: 1;
+  background-color: white;
+  padding-top: 2%;
+}
+.home-ux .img-ux3-contenedor .txt-ux3 {
+  background-color: white;
+  border: 2px solid #BA0404;
+  border-radius: 10px;
+  padding: 8px;
+}
+.home-ux .img-ux4-contenedor {
+  width: 100%;
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.home-ux .img-ux4-contenedor .img-ux4 {
+  width: 80%;
+  height: auto;
+  order: 1;
+  background-color: white;
+}
+.home-ux .img-ux4-contenedor .txt-ux4 {
+  background-color: white;
+  border: 2px solid #BA0404;
+  border-radius: 10px;
+  padding: 8px;
+}
+.home-ux .img-ux5-contenedor {
+  width: 100%;
+  display: flex;
+  padding: 4% 0;
+  background-color: white;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.home-ux .img-ux5-contenedor .img-ux5 {
+  width: 88%;
+  height: auto;
+  order: 1;
+  background-color: white;
+}
+.home-ux .img-ux5-contenedor .txt-ux5 {
+  background-color: white;
+  border: 2px solid #BA0404;
+  border-radius: 10px;
+  padding: 8px;
+}
+.home-ux .img-ux6-contenedor {
+  width: 100%;
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.home-ux .img-ux6-contenedor .img-ux6 {
+  width: 80%;
+  height: auto;
+  order: 1;
+  background-color: white;
+  padding-top: 2%;
+}
+.home-ux .img-ux6-contenedor .txt-ux6 {
+  background-color: white;
+  border: 2px solid #BA0404;
+  border-radius: 10px;
+  padding: 8px;
+}
+.home-ux .img-ux7-contenedor {
+  width: 100%;
+  display: flex;
+  padding: 6% 0;
+  background-color: white;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.home-ux .img-ux7-contenedor .img-ux7 {
+  width: 80%;
+  height: auto;
+  order: 1;
+  background-color: white;
+  padding-top: 2%;
+}
+.home-ux .img-ux7-contenedor .txt-ux7 {
+  background-color: white;
+  border: 2px solid #BA0404;
+  border-radius: 10px;
+  padding: 8px;
+}
+.home-ux .txt-ux8 {
+  width: 90%;
+  height: auto;
+  padding: 6% 0% 2% 0;
+  text-align: center;
+  padding-right: 11%;
+}
+
+.txt-ux9 {
+  width: 90%;
+  height: auto;
+  text-align: center;
+}
+
+.behance-enlace {
+  background-color: white;
+}
+.behance-enlace .behance {
+  width: 6%;
+  height: auto;
 }
 
 .mockup {
@@ -455,6 +474,12 @@ footer .small-txt {
   color: #343333;
   font-size: 12px;
   justify-content: center;
+}
+footer .disclaimer {
+  text-align: right;
+  border-left: 2px solid red;
+  border-top-left-radius: 10px;
+  display: none;
 }
 
 /*Idioma */
