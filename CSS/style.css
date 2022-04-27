@@ -86,49 +86,46 @@ body header nav ul a:hover {
   padding: 0px 18%;
   align-items: center;
   justify-content: flex-end;
-  /*----Sobre mi------*/
-  /*-----Web----*/
 }
+
+/*------Arte---------*/
 .home-arte {
-  border: 2px solid white;
-  border-radius: 4px;
-  block-size: 600px;
-  padding: 5% 10%;
-}
-.home .home-arte {
   border: 2px solid white;
   border-radius: 4px;
   block-size: 600px;
   padding: 10% 25%;
 }
-.home .home-arte .col {
-  padding: 0 5%;
+.home-arte .col {
+  padding: 0 2%;
   text-align: center;
 }
-.home .home-arte .col .card .h-100 img {
+.home-arte .col .card .h-100 {
+  padding: 4%;
+}
+.home-arte .col img {
   background-color: white;
   border: 4px solid white;
 }
-.home .home-arte .col .card .h-100 .text-muted {
+.home-arte .col .text-muted {
   background-color: white;
   color: #343333;
 }
-.home .home-arte .col .card .h-100 .card-img-top {
-  margin-top: 20%;
-  padding-left: 4px;
-  padding-right: 4px;
+.home-arte .col .card-img-top {
+  background-color: white;
+  padding: 20% 4% 0% 4%;
+}
+.home-arte .col .card-body {
   background-color: white;
 }
-.home .home-arte .col .card .h-100 .card-body {
-  background-color: white;
-}
-.home .home-arte .col .card .h-100 .card-body .card-footer {
+.home-arte .col .card-body .card-footer {
   background-color: rgb(241, 245, 249);
 }
-.home .home-arte .col .card .h-100 .card-body .card-footer:hover {
+.home-arte .col .card-body .card-footer:hover {
   background-color: #fa9d50;
 }
-.home .home-sobremi {
+
+/*----Sobre mi------*/
+.home-sobremi {
   border: 2px solid white;
   border-radius: 4px;
   block-size: 600px;
@@ -139,20 +136,22 @@ body header nav ul a:hover {
   align-items: center;
   justify-content: flex-end;
 }
-.home .home-sobremi .foto-perfil {
+.home-sobremi .foto-perfil {
   width: 35%;
   height: auto;
   border-radius: 8px;
   border: 1px solid white;
   padding: 2px;
 }
-.home .home-sobremi .text-perfil {
+.home-sobremi .text-perfil {
   width: 65%;
   height: auto;
   padding: 0 3%;
   order: -1;
 }
-.home .home-web {
+
+/*-----Web----*/
+.home-web {
   border: 2px solid white;
   border-radius: 4px;
   display: flex;
@@ -160,7 +159,25 @@ body header nav ul a:hover {
   justify-content: space-around;
   align-items: center;
   justify-content: flex-end;
-  padding: 50px;
+  padding: 4%;
+}
+.home-web .carousel-indicators {
+  background-color: transparent;
+  padding-bottom: 2%;
+}
+.home-web .carousel-control-prev {
+  justify-content: flex-start;
+  background-color: transparent;
+}
+.home-web .carousel-control-prev .carousel-control-prev-icon {
+  background-color: transparent;
+}
+.home-web .carousel-control-next {
+  justify-content: flex-end;
+  background-color: transparent;
+}
+.home-web .carousel-control-next .carousel-control-next-icon {
+  background-color: transparent;
 }
 
 /*-----UX----------------*/
