@@ -1,6 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@100;200;300;400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@100;200;300;400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@100;200;300;400;600;700&display=swap");
+.img-intro {
+  background-color: white;
+  width: 80%;
+}
+
+.iconos {
+  background-color: white;
+  width: 20%;
+}
+
+.home-ux, .home-web, .home-sobremi, .home {
+  border: 2px solid white;
+  border-radius: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.home-ux, .home-web, .home-sobremi, .home {
+  border: 2px solid white;
+  border-radius: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  justify-content: flex-end;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -76,16 +106,29 @@ body header nav ul a:hover {
   color: #BA0404;
 }
 
-.home {
+.img-intro {
+  background-color: white;
+  width: 80%;
+}
+
+.iconos {
+  background-color: white;
+  width: 20%;
+}
+
+.home-ux, .home-web, .home-sobremi, .home {
   border: 2px solid white;
   border-radius: 4px;
-  block-size: 600px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 0px 18%;
   align-items: center;
   justify-content: flex-end;
+}
+
+.home {
+  block-size: 600px;
+  padding: 0px 18%;
 }
 
 /*------Arte---------*/
@@ -126,15 +169,8 @@ body header nav ul a:hover {
 
 /*----Sobre mi------*/
 .home-sobremi {
-  border: 2px solid white;
-  border-radius: 4px;
   block-size: 600px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
   padding: 0px 18%;
-  align-items: center;
-  justify-content: flex-end;
 }
 .home-sobremi .foto-perfil {
   width: 35%;
@@ -152,13 +188,6 @@ body header nav ul a:hover {
 
 /*-----Web----*/
 .home-web {
-  border: 2px solid white;
-  border-radius: 4px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  justify-content: flex-end;
   padding: 4%;
 }
 .home-web .carousel-indicators {
@@ -182,11 +211,6 @@ body header nav ul a:hover {
 
 /*-----UX----------------*/
 .home-ux {
-  border: 2px solid white;
-  border-radius: 4px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
   padding: 0px 8%;
   align-items: center;
   justify-content: flex-end;
@@ -234,9 +258,7 @@ body header nav ul a:hover {
   background-color: white;
 }
 .home-ux .iconos {
-  width: 20%;
   display: flex;
-  background-color: white;
   padding-top: 0;
   align-items: center;
   size: 50%;

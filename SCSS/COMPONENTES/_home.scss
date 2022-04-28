@@ -1,15 +1,11 @@
 @import "../base/variables";
+@import "../base/mixins";
+@import "../base/extends";
 
 .home {
-    border: 2px solid $border-color;
-    border-radius: 4px;
+   @extend %home;
     block-size: 600px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
     padding: 0px 18%;
-    align-items: center;
-    justify-content: flex-end;
     }
     /*------Arte---------*/
     .home-arte {
@@ -48,15 +44,10 @@
     
     /*----Sobre mi------*/
     .home-sobremi {
-        border: 2px solid $border-color;
-        border-radius: 4px;
+        @extend %home;
         block-size: 600px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
         padding: 0px 18%;
-        align-items: center;
-        justify-content: flex-end;
+        
         .foto-perfil {
             width: 35%;
             height: auto;
@@ -73,13 +64,7 @@
     }
     /*-----Web----*/
     .home-web {
-        border: 2px solid white;
-        border-radius: 4px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        justify-content: flex-end;
+        @extend %home;
         padding: 4%;
     .carousel-indicators{
         background-color: transparent;
@@ -102,11 +87,7 @@
     }
 /*-----UX----------------*/
 .home-ux {
-    border: 2px solid $border-color;
-    border-radius: 4px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    @extend %home;
     padding: 0px 8%;
     align-items: center;
     justify-content: flex-end;
@@ -120,8 +101,7 @@
             height: auto;
             border-radius: 6px;
             order: 1;
-            background-color: #ffff;
-
+            background-color: $background-color;
         }
     }
     .lateral {
@@ -154,9 +134,9 @@
         }
     }
     .iconos {
-        width: 20%;
+       
         display: flex;
-        background-color: $background-color;
+       
         padding-top: 0;
         align-items: center;
         size: 50%;

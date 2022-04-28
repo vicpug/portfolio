@@ -1,0 +1,12 @@
+@import "./variables";
+
+@mixin forma($background, $sizes){
+    background-color: $background;
+    width: $sizes;
+}
+.img-intro{
+    @include forma($background-color,80%)
+}
+.iconos{
+    @include forma($background-color,20%)
+}
