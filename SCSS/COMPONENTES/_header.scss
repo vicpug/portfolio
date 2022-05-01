@@ -1,73 +1,32 @@
-@import "../base/variables";
+@import "../style.scss";
+@import "../base/extends";
 
-body{
+body {
     margin: 6%;
     background-color: transparent;
-    
-    header {
-            margin-bottom: 8px;
-           
-            h1 {
-                font-weight: 300;
-                font-size: 200%;
-                color: $font-color-principal;
-                margin-bottom: 12px;
-                
-                a{
-                    color: $font-color-principal;
-                    text-decoration: none;
-                    &:hover{
-                        color:$h1-color-hover;
-                    }
-                }
-            }
-           
 
-            nav{
-               ul {
-                display: flex;
-                list-style-type: none;
-                font-size: 16px;
-                font-weight: 300;
-                color: $font-color-terciario;
-                flex-direction: row;
-                justify-content: space-around;
-                flex-wrap: wrap;
-                margin: 0;
-                padding: 0;
-                padding-inline-start: 0;
-                  
-                li{
-                   color: $font-color-principal;
-                   text-decoration: none;
-                   font-size: 100%;}
-                
-                .li-contacto{
-                    margin-left: 15%
-                    }    
-                .li-sobremi-activo a{
-                    color: $font-hover;
-                    }    
-                .li-ux-activo a {
-                    color: $font-hover;
-                     }
-                .li-web-activo a{
-                            color: $font-hover;
-                        }
-                .li-arte-activo a{
-                    color: $font-hover;
-                }
-                        
-                    a{
-                    color: $font-color-principal;
-                    text-decoration: none;
-                    
-                    &:hover {
-                        color: $font-hover ;
-                        }    
-                    }         
-                  }               
-                }
-            }
-}
+    header {
+        margin-bottom: 8px;
+
+        h1 {
+            font-weight: 300;
+            font-size: 30px;
+            color: $font-color-principal;
+            margin-bottom: 12px;
+
+            &:hover {
+                color: $h1-color-hover;
+            }}
+        a.navbar-brand{
+            @extend %navbar;
+            
+        }
+        a.navbar-light{
+            @extend %navbar;
+        }
+        .navbar-light .navbar-brand {
+            color:$font-color-principal;
+        }
+    }}
+        
 

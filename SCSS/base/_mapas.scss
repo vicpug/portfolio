@@ -1,0 +1,10 @@
+@import "./variables";
+
+$border-home:(
+    border-radius:4px,
+    border:2px solid $border-color
+);
+
+.home-arte{
+    border: map-get($map: border-home, $key:border-radius);
+}

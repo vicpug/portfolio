@@ -21,14 +21,10 @@
   justify-content: flex-end;
 }
 
-.home-ux, .home-web, .home-sobremi, .home {
-  border: 2px solid white;
-  border-radius: 4px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  justify-content: flex-end;
+body header a.navbar-light, body header a.navbar-brand {
+  color: white;
+  font-weight: 200;
+  font-size: 18px;
 }
 
 * {
@@ -54,58 +50,13 @@ body header {
 }
 body header h1 {
   font-weight: 300;
-  font-size: 200%;
+  font-size: 30px;
   color: white;
   margin-bottom: 12px;
 }
-body header h1 a {
-  color: white;
-  text-decoration: none;
-}
-body header h1 a:hover {
+body header h1:hover {
   color: lightseagreen;
 }
-body header nav ul {
-  display: flex;
-  list-style-type: none;
-  font-size: 16px;
-  font-weight: 300;
-  color: #343333;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  padding-inline-start: 0;
-}
-body header nav ul li {
-  color: white;
-  text-decoration: none;
-  font-size: 100%;
-}
-body header nav ul .li-contacto {
-  margin-left: 15%;
-}
-body header nav ul .li-sobremi-activo a {
-  color: #BA0404;
-}
-body header nav ul .li-ux-activo a {
-  color: #BA0404;
-}
-body header nav ul .li-web-activo a {
-  color: #BA0404;
-}
-body header nav ul .li-arte-activo a {
-  color: #BA0404;
-}
-body header nav ul a {
-  color: white;
-  text-decoration: none;
-}
-body header nav ul a:hover {
-  color: #BA0404;
-}
-
 .img-intro {
   background-color: white;
   width: 80%;
@@ -124,6 +75,12 @@ body header nav ul a:hover {
   justify-content: space-around;
   align-items: center;
   justify-content: flex-end;
+}
+
+body header a.navbar-brand, body header a.navbar-light {
+  color: white;
+  font-weight: 200;
+  font-size: 18px;
 }
 
 .home {
