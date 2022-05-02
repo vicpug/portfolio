@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@100;200;300;400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@100;200;300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@100;200;300;400;600;700&family=Share+Tech+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@100;200;300;400;600;700&display=swap");
 .img-intro {
   background-color: white;
@@ -171,7 +171,7 @@ body header a.navbar-brand {
   order: -1;
 }
 
-/*-----Web----*/
+/*-----Web------------------------*/
 .home-web {
   padding: 4%;
   margin-left: 67px;
@@ -236,6 +236,27 @@ h4 p {
 }
 .carousel-control-next .carousel-control-next-icon {
   background-color: transparent;
+}
+
+.carousel-inner {
+  width: 100%;
+}
+
+.d-block .icons {
+  padding-top: 10%;
+  background-color: #343333;
+}
+.d-block .icons img {
+  padding: 0 2%;
+  width: 20%;
+  height: auto;
+  background-color: #343333;
+}
+.d-block .icons .scss {
+  display: inline;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 46px;
+  color: palevioletred;
 }
 
 /*-----UX----------------*/

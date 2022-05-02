@@ -63,7 +63,7 @@
             order: -1;
         }
     }
-    /*-----Web----*/
+    /*-----Web------------------------*/
     .home-web {
         @extend %home;
         padding: 4%;
@@ -121,7 +121,31 @@
                 background-color: transparent;
             }
         }
+        .carousel-inner {
+            width: 100%
 
+        }
+        .d-block{
+            .icons{
+                padding-top: 10%;
+                background-color: $font-color-terciario;
+            img{
+                padding: 0 2%;
+                 width: 20%;
+                 height: auto;
+                 background-color: $font-color-terciario;
+             }
+            .scss{
+                display: inline;
+                font-family: 'Share Tech Mono', monospace;
+            font-size: 46px;
+            color: palevioletred;
+            }}}
+         
+       
+
+        
+      
 /*-----UX----------------*/
 .home-ux {
     @extend %home;
