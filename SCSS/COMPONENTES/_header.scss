@@ -16,17 +16,15 @@ body {
 
             &:hover {
                 color: $h1-color-hover;
-            }}
-        a.navbar-brand{
+            }
+        }
+
+        a.navbar-brand {
             @extend %navbar;
-            
+            background-color: blue;
+
         }
-        a.navbar-light{
-            @extend %navbar;
-        }
-        .navbar-light .navbar-brand {
-            color:$font-color-principal;
-        }
-    }}
+
         
 
+    }}

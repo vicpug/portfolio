@@ -67,6 +67,7 @@
     .home-web {
         @extend %home;
         padding: 4%;
+        }
     .carousel-indicators{
         background-color: transparent;
         padding-bottom: 2%;
@@ -85,7 +86,7 @@
                 background-color: transparent;
             }
         }
-    }
+
 /*-----UX----------------*/
 .home-ux {
     @extend %home;
