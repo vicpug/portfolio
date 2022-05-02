@@ -6,5 +6,5 @@ $border-home:(
 );
 
 .home-arte{
-    border: map-get($map: border-home, $key:border-radius);
+    border: map-get($border-home, border-radius);
 }

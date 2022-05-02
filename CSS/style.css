@@ -21,7 +21,7 @@
   justify-content: flex-end;
 }
 
-body header a.navbar-light, body header a.navbar-brand {
+body header a.navbar-brand {
   color: white;
   font-weight: 200;
   font-size: 18px;
@@ -41,6 +41,26 @@ body {
   background-color: transparent;
 }
 
+.home-arte {
+  border: 4px;
+}
+
+.home-ux, .home-web, .home-sobremi, .home {
+  border: 2px solid white;
+  border-radius: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+body header a.navbar-brand {
+  color: white;
+  font-weight: 200;
+  font-size: 18px;
+}
+
 body {
   margin: 6%;
   background-color: transparent;
@@ -57,6 +77,10 @@ body header h1 {
 body header h1:hover {
   color: lightseagreen;
 }
+body header a.navbar-brand {
+  background-color: blue;
+}
+
 .img-intro {
   background-color: white;
   width: 80%;
@@ -77,10 +101,14 @@ body header h1:hover {
   justify-content: flex-end;
 }
 
-body header a.navbar-brand, body header a.navbar-light {
+body header a.navbar-brand {
   color: white;
   font-weight: 200;
   font-size: 18px;
+}
+
+.home-arte {
+  border: 4px;
 }
 
 .home {
@@ -147,22 +175,25 @@ body header a.navbar-brand, body header a.navbar-light {
 .home-web {
   padding: 4%;
 }
-.home-web .carousel-indicators {
+
+.carousel-indicators {
   background-color: transparent;
   padding-bottom: 2%;
 }
-.home-web .carousel-control-prev {
+
+.carousel-control-prev {
   justify-content: flex-start;
   background-color: transparent;
 }
-.home-web .carousel-control-prev .carousel-control-prev-icon {
+.carousel-control-prev .carousel-control-prev-icon {
   background-color: transparent;
 }
-.home-web .carousel-control-next {
+
+.carousel-control-next {
   justify-content: flex-end;
   background-color: transparent;
 }
-.home-web .carousel-control-next .carousel-control-next-icon {
+.carousel-control-next .carousel-control-next-icon {
   background-color: transparent;
 }
 
