@@ -174,11 +174,52 @@ body header a.navbar-brand {
 /*-----Web----*/
 .home-web {
   padding: 4%;
+  margin-left: 67px;
+  width: 90%;
+  height: 60%;
 }
-
-.carousel-indicators {
+.home-web .carousel-indicators {
   background-color: transparent;
   padding-bottom: 2%;
+}
+
+.d-block {
+  height: 700px;
+  width: 100%;
+  background-color: #343333;
+  color: white;
+  font-size: 18px;
+  font-weight: 200;
+  font-family: menlo;
+}
+.d-block p {
+  color: white;
+  font-size: 18px;
+  font-weight: 200;
+  font-family: menlo;
+}
+.d-block p.fw {
+  color: #fa9d50;
+}
+.d-block p.fc {
+  color: black;
+  background-color: rgb(214, 214, 10);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  width: 50%;
+  display: inline;
+}
+.d-block p.fp {
+  color: lightseagreen;
+  display: inline;
+}
+
+h4 {
+  text-align: center;
+  line-height: 200%;
+  padding: 10% 20%;
+}
+h4 p {
+  background-color: #343333;
 }
 
 .carousel-control-prev {

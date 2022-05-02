@@ -67,11 +67,46 @@
     .home-web {
         @extend %home;
         padding: 4%;
-        }
+        margin-left: 67px;
+        width: 90%;
+        height: 60%;
+       
     .carousel-indicators{
         background-color: transparent;
         padding-bottom: 2%;
-    } 
+        }}
+    .d-block{
+        height: 700px;
+        width:100%;
+        background-color: $font-color-terciario;
+        color: $font-color-principal;
+        font-size: 18px;
+        font-weight: 200;
+        font-family: menlo;
+        p{
+            color: $font-color-principal;
+            font-size: 18px;
+            font-weight: 200;
+            font-family: menlo;
+            &.fw{color: #fa9d50;}
+            &.fc{color: black;
+            background-color: rgb(214, 214, 10);
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            width: 50%;
+            display: inline;}
+            &.fp{color: lightseagreen;
+            display: inline;}
+        }
+
+        } 
+    h4 {
+       text-align: center;
+       line-height: 200%;
+       padding: 10% 20%;
+       p{
+        background-color: $font-color-terciario;
+       }
+    }
     .carousel-control-prev {
                 justify-content: flex-start;
                 background-color: transparent;
