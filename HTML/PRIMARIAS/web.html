@@ -25,36 +25,41 @@
     <h1>
       <a href="../../index.html">Victoria Pugliese</h1>
 
-    <nav>
-      <ul>
-        <li class="li-web-activo">
-          <a href="./html/primarias/web.html">Desarrollo web</a>
-      </li>
-      <li class="li-ux">
-          <a href="../primarias/ux.html">Diseño UX/UI</a>
-      </li>
-      <li class="li-arte">
-          <a href="../primarias/arte-dos.html">Arte</a>
-      </li>
-      <li class="li-contacto">
-         Contacto<!-- ---------completar! ----------------- --> 
-      </li>
-      <li class="li-sobremi">
-          <a href="../primarias/sobremi.html">Sobre mí</a>
-      </li>
-      <li class="li-idioma">
-          <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-                Español
+        <nav class="navbar navbar-expand-lg navbar-light borrar">
+          <div class="container-fluid">
+              <a class="navbar-brand" href="../primarias/web.html">Desarrollo Web</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
               </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                <li><button class="dropdown-item" type="button">Inglés</button></li>
-                <li><button class="dropdown-item" type="button">Portugués</button></li>
-              </ul>
-            </div>
-      </li>
-      </ul>
-    </nav>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="../primarias/ux.html">Diseño
+                              UX/UI</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="../primarias/arte-dos.html">Arte</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="../primarias/sobremi.html">Sobre mí</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="../primarias/contacto.html">Contacto</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                              data-bs-toggle="dropdown" aria-expanded="false">
+                              Español
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <li><a class="dropdown-item" href="#">Inglés</a></li>
+                              <li><a class="dropdown-item" href="#">Francés</a></li>
+                          </ul>
+                      </li>
+                  </ul>
+              </div>
   </header>
   <section class="home-web">
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">

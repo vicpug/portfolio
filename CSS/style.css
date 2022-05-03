@@ -1,16 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@100;200;300;400;600;700&family=Share+Tech+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@100;200;300;400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@100;200;300;400;600;700&family=Share+Tech+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@100;200;300;400;600;700&display=swap");
-.img-intro {
-  background-color: white;
-  width: 80%;
-}
-
-.iconos {
-  background-color: white;
-  width: 20%;
-}
-
 .home-ux, .home-web, .home-sobremi, .home {
   border: 2px solid white;
   border-radius: 4px;
@@ -21,10 +12,20 @@
   justify-content: flex-end;
 }
 
-body header a.navbar-brand {
+body header .navbar-light .navbar-nav .nav-link, body header .navbar-light .navbar-nav .nav-link.active, body header .navbar-light .navbar-nav .show > .nav-link, body header .navbar-light .navbar-brand {
   color: white;
   font-weight: 200;
   font-size: 18px;
+}
+
+.img-intro {
+  background-color: white;
+  width: 80%;
+}
+
+.iconos {
+  background-color: white;
+  width: 20%;
 }
 
 * {
@@ -45,22 +46,6 @@ body {
   border: 4px;
 }
 
-.home-ux, .home-web, .home-sobremi, .home {
-  border: 2px solid white;
-  border-radius: 4px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-body header a.navbar-brand {
-  color: white;
-  font-weight: 200;
-  font-size: 18px;
-}
-
 body {
   margin: 6%;
   background-color: transparent;
@@ -73,47 +58,60 @@ body header h1 {
   font-size: 30px;
   color: white;
   margin-bottom: 12px;
+  text-decoration: none;
+}
+body header h1 a {
+  font-weight: 300;
+  font-size: 30px;
+  color: white;
+  margin-bottom: 12px;
+  text-decoration: none;
+}
+body header h1 a:hover {
+  color: lightseagreen;
 }
 body header h1:hover {
   color: lightseagreen;
 }
-body header a.navbar-brand {
-  background-color: blue;
-}
-
-.img-intro {
-  background-color: white;
-  width: 80%;
-}
-
-.iconos {
-  background-color: white;
-  width: 20%;
-}
-
-.home-ux, .home-web, .home-sobremi, .home {
-  border: 2px solid white;
-  border-radius: 4px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-body header a.navbar-brand {
+body header .navbar-light .navbar-brand {
   color: white;
-  font-weight: 200;
-  font-size: 18px;
 }
-
-.home-arte {
-  border: 4px;
+body header .navbar-light .navbar-brand:hover {
+  color: red;
+}
+body header .navbar-light .navbar-nav .nav-link.active, body header .navbar-light .navbar-nav .show > .nav-link {
+  color: white;
+}
+body header .navbar-light .navbar-nav .nav-link.active:hover, body header .navbar-light .navbar-nav .show > .nav-link:hover {
+  color: red;
+}
+body header .navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+body header .navbar-light .navbar-nav .nav-link:hover {
+  color: red;
+}
+body header .nav-item {
+  padding: 0 6px;
+  width: 200px;
+  text-align: center;
+}
+body header .nav-item:hover {
+  color: red;
+}
+body header .navbar-expand-lg .navbar-collapse {
+  display: flex !important;
+  flex-basis: auto;
+  justify-content: space-evenly;
+}
+body header li.nav-item.dropdown {
+  padding-top: 10px;
 }
 
 .home {
   block-size: 600px;
   padding: 0px 18%;
+  width: 1216px;
 }
 
 /*------Arte---------*/
@@ -174,8 +172,7 @@ body header a.navbar-brand {
 /*-----Web------------------------*/
 .home-web {
   padding: 4%;
-  margin-left: 67px;
-  width: 90%;
+  width: 1216px;
   height: 60%;
 }
 .home-web .carousel-indicators {
