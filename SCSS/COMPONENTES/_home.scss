@@ -173,15 +173,14 @@ h4 {
 /*-----UX----------------*/
 .home-ux {
     @extend %home;
-    padding: 0px 8%;
-    align-items: center;
-    justify-content: flex-end;
-
-    .img-intro-contenedor {
+    padding: 4%;
+    width: 1216px;
+    height: 60%;
+       .img-intro-contenedor {
         display: flex;
         flex-direction: row;
         background-color: $background-color;
-        margin-top: 8%;
+   
 
         .img-intro {
             width: 80%;
@@ -391,7 +390,8 @@ h4 {
 .txt-ux9 {
     width: 90%;
     height: auto;
-    text-align: center
+    text-align: center;
+    padding-right: 10%;
 }
 
 .behance-enlace {
