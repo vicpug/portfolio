@@ -1,57 +1,103 @@
 body {
     margin: 6%;
     background-color: transparent;
+
     header {
         margin-bottom: 8px;
+
         h1 {
             font-weight: 300;
             font-size: 30px;
             color: $font-color-principal;
             margin-bottom: 12px;
             text-decoration: none;
-            a{
-            font-weight: 300;
-            font-size: 30px;
-            color: $font-color-principal;
-            margin-bottom: 12px;
-            text-decoration: none;
-            &:hover {
-                color: $h1-color-hover;
+
+            a {
+                font-weight: 300;
+                font-size: 30px;
+                color: $font-color-principal;
+                margin-bottom: 12px;
+                text-decoration: none;
+
+                &:hover {
+                    color: $h1-color-hover;
+                }
             }
-            }
+
             &:hover {
                 color: $h1-color-hover;
             }
         }
+
         .navbar-light .navbar-brand {
             color: $font-color-principal;
-            @extend %navbar;
-            &:hover{color: red;}
         }
-        .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+
+        .navbar-light .navbar-toggler {
+            color: $font-color-principal;
+            border-color: $font-color-principal;
+        }
+
+        .navbar-light .navbar-nav .nav-link.active,
+        .navbar-light .navbar-nav .show>.nav-link {
+            color: white;
+
+            &:hover {
+                color: red;
+            }
+        }
+
+        a.navbar-brand {
             color: $font-color-principal;
             @extend %navbar;
-            &:hover{color: red;}
+
+            &:hover {
+                color: $h1-color-hover;
+            }
         }
+
+        .d-block {
+            color: $font-color-principal;
+        }
+
         .navbar-light .navbar-nav .nav-link {
             color: $font-color-principal;
-            @extend %navbar;
-            &:hover{color: red;}
-        }
-        .nav-item {
-            padding: 0 6px;
-            width: 200px;
-            text-align: center;
-            &:hover{color: red;}
 
         }
-   .navbar-expand-lg .navbar-collapse {
-    display: flex!important;
-    flex-basis: auto;
-    justify-content: space-evenly;
-}
-li.nav-item.dropdown{
-    padding-top: 10px;
-}
 
-    }}
+        #navbarDropdownMenuLink {
+            margin-top: 5%;
+        }
+
+    }
+/*-------------DESKTOP-----------------*/
+    @media desktop and (min-width: 969px){
+        a.nav-link active {
+            margin: 0 2%;
+            width: 200%
+        }
+        a.nav-link {
+            margin: 0 2%;
+            width: 200%
+        }
+        .navbar-expand-lg .navbar-nav .nav-link {
+            padding-right: 2.5rem;
+            padding-left: 2.5rem;
+        }
+
+    }
+    /*-------------MOBILE-----------------*/
+    @media mobile and ( max-width:490px){
+       h1 {
+           display: none;
+        }
+        .home{
+           width: auto;
+        }
+        
+    }
+
+
+
+
+}

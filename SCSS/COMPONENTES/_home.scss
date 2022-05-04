@@ -1,3 +1,4 @@
+
 .home {
     @extend %home;
     block-size: 600px;
@@ -71,20 +72,17 @@
     }
 }
 
-/*-----Web------------------------*/
+/*-------------------------------Web--------------------------------------------*/
 .home-web {
     @extend %home;
     padding: 4%;
- 
     width: 1216px;
     height: 60%;
-
     .carousel-indicators {
         background-color: transparent;
         padding-bottom: 2%;
     }
 }
-
 .d-block {
     height: 700px;
     width: 100%;
@@ -93,17 +91,14 @@
     font-size: 18px;
     font-weight: 200;
     font-family: menlo;
-
     p {
         color: $font-color-principal;
         font-size: 18px;
         font-weight: 200;
         font-family: menlo;
-
         &.fw {
             color: #fa9d50;
         }
-
         &.fc {
             color: black;
             background-color: rgb(214, 214, 10);
@@ -111,34 +106,27 @@
             width: 50%;
             display: inline;
         }
-
         &.fp {
             color: lightseagreen;
             display: inline;
         }
     }
-
 }
-
 h4 {
     text-align: center;
     line-height: 200%;
     padding: 10% 20%;
-
     p {
         background-color: $font-color-terciario;
     }
 }
-
 .carousel-control-prev {
     justify-content: flex-start;
     background-color: transparent;
-
     .carousel-control-prev-icon {
         background-color: transparent;
     }
 }
-
 .carousel-control-next {
     justify-content: flex-end;
     background-color: transparent;
@@ -170,19 +158,38 @@ h4 {
         }
     }
 }
-/*-----UX----------------*/
+/*-----------------------mobile web---------------------------------------*/
+@media screen and (max-width: 490px){
+.home-web{
+    @extend %home;
+    padding: 4%;
+    width: 320px;
+    height: 60%;
+}
+.d-block {
+    height: 60%;
+    font-size: 14px;}
+.carousel-inner{
+        width: 290px;
+        height: 181px;
+}
+
+
+
+}
+
+/*--------------------------------UX----------------------------------*/
 .home-ux {
     @extend %home;
     padding: 4%;
     width: 1216px;
     height: 60%;
+    
        .img-intro-contenedor {
         display: flex;
         flex-direction: row;
         background-color: $background-color;
-   
-
-        .img-intro {
+           .img-intro {
             width: 80%;
             height: auto;
             border-radius: 6px;
@@ -190,7 +197,6 @@ h4 {
             background-color: $background-color;
         }
     }
-
     .lateral {
         background-color: $background-color;
         display: flex;
@@ -201,7 +207,6 @@ h4 {
         margin-left: 3%;
         padding-top: 5%;
         font-weight: 300;
-
         .intro-txt {
             font-size: 12px;
             color: $font-color-secundario;
@@ -211,19 +216,16 @@ h4 {
             padding-left: 18%;
             font-weight: 400;
         }
-
         .descripcion-txt {
             background-color: $background-color;
             font-size: 16px;
             color: $font-color-terciario;
             font-weight: 300;
         }
-
         p {
             background-color: $background-color;
         }
     }
-
     .iconos {
 
         display: flex;
@@ -233,7 +235,6 @@ h4 {
         size: 50%;
         align-content: center;
     }
-
     .figma {
         width: 55%;
         padding: 15%;
@@ -245,13 +246,11 @@ h4 {
         padding: 10%;
         background-color: $background-color;
     }
-
     .photoshop {
         width: 70%;
         padding: 10%;
         background-color: $background-color
     }
-
     .img-ux3-contenedor {
         width: 100%;
         display: flex;
@@ -261,7 +260,6 @@ h4 {
         align-content: center;
         justify-content: center;
         align-items: center;
-
         .img-ux3 {
             width: 90%;
             height: auto;
@@ -269,7 +267,6 @@ h4 {
             background-color: $background-color;
             padding-top: 2%;
         }
-
         .txt-ux3 {
             background-color: $background-color;
             border: 2px solid $font-hover;
@@ -277,7 +274,6 @@ h4 {
             padding: 8px;
         }
     }
-
     .img-ux4-contenedor {
         width: 100%;
         display: flex;
@@ -286,14 +282,12 @@ h4 {
         align-content: center;
         justify-content: center;
         align-items: center;
-
         .img-ux4 {
             width: 80%;
             height: auto;
             order: 1;
             background-color: $background-color;
         }
-
         .txt-ux4 {
             background-color: $background-color;
             border: 2px solid $font-hover;
@@ -301,7 +295,6 @@ h4 {
             padding: 8px;
         }
     }
-
     .img-ux5-contenedor {
         width: 100%;
         display: flex;
@@ -311,14 +304,12 @@ h4 {
         align-content: center;
         justify-content: center;
         align-items: center;
-
         .img-ux5 {
             width: 88%;
             height: auto;
             order: 1;
             background-color: $background-color;
         }
-
         .txt-ux5 {
             background-color: $background-color;
             border: 2px solid $font-hover;
@@ -326,7 +317,6 @@ h4 {
             padding: 8px;
         }
     }
-
     .img-ux6-contenedor {
         width: 100%;
         display: flex;
@@ -335,7 +325,6 @@ h4 {
         align-content: center;
         justify-content: center;
         align-items: center;
-
         .img-ux6 {
             width: 80%;
             height: auto;
@@ -343,7 +332,6 @@ h4 {
             background-color: $background-color;
             padding-top: 2%;
         }
-
         .txt-ux6 {
             background-color: $background-color;
             border: 2px solid $font-hover;
@@ -351,7 +339,6 @@ h4 {
             padding: 8px;
         }
     }
-
     .img-ux7-contenedor {
         width: 100%;
         display: flex;
@@ -361,7 +348,6 @@ h4 {
         align-content: center;
         justify-content: center;
         align-items: center;
-
         .img-ux7 {
             width: 80%;
             height: auto;
@@ -369,7 +355,6 @@ h4 {
             background-color: $background-color;
             padding-top: 2%;
         }
-
         .txt-ux7 {
             background-color: $background-color;
             border: 2px solid $font-hover;
@@ -377,7 +362,6 @@ h4 {
             padding: 8px;
         }
     }
-
     .txt-ux8 {
         width: 90%;
         height: auto;
@@ -397,5 +381,76 @@ h4 {
     .behance {
         width: 6%;
         height: auto;
+    }
+}
+/*------MOBILE UX-----------------*/
+@media screen and (max-width: 490px){
+    .home-ux{
+        @extend %home;
+        padding: 4%;
+        width: 320px;
+        height: 60%;
+    }
+    .img-intro-contenedor{
+        flex-wrap: wrap;
+         }
+    .img-intro{
+        order:-1
+    }
+.home-ux .img-intro-contenedor .img-intro {
+       order: -1;
+     }
+.home-ux .img-intro-contenedor {
+     justify-content: flex-end;
+}
+.home-ux .lateral {
+        align-content: center;
+      justify-content: center;
+    align-items: center;
+      text-align: center;
+   }
+.home-ux .lateral .intro-txt {
+    padding-left: 0;
+}
+.home-ux .img-ux3-contenedor .txt-ux3{
+  padding: 4px;
+    width: 87%;
+    font-size: 14px;
+    text-align: center;
+}
+.home-ux .img-ux4-contenedor .txt-ux4 {
+padding: 4px;
+    width: 87%;
+    font-size: 14px;
+    text-align: center;
+}
+.home-ux .img-ux5-contenedor .txt-ux5 {
+    padding: 4px;
+    width: 87%;
+    font-size: 14px;
+    text-align: center;
+}
+.home-ux .img-ux6-contenedor .txt-ux6 {
+    padding: 4px;
+    width: 87%;
+    font-size: 14px;
+    text-align: center;
+}
+.home-ux .txt-ux8 {
+    width: 100%;
+    padding: 6% 0% 0 0;
+    text-align: center;
+}
+.txt-ux9 {
+    width: 100%;
+    text-align: center;
+    padding-right: 0;
+    }
+.behance-enlace .behance {
+    width: 14%;
+    height: auto;
+}
+.behance-enlace {
+        background-color: $background-color-body;
     }
 }

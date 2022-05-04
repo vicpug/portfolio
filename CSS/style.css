@@ -12,7 +12,7 @@
   justify-content: flex-end;
 }
 
-body header .navbar-light .navbar-nav .nav-link, body header .navbar-light .navbar-nav .nav-link.active, body header .navbar-light .navbar-nav .show > .nav-link, body header .navbar-light .navbar-brand {
+body header a.navbar-brand {
   color: white;
   font-weight: 200;
   font-size: 18px;
@@ -49,6 +49,8 @@ body {
 body {
   margin: 6%;
   background-color: transparent;
+  /*-------------DESKTOP-----------------*/
+  /*-------------MOBILE-----------------*/
 }
 body header {
   margin-bottom: 8px;
@@ -76,36 +78,54 @@ body header h1:hover {
 body header .navbar-light .navbar-brand {
   color: white;
 }
-body header .navbar-light .navbar-brand:hover {
-  color: red;
+body header .navbar-light .navbar-toggler {
+  color: white;
+  border-color: white;
 }
-body header .navbar-light .navbar-nav .nav-link.active, body header .navbar-light .navbar-nav .show > .nav-link {
+body header .navbar-light .navbar-nav .nav-link.active,
+body header .navbar-light .navbar-nav .show > .nav-link {
   color: white;
 }
-body header .navbar-light .navbar-nav .nav-link.active:hover, body header .navbar-light .navbar-nav .show > .nav-link:hover {
+body header .navbar-light .navbar-nav .nav-link.active:hover,
+body header .navbar-light .navbar-nav .show > .nav-link:hover {
   color: red;
+}
+body header a.navbar-brand {
+  color: white;
+}
+body header a.navbar-brand:hover {
+  color: lightseagreen;
+}
+body header .d-block {
+  color: white;
 }
 body header .navbar-light .navbar-nav .nav-link {
   color: white;
 }
-body header .navbar-light .navbar-nav .nav-link:hover {
-  color: red;
+body header #navbarDropdownMenuLink {
+  margin-top: 5%;
 }
-body header .nav-item {
-  padding: 0 6px;
-  width: 200px;
-  text-align: center;
+@media desktop and (min-width: 969px) {
+  body a.nav-link active {
+    margin: 0 2%;
+    width: 200%;
+  }
+  body a.nav-link {
+    margin: 0 2%;
+    width: 200%;
+  }
+  body .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+  }
 }
-body header .nav-item:hover {
-  color: red;
-}
-body header .navbar-expand-lg .navbar-collapse {
-  display: flex !important;
-  flex-basis: auto;
-  justify-content: space-evenly;
-}
-body header li.nav-item.dropdown {
-  padding-top: 10px;
+@media mobile and (max-width: 490px) {
+  body h1 {
+    display: none;
+  }
+  body .home {
+    width: auto;
+  }
 }
 
 .home {
@@ -169,7 +189,7 @@ body header li.nav-item.dropdown {
   order: -1;
 }
 
-/*-----Web------------------------*/
+/*-------------------------------Web--------------------------------------------*/
 .home-web {
   padding: 4%;
   width: 1216px;
@@ -256,7 +276,25 @@ h4 p {
   color: palevioletred;
 }
 
-/*-----UX----------------*/
+/*-----------------------mobile web---------------------------------------*/
+@media screen and (max-width: 490px) {
+  .home-web {
+    padding: 4%;
+    width: 320px;
+    height: 60%;
+  }
+
+  .d-block {
+    height: 60%;
+    font-size: 14px;
+  }
+
+  .carousel-inner {
+    width: 290px;
+    height: 181px;
+  }
+}
+/*--------------------------------UX----------------------------------*/
 .home-ux {
   padding: 4%;
   width: 1216px;
@@ -459,6 +497,90 @@ h4 p {
   height: auto;
 }
 
+/*------MOBILE UX-----------------*/
+@media screen and (max-width: 490px) {
+  .home-ux {
+    padding: 4%;
+    width: 320px;
+    height: 60%;
+  }
+
+  .img-intro-contenedor {
+    flex-wrap: wrap;
+  }
+
+  .img-intro {
+    order: -1;
+  }
+
+  .home-ux .img-intro-contenedor .img-intro {
+    order: -1;
+  }
+
+  .home-ux .img-intro-contenedor {
+    justify-content: flex-end;
+  }
+
+  .home-ux .lateral {
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-ux .lateral .intro-txt {
+    padding-left: 0;
+  }
+
+  .home-ux .img-ux3-contenedor .txt-ux3 {
+    padding: 4px;
+    width: 87%;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .home-ux .img-ux4-contenedor .txt-ux4 {
+    padding: 4px;
+    width: 87%;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .home-ux .img-ux5-contenedor .txt-ux5 {
+    padding: 4px;
+    width: 87%;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .home-ux .img-ux6-contenedor .txt-ux6 {
+    padding: 4px;
+    width: 87%;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .home-ux .txt-ux8 {
+    width: 100%;
+    padding: 6% 0% 0 0;
+    text-align: center;
+  }
+
+  .txt-ux9 {
+    width: 100%;
+    text-align: center;
+    padding-right: 0;
+  }
+
+  .behance-enlace .behance {
+    width: 14%;
+    height: auto;
+  }
+
+  .behance-enlace {
+    background-color: #D2C07D;
+  }
+}
 .mockup {
   width: 35%;
   order: 1;
@@ -568,6 +690,12 @@ footer .disclaimer {
   display: none;
 }
 
+@media screen and (max-width: 490px) {
+  footer .small-txt {
+    width: 350px;
+    text-align: center;
+  }
+}
 /*Idioma */
 .dropdown {
   font-family: "Lexend Peta", sans-serif;
