@@ -8,7 +8,7 @@ body {
         h1 {
             font-weight: 300;
             font-size: 30px;
-            color: $font-color-principal;
+            color: $h1-color-hover;
             margin-bottom: 12px;
             text-decoration: none;
 
@@ -71,8 +71,8 @@ body {
 
     }
 /*-------------DESKTOP-----------------*/
-    @media desktop and (min-width: 969px){
-        a.nav-link active {
+    @media desktop and (min-width: 992px){
+        a.nav-link:active {
             margin: 0 2%;
             width: 200%
         }
@@ -81,23 +81,25 @@ body {
             width: 200%
         }
         .navbar-expand-lg .navbar-nav .nav-link {
-            padding-right: 2.5rem;
-            padding-left: 2.5rem;
+            padding-right: 1.5rem;
+           
         }
+
 
     }
     /*-------------MOBILE-----------------*/
     @media mobile and ( max-width:490px){
        h1 {
-           display: none;
+        body header h1 {
+            font-weight: 300;
+            font-size: 22px;
+            margin-bottom: 12px;
+            text-decoration: none;
         }
-        .home{
-           width: auto;
-        }
-        
+           
     }
 
 
 
 
-}
+}}

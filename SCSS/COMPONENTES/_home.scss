@@ -3,8 +3,25 @@
     @extend %home;
     block-size: 600px;
     padding: 0px 18%;
-    width: 1216px;
+    width: 98%;
 }
+/*----------Home Index Mobile----------*/
+.home{
+    width: auto;
+    align-items: flex-start;
+    padding: 0px 12%;
+ }
+ .mockup{
+     width: 80%;
+     margin-top: 10%;
+     }
+ .contenedor-animacion {
+     width: 83%;
+     height: 30px;
+     font-size: 14px;
+     margin: 58% auto auto 8%;
+ }
+
 
 /*------Arte---------*/
 .home-arte {
@@ -76,7 +93,7 @@
 .home-web {
     @extend %home;
     padding: 4%;
-    width: 1216px;
+    width: 98%;
     height: 60%;
     .carousel-indicators {
         background-color: transparent;
@@ -383,7 +400,7 @@ h4 {
         height: auto;
     }
 }
-/*------MOBILE UX-----------------*/
+/*------------------------MOBILE UX-----------------------*/
 @media screen and (max-width: 490px){
     .home-ux{
         @extend %home;
