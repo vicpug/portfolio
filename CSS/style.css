@@ -1,3 +1,7 @@
+/*--paleta 1 fondo #D2C07D, h1 celeste, hover enlaces rojo */
+/*--paleta 2 fondo #85732E, h1 #B2F0F0, hover enlaces #FDD3D3 */
+/*--paleta 1 fondo #D2C07D, h1 celeste, hover enlaces rojo */
+/*--paleta 2 fondo #85732E, h1 #B2F0F0, hover enlaces #FDD3D3 */
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@100;200;300;400;600;700&family=Share+Tech+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@100;200;300;400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@100;200;300;400;600;700&family=Share+Tech+Mono&display=swap");
@@ -18,6 +22,8 @@ body header a.navbar-brand {
   font-size: 18px;
 }
 
+/*--paleta 1 fondo #D2C07D, h1 celeste, hover enlaces rojo */
+/*--paleta 2 fondo #85732E, h1 #B2F0F0, hover enlaces #FDD3D3 */
 .img-intro {
   background-color: white;
   width: 80%;
@@ -33,7 +39,7 @@ body header a.navbar-brand {
   padding: 0;
   text-decoration: none;
   font-family: "Lexend Peta", sans-serif;
-  background-color: #D2C07D;
+  background-color: #ac932d;
   box-sizing: border-box;
 }
 
@@ -42,6 +48,8 @@ body {
   background-color: transparent;
 }
 
+/*--paleta 1 fondo #D2C07D, h1 celeste, hover enlaces rojo */
+/*--paleta 2 fondo #85732E, h1 #B2F0F0, hover enlaces #FDD3D3 */
 .home-arte {
   border: 4px;
 }
@@ -57,8 +65,8 @@ body header {
 }
 body header h1 {
   font-weight: 300;
-  font-size: 30px;
-  color: lightseagreen;
+  font-size: 34px;
+  color: #B2F0F0;
   margin-bottom: 12px;
   text-decoration: none;
 }
@@ -68,12 +76,6 @@ body header h1 a {
   color: white;
   margin-bottom: 12px;
   text-decoration: none;
-}
-body header h1 a:hover {
-  color: lightseagreen;
-}
-body header h1:hover {
-  color: lightseagreen;
 }
 body header .navbar-light .navbar-brand {
   color: white;
@@ -88,7 +90,7 @@ body header .navbar-light .navbar-nav .show > .nav-link {
 }
 body header .navbar-light .navbar-nav .nav-link.active:hover,
 body header .navbar-light .navbar-nav .show > .nav-link:hover {
-  color: red;
+  color: #5D0E0E;
 }
 body header a.navbar-brand {
   color: white;
@@ -100,7 +102,7 @@ body header .navbar-light .navbar-nav .nav-link {
   color: white;
 }
 body header .navbar-light .navbar-nav .nav-link:hover {
-  color: red;
+  color: #5D0E0E;
 }
 body header #navbarDropdownMenuLink {
   margin-top: 5%;
@@ -119,9 +121,9 @@ body header #navbarDropdownMenuLink {
   }
 }
 @media mobile and (max-width: 490px) {
-  body h1 body header h1 {
+  body body header h1 {
     font-weight: 300;
-    font-size: 22px;
+    font-size: 127%;
     margin-bottom: 12px;
     text-decoration: none;
   }
@@ -389,7 +391,7 @@ h4 p {
 }
 .home-ux .img-ux3-contenedor .txt-ux3 {
   background-color: white;
-  border: 2px solid #BA0404;
+  border: 2px solid #5D0E0E;
   border-radius: 10px;
   padding: 8px;
 }
@@ -410,7 +412,7 @@ h4 p {
 }
 .home-ux .img-ux4-contenedor .txt-ux4 {
   background-color: white;
-  border: 2px solid #BA0404;
+  border: 2px solid #5D0E0E;
   border-radius: 10px;
   padding: 8px;
 }
@@ -432,7 +434,7 @@ h4 p {
 }
 .home-ux .img-ux5-contenedor .txt-ux5 {
   background-color: white;
-  border: 2px solid #BA0404;
+  border: 2px solid #5D0E0E;
   border-radius: 10px;
   padding: 8px;
 }
@@ -454,7 +456,7 @@ h4 p {
 }
 .home-ux .img-ux6-contenedor .txt-ux6 {
   background-color: white;
-  border: 2px solid #BA0404;
+  border: 2px solid #5D0E0E;
   border-radius: 10px;
   padding: 8px;
 }
@@ -477,7 +479,7 @@ h4 p {
 }
 .home-ux .img-ux7-contenedor .txt-ux7 {
   background-color: white;
-  border: 2px solid #BA0404;
+  border: 2px solid #5D0E0E;
   border-radius: 10px;
   padding: 8px;
 }
@@ -585,7 +587,7 @@ h4 p {
   }
 
   .behance-enlace {
-    background-color: #D2C07D;
+    background-color: #ac932d;
   }
 }
 .mockup {
@@ -675,7 +677,7 @@ h4 p {
   font-family: "Lexend Peta", sans-serif;
 }
 
-/*----------Home Index Mobile----------*/
+/*---------------Home Index Mobile----------*/
 @media screen and (max-width: 490px) {
   .home {
     width: auto;
@@ -692,7 +694,7 @@ h4 p {
     width: 83%;
     height: 30px;
     font-size: 14px;
-    margin: 58% auto auto 8%;
+    margin: 133% auto 20% 8%;
   }
 }
 footer .linkedin {
@@ -728,7 +730,7 @@ footer .disclaimer {
 
 .btn-secondary {
   color: white;
-  background-color: #D2C07D;
+  background-color: #ac932d;
   border-color: white;
 }
 
