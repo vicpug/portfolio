@@ -15,17 +15,14 @@ footer{
                 justify-content: center;   
                 }
        .disclaimer {
-                    text-align: right;
-                    border-left: 2px solid red;
-                    border-top-left-radius: 10px;
-                    display: none;
+              display: none;
                 }
-}
+} 
 @media screen and (max-width: 490px){
-
 footer .small-txt{
        width: 350px;
-       text-align: center;}
+       text-align: center;
+       }
 }
 
 

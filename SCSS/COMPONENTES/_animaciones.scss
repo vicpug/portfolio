@@ -67,6 +67,25 @@
                     font-family: 'Lexend Peta', sans-serif;
                 }
             }
+
+            /*----------Home Index Mobile----------*/
+ @media screen and (max-width: 490px){
+    .home{
+    width: auto;
+    align-items: flex-start;
+    padding: 0px 12%;
+ }
+ .mockup{
+     width: 80%;
+     margin-top: 10%;
+     }
+ .contenedor-animacion {
+     width: 83%;
+     height: 30px;
+     font-size: 14px;
+     margin: 58% auto auto 8%;
+ }}
+
             
         
         

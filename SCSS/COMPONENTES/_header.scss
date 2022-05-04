@@ -1,7 +1,7 @@
 body {
     margin: 6%;
     background-color: transparent;
-
+    
     header {
         margin-bottom: 8px;
 
@@ -41,27 +41,22 @@ body {
         .navbar-light .navbar-nav .nav-link.active,
         .navbar-light .navbar-nav .show>.nav-link {
             color: white;
-
-            &:hover {
-                color: red;
-            }
-        }
-
+        &:hover{
+            color: red;
+        }}
         a.navbar-brand {
             color: $font-color-principal;
             @extend %navbar;
 
-            &:hover {
-                color: $h1-color-hover;
-            }
         }
-
         .d-block {
             color: $font-color-principal;
         }
-
         .navbar-light .navbar-nav .nav-link {
             color: $font-color-principal;
+            &:hover{
+                color: red;
+            }
 
         }
 
