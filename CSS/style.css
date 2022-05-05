@@ -57,18 +57,19 @@ body {
 body {
   margin: 6%;
   background-color: transparent;
-  /*-------------DESKTOP-----------------*/
-  /*-------------MOBILE-----------------*/
 }
 body header {
   margin-bottom: 8px;
 }
 body header h1 {
   font-weight: 300;
-  font-size: 34px;
+  font-size: 125%;
   color: #B2F0F0;
   margin-bottom: 12px;
   text-decoration: none;
+}
+body header h1:hover {
+  color: rgb(22, 72, 44);
 }
 body header h1 a {
   font-weight: 300;
@@ -107,28 +108,29 @@ body header .navbar-light .navbar-nav .nav-link:hover {
 body header #navbarDropdownMenuLink {
   margin-top: 5%;
 }
-@media desktop and (min-width: 992px) {
-  body a.nav-link:active {
-    margin: 0 2%;
-    width: 200%;
-  }
-  body a.nav-link {
-    margin: 0 2%;
-    width: 200%;
-  }
-  body .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 1.5rem;
-  }
-}
-@media mobile and (max-width: 490px) {
-  body body header h1 {
-    font-weight: 300;
-    font-size: 127%;
-    margin-bottom: 12px;
-    text-decoration: none;
-  }
-}
 
+/*-------------DESKTOP-----------------*/
+@media desktop and (min-width: 992px) {
+  a.nav-link:active {
+    margin: 0 2%;
+    width: 200%;
+  }
+
+  a.nav-link {
+    margin: 0 2%;
+    width: 200%;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.5rem !important;
+  }
+}
+/*-------------MOBILE-----------------*/
+@media screen and (max-width: 490px) {
+  .navbar-brand {
+    font-size: 66%;
+  }
+}
 .home {
   block-size: 600px;
   padding: 0px 18%;
@@ -210,7 +212,7 @@ body header #navbarDropdownMenuLink {
 }
 
 .d-block {
-  height: 700px;
+  height: 130%;
   width: 100%;
   background-color: #343333;
   color: white;
@@ -288,19 +290,31 @@ h4 p {
 /*-----------------------mobile web---------------------------------------*/
 @media screen and (max-width: 490px) {
   .home-web {
-    padding: 4%;
-    width: 320px;
-    height: 60%;
+    padding: 30% 4%;
+    width: 100%;
+    height: auto;
   }
 
   .d-block {
-    height: 60%;
     font-size: 14px;
   }
 
   .carousel-inner {
-    width: 290px;
-    height: 181px;
+    width: 100%;
+    height: 263px;
+  }
+
+  .carousel-item {
+    width: 329px;
+    height: 205px;
+  }
+
+  h4 {
+    padding: 10%;
+  }
+
+  .carousel-item.slide3.active {
+    padding: 0 2%;
   }
 }
 /*--------------------------------UX----------------------------------*/

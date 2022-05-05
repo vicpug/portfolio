@@ -94,7 +94,7 @@
     }
 }
 .d-block {
-    height: 700px;
+    height: 130%;
     width: 100%;
     background-color: $font-color-terciario;
     color: $font-color-principal;
@@ -147,7 +147,7 @@ h4 {
 }
 
 .carousel-inner {
-    width: 100%
+    width: 100%;
 }
 
 .d-block {
@@ -172,21 +172,32 @@ h4 {
 @media screen and (max-width: 490px){
 .home-web{
     @extend %home;
-    padding: 4%;
-    width: 320px;
-    height: 60%;
+    padding: 30% 4%;
+    width: 100%;
+    height: auto;
 }
 .d-block {
-    height: 60%;
+  
     font-size: 14px;}
 .carousel-inner{
-        width: 290px;
-        height: 181px;
+        width: 100%;
+        height: 263px;
+}
+.carousel-item{
+    width: 329px;
+    height:205px;
+}
+h4 {
+    padding: 10%
+}
+.carousel-item.slide3.active {
+    padding: 0 2%;
+}
+    
 }
 
 
 
-}
 
 /*--------------------------------UX----------------------------------*/
 .home-ux {
