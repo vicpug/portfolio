@@ -207,27 +207,94 @@ h4 {
 
         .home-web {
             padding: 6% 2%;
-            width: 228px;
+            width: 396px;
+
 
             .media-mobile-web {
-                width: 214px;
+                width: 394px;
                 display: flex;
                 justify-content: center;
                 flex-direction: column;
                 padding-left: 4px;
-            
 
-            .print-vsc img {
-                width: 100%;
-                margin-left: 0;
 
+                .print-vsc img {
+                    width: 100%;
+                    margin-left: 0;
+
+                }
+
+                h4 {
+                    padding: 4% 1%;
+                    background-color: $background-color-body;
+                    font-size: 12px;
+                    color: $font-color-terciario;
+                }
+
+                .txt-vsc {
+                    margin-top: 2px;
+
+                    p {
+                        color: $font-color-terciario;
+                        font-size: 12px;
+                        font-weight: 200;
+                        font-family: menlo;
+                        background-color: $background-color-body;
+
+                        &.fw {
+                            color: $h1-color-hover;
+                            margin-bottom: 1px;
+                        }
+
+                        &.fj {
+                            margin-top: 8px;
+                        }
+
+                        &.fr {
+                            margin-bottom: 1px;
+                        }
+
+                        &.fc {
+                            color: black;
+                            background-color: rgb(214, 214, 10);
+                            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                            width: 50%;
+                            display: inline;
+                        }
+
+                        &.fp {
+                            color: rgb(64, 1, 71);
+                            display: inline;
+                            background-color: $background-color-body;
+                        }
+                    }
+                }
+
+                div.programas-contenedor {
+                    background-color: $h1-color-hover;
+
+                    .txt-programas {
+                        background-color: $h1-color-hover;
+                    }
+
+                    .icons {
+                        background-color: $h1-color-hover;
+
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        align-content: center;
+
+                        img {
+                            background-color: $h1-color-hover;
+                            margin: 3px 8px;
+                        }
+                    }
+
+                }
             }
-            h4 .txt-vsc{
-                padding: 4% 1%;
-                background-color: $background-color;
-            } 
         }
-       
+
     }
 
 
@@ -250,9 +317,10 @@ h4 {
         background-color: $background-color;
         color: $font-color-principal;
 
-       
-    }}
+
+    }
 }
+
 
 
 
@@ -496,80 +564,95 @@ h4 {
     }
 }
 
-/*------------------------MOBILE UX-----------------------*/
+/*------------------------ querie mobile UX-----------------------*/
 @media screen and (max-width: 490px) {
     .home-ux {
         @extend %home;
-        padding: 4%;
-        width: 320px;
+        padding: 6% 2%;
+        width: 390px;
         height: 60%;
-    }
 
-    .img-intro-contenedor {
-        flex-wrap: wrap;
-    }
+        .iconos {
+            justify-content: space-evenly;
 
-    .img-intro {
-        order: -1
-    }
+            img.photoshop {
+                width: 30px;
+            }
 
-    .home-ux .img-intro-contenedor .img-intro {
-        order: -1;
-    }
+            img.figma {
+                width: 30px;
+            }
 
-    .home-ux .img-intro-contenedor {
-        justify-content: flex-end;
-    }
+            img.mac {
+                width: 30px;
+            }
+        }
 
-    .home-ux .lateral {
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
 
-    .home-ux .lateral .intro-txt {
-        padding-left: 0;
-    }
+        .img-intro-contenedor {
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            order: -1;
 
-    .home-ux .img-ux3-contenedor .txt-ux3 {
-        padding: 4px;
-        width: 87%;
-        font-size: 14px;
-        text-align: center;
-    }
+            .img-intro {
+                order: -1;
+            }
 
-    .home-ux .img-ux4-contenedor .txt-ux4 {
-        padding: 4px;
-        width: 87%;
-        font-size: 14px;
-        text-align: center;
-    }
 
-    .home-ux .img-ux5-contenedor .txt-ux5 {
-        padding: 4px;
-        width: 87%;
-        font-size: 14px;
-        text-align: center;
-    }
+            .lateral {
+                align-content: center;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                margin-left: 0;
+                padding-left: 0;
 
-    .home-ux .img-ux6-contenedor .txt-ux6 {
-        padding: 4px;
-        width: 87%;
-        font-size: 14px;
-        text-align: center;
-    }
+                .intro-txt {
+                    padding-left: 0;
+                }
+            }
 
-    .home-ux .txt-ux8 {
-        width: 100%;
-        padding: 6% 0% 0 0;
-        text-align: center;
-    }
+            .img-ux3-contenedor .txt-ux3 {
+                padding: 4px;
+                width: 87%;
+                font-size: 14px;
+                text-align: center;
+            }
 
-    .txt-ux9 {
-        width: 100%;
-        text-align: center;
-        padding-right: 0;
+            .img-ux4-contenedor .txt-ux4 {
+                padding: 4px;
+                width: 87%;
+                font-size: 14px;
+                text-align: center;
+            }
+
+            .img-ux5-contenedor .txt-ux5 {
+                padding: 4px;
+                width: 87%;
+                font-size: 14px;
+                text-align: center;
+            }
+
+            .img-ux6-contenedor .txt-ux6 {
+                padding: 4px;
+                width: 87%;
+                font-size: 14px;
+                text-align: center;
+            }
+
+            .txt-ux8 {
+                width: 100%;
+                padding: 6% 0% 0 0;
+                text-align: center;
+            }
+        }
+
+        .txt-ux9 {
+            width: 97%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
     }
 
     .behance-enlace .behance {
@@ -579,5 +662,74 @@ h4 {
 
     .behance-enlace {
         background-color: $background-color-body;
+    }
+}
+
+/*-------querie mobile sobre mi-------*/
+@media screen and (max-width: 490px) {
+    .home-sobremi {
+        block-size: 600px;
+        padding: 0px 2%;
+
+        .home-sobremi {
+            border: 2px solid white;
+            justify-content: flex-end;
+            align-items: flex-start !important;
+        }
+
+        .clearfix {
+            width: 353px;
+            margin: 0px 19px;
+
+            .col-md-2 float-md-end mb-3 ms-md-3 {
+                width: 50%;
+                height: auto;
+            }
+        }
+
+    }
+
+
+
+}
+
+/*-------querie mobile Arte-dos-------*/
+@media screen and (max-width: 490px) {
+    .home-arte {
+        padding: 8% 4%;
+        height: auto;
+
+        .card {
+            width: 315px;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .col {
+            display: flex;
+            justify-content: center;
+        }
+
+        .col .card-img-top {
+            background-color: white;
+            padding: 0% 4% 0% 4%;
+            width: 112px;
+        }
+
+        .card-footer {
+            display: flex;
+            align-content: center;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            width: 168px;
+            background-color: $background-color;
+            border-top: none;
+            .text-muted a{
+                background-color: $background-color;
+                text-decoration: none;
+                color: $font-color-terciario;
+            }
+        }
     }
 }
