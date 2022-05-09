@@ -60,26 +60,110 @@
     }
 }
 
-/*----Sobre mi------*/
+/*-----------------Sobre mi--------------------*/
 .home-sobremi {
-    @extend %home;
     block-size: 600px;
-    padding: 0px 18%;
+    padding: 0px 9%;
+    border: 2px solid white;
+    border-radius: 4px;
+
 
     .foto-perfil {
-        width: 35%;
-        height: auto;
         border-radius: 8px;
         border: 1px solid $border-color;
-        padding: 2px;
+        padding: 1%;
+
     }
 
-    .text-perfil {
-        width: 65%;
-        height: auto;
-        padding: 0 3%;
-        order: -1;
+
+
+}
+
+/*-----------------QUERIE  SOBRE MI-------------------------------------*/
+@media screen and (max-width: 490px) {
+    body {
+        margin: 2%;
+
+        .home-sobremi {
+            block-size: 600px;
+            padding: 6% 2%;
+            height: 60%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            .foto-perfil {
+                width: 30%;
+                height: auto;}
+            .text-perfil {
+                display: none;
+            }
+
+            .text-perfil1 {
+                width: 63%;
+                padding: 3% 2% 0 2%;
+                order: -1;
+                text-align: center;
+            }
+
+            .text-perfil2 {
+                padding: 1% 3% 0 3%;
+                text-align: center;
+            }
+
+            p {
+                margin-bottom: 0;
+            }
+        }
     }
+}
+
+
+@media screen and (min-width: 491px) and (max-width: 992px) {
+    .home-sobremi {
+        block-size: 800px;
+        padding: 0px 13px;
+        display: flex;
+        align-content: stretch;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5%;
+    }
+    .text-perfil{
+        padding-left: 2%;
+    }
+    .text-perfil1 {
+        display: none
+    }
+
+    .text-perfil2 {
+        display: none
+    }
+    .foto-perfil{
+        width: 41%;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 993px) {
+    .home-sobremi {
+        display: flex;
+        align-content: stretch;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .foto-perfil {
+        width: 30%;
+        height: auto;}
+    .text-perfil1 {
+        display: none
+    }
+
+    .text-perfil2 {
+        display: none
+    }
+
 }
 
 /*-------------------------------Web--------------------------------------------*/
@@ -665,33 +749,6 @@ h4 {
     }
 }
 
-/*-------querie mobile sobre mi-------*/
-@media screen and (max-width: 490px) {
-    .home-sobremi {
-        block-size: 600px;
-        padding: 0px 2%;
-
-        .home-sobremi {
-            border: 2px solid white;
-            justify-content: flex-end;
-            align-items: flex-start !important;
-        }
-
-        .clearfix {
-            width: 353px;
-            margin: 0px 19px;
-
-            .col-md-2 float-md-end mb-3 ms-md-3 {
-                width: 50%;
-                height: auto;
-            }
-        }
-
-    }
-
-
-
-}
 
 /*-------querie mobile Arte-dos-------*/
 @media screen and (max-width: 490px) {
@@ -725,7 +782,8 @@ h4 {
             width: 168px;
             background-color: $background-color;
             border-top: none;
-            .text-muted a{
+
+            .text-muted a {
                 background-color: $background-color;
                 text-decoration: none;
                 color: $font-color-terciario;
