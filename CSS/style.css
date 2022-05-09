@@ -130,42 +130,50 @@ body header #navbarDropdownMenuLink {
   header {
     margin-top: 3%;
     margin-bottom: 0;
-    margin-left: 13px;
+    margin-left: 4px;
   }
   header body header h1 {
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 0;
     padding-top: 8px;
-    padding-left: 20px;
+    padding-left: 0;
   }
   header a.nav-link {
-    font-size: 12px;
+    font-size: 11px;
   }
   header .navbar .navbar-expand-lg .navbar-light .borrar {
     width: 66%;
   }
   header .navbar > .container-fluid {
     display: flex;
-    flex-wrap: inherit;
+    flex-wrap: nowrap;
     align-items: center;
     width: 100%;
     padding-left: 0;
   }
-  header .navbar-brand {
-    font-size: 66%;
-    margin-top: 6px;
+  header .navbar > .container-fluid, header .navbar > .container-lg, header .navbar > .container-md, header .navbar > .container-sm, header .navbar > .container-xl, header .navbar > .container-xxl {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
   }
-
-  .navbar-toggler {
+  header .navbar > .container-fluid .navbar-brand, header .navbar > .container-lg .navbar-brand, header .navbar > .container-md .navbar-brand, header .navbar > .container-sm .navbar-brand, header .navbar > .container-xl .navbar-brand, header .navbar > .container-xxl .navbar-brand {
+    margin-right: 0;
+    font-size: 16px;
+    margin-top: 6px;
+    flex-wrap: wrap;
+  }
+  header .navbar-toggler {
     padding: 0.25rem 0.45rem;
   }
-  .navbar-toggler .navbar-toggler-icon {
+  header .navbar-toggler .navbar-toggler-icon {
     width: 1em;
     height: 1em;
   }
+
+  /*----------------------TABLET-------------------------------*/
 }
-/*----------------------TABLET-------------------------------*/
-@media screen and (min-width: 491px) and (max-width: 992px) {
+@media screen and (max-width: 490px) and (min-width: 491px) and (max-width: 992px) {
   body header h1 {
     font-size: 26px;
   }
@@ -185,12 +193,23 @@ body header #navbarDropdownMenuLink {
   width: 98%;
 }
 
-/*----------Home Index Mobile----------*/
+/*----------QUERIE INDEX----------*/
 @media screen and (max-width: 490px) {
-  .home {
-    width: auto;
-    align-items: flex-start;
+  body {
+    width: 192px;
+    height: auto;
+    margin: 0;
+  }
+  body .home {
+    width: 190px;
+    height: 240px;
     padding: 0px 12%;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: stretch;
+  }
+  body .home-txt {
+    font-size: 12px;
   }
 }
 /*------Arte---------*/
@@ -245,41 +264,45 @@ body header #navbarDropdownMenuLink {
 /*-----------------QUERIE  SOBRE MI-------------------------------------*/
 @media screen and (max-width: 490px) {
   body {
+    width: 328px;
     margin: 2%;
   }
   body .home-sobremi {
-    block-size: 600px;
+    block-size: 550px;
+    width: 326px;
+    height: auto;
     padding: 6% 2%;
-    height: 60%;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
+    order: -1;
     flex-wrap: wrap;
+    justify-content: flex-start;
   }
-  body .home-sobremi .foto-perfil {
-    width: 30%;
+  body .home-sobremi .img-fluid {
+    max-width: 45%;
     height: auto;
   }
   body .home-sobremi .text-perfil {
     display: none;
   }
   body .home-sobremi .text-perfil1 {
-    width: 63%;
-    padding: 3% 2% 0 2%;
-    order: -1;
-    text-align: center;
+    width: 54%;
   }
   body .home-sobremi .text-perfil2 {
-    padding: 1% 3% 0 3%;
-    text-align: center;
+    display: block;
   }
   body .home-sobremi p {
     margin-bottom: 0;
   }
 }
 @media screen and (min-width: 491px) and (max-width: 992px) {
+  body {
+    width: 600px;
+  }
+
   .home-sobremi {
-    block-size: 800px;
-    padding: 0px 13px;
+    block-size: 710px;
+    padding: 0;
     display: flex;
     align-content: stretch;
     flex-direction: row-reverse;
@@ -303,6 +326,7 @@ body header #navbarDropdownMenuLink {
   .foto-perfil {
     width: 41%;
     height: auto;
+    margin-right: 2%;
   }
 }
 @media screen and (min-width: 993px) {
@@ -886,7 +910,6 @@ h4 p {
 }
 .contenedor-animacion .home-txt {
   color: white;
-  font-size: 18px;
   order: -1;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -929,28 +952,33 @@ h4 p {
 }
 .contenedor-animacion .enlace-animacion {
   color: white;
-  font-size: 20px;
   font-family: "Lexend Peta", sans-serif;
 }
 
-/*---------------Home Index Mobile----------*/
+/*---------------QUERIE INDEX----------*/
 @media screen and (max-width: 490px) {
-  .home {
-    width: auto;
-    align-items: flex-start;
-    padding: 0px 12%;
-  }
-
   .mockup {
-    width: 80%;
+    width: 70%;
     margin-top: 10%;
+    margin-left: 40%;
   }
 
   .contenedor-animacion {
-    width: 83%;
-    height: 30px;
-    font-size: 14px;
-    margin: 133% auto 20% 8%;
+    font-size: 12px;
+    margin: 67% 0 0 4%;
+    width: 179px;
+    height: 68px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .contenedor-animacion ul {
+    padding-left: 44px;
+  }
+  .contenedor-animacion p.home-txt {
+    font-size: 12px;
+  }
+  .contenedor-animacion .enlace-animacion {
+    font-size: 12px;
   }
 }
 footer .linkedin {
@@ -980,14 +1008,14 @@ footer .disclaimer {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    width: 390px;
+    width: 326px;
   }
   footer .linkedin .icono-lin {
     width: 77%;
   }
 
   footer .small-txt {
-    width: 390px;
+    width: 326px;
     text-align: center;
     font-size: 11px;
   }

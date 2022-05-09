@@ -33,7 +33,7 @@
             justify-content: flex-start;
             .home-txt {
                 color: $font-color-principal;
-                font-size: 18px;
+                
                 order: -1;
                 justify-content: flex-start;
                 flex-wrap: wrap;
@@ -63,28 +63,39 @@
                 
                 .enlace-animacion {
                     color: $font-color-principal;
-                    font-size: 20px;
+                    
                     font-family: 'Lexend Peta', sans-serif;
                 }
             }
 
-/*---------------Home Index Mobile----------*/
+/*---------------QUERIE INDEX----------*/
  @media screen and (max-width: 490px){
-    .home{
-    width: auto;
-    align-items: flex-start;
-    padding: 0px 12%;
- }
+   
  .mockup{
-     width: 80%;
+     width: 70%;
      margin-top: 10%;
+     margin-left: 40%;
      }
- .contenedor-animacion {
-     width: 83%;
-     height: 30px;
-     font-size: 14px;
-     margin: 133% auto 20% 8%;
+ 
+     .contenedor-animacion {
+        font-size: 12px;
+       margin: 67% 0 0 4%;
+       width: 179px;
+       height: 68px;
+       flex-wrap: wrap;
+       justify-content: center;
+       ul {
+        padding-left: 44px;
+
+ }
+p.home-txt{
+    font-size: 12px;
+}
+.enlace-animacion{
+    font-size: 12px;
+}
  }}
+
 
             
         
