@@ -66,20 +66,7 @@ body {
         }
     }
 }
-/*-------------DESKTOP-----------------*/
-@media desktop and (min-width: 992px) {
-    a.nav-link:active {
-        margin: 0 2%;
-        width: 200%
-    }
-    a.nav-link {
-        margin: 0 2%;
-        width: 200%
-    }
-    .navbar-expand-lg .navbar-nav .nav-link {
-        padding-right: 1.5rem !important;
-    }
-}
+
 /*-------------MOBILE-----------------*/
 @media screen and (max-width: 490px) {
     header {
@@ -117,12 +104,7 @@ body {
                 margin-top: 6px;
                 flex-wrap: wrap;
             }
-        }
-       
-        
-      
-     
-          
+        }  
         .navbar-toggler {
             padding: 0.25rem 0.45rem;
             .navbar-toggler-icon {
@@ -134,8 +116,18 @@ body {
    
     /*----------------------TABLET-------------------------------*/
     @media screen and (min-width: 491px) and (max-width: 992px) {
+       body header{
+           width: 790px;
+       }
         body header h1 {
             font-size: 26px;
+        }
+        a.navbar-brand{
+            width: auto;
+            margin-top: 4%;
+            margin-left: 2%;
+            font-size: 26px;
+
         }
             .navbar-toggler{
                 width: 11%;
@@ -145,3 +137,17 @@ body {
                 height: 2em;
             }
     }}
+    /*-------------DESKTOP-----------------*/
+@media desktop and (min-width: 992px) {
+    a.nav-link:active {
+        margin: 0 2%;
+        width: 200%
+    }
+    a.nav-link {
+        margin: 0 2%;
+        width: 200%
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1.5rem !important;
+    }
+}
