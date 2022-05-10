@@ -819,7 +819,7 @@ h4 {
         }
     }
 
-    /*------------------------ querie mobile UX-----------------------*/
+    /*------------------------ QUERIES UX-----------------------*/
     @media screen and (max-width: 490px) {
         .home-ux {
             border: 2px solid $border-color;
@@ -925,7 +925,21 @@ h4 {
             background-color: $background-color-body;
         }
     }
+    @media screen and (min-width: 491px) and (max-width: 992px) {
+        body {
+            margin: 2%;
+            width: 790px;
+    
+            .home-ux {
+                padding: 6% 2%;
+                width: 792px;
 
+.img-intro-contenedor .img-intro {
+                    width: 70%;
+                    height: auto;
+                }
+            }}
+        }
 
     /*-------querie mobile Arte-dos-------*/
     @media screen and (max-width: 490px) {

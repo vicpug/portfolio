@@ -125,6 +125,10 @@ body header #navbarDropdownMenuLink {
   header a.nav-link {
     font-size: 11px;
   }
+  header .navbar {
+    width: 118%;
+    margin-left: 2%;
+  }
   header .navbar .navbar-expand-lg .navbar-light .borrar {
     width: 66%;
   }
@@ -879,7 +883,7 @@ h4 p {
   height: auto;
 }
 
-/*------------------------ querie mobile UX-----------------------*/
+/*------------------------ QUERIES UX-----------------------*/
 @media screen and (max-width: 490px) {
   .home-ux {
     border: 2px solid white;
@@ -967,6 +971,20 @@ h4 p {
 
   .behance-enlace {
     background-color: #ac932d;
+  }
+}
+@media screen and (min-width: 491px) and (max-width: 992px) {
+  body {
+    margin: 2%;
+    width: 790px;
+  }
+  body .home-ux {
+    padding: 6% 2%;
+    width: 792px;
+  }
+  body .home-ux .img-intro-contenedor .img-intro {
+    width: 70%;
+    height: auto;
   }
 }
 /*-------querie mobile Arte-dos-------*/
@@ -1143,14 +1161,14 @@ footer .disclaimer {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    width: 326px;
+    width: 122%;
   }
   footer .linkedin .icono-lin {
     width: 77%;
   }
 
   footer .small-txt {
-    width: 326px;
+    width: 122%;
     text-align: center;
     font-size: 11px;
   }
