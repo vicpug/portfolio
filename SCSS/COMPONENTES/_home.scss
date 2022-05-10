@@ -32,7 +32,7 @@
 
 
 
-/*------Arte---------*/
+/*-------------------------Arte-----------------------------------*/
 .home-arte {
     border: 2px solid $border-color;
     border-radius: 4px;
@@ -56,6 +56,11 @@
             background-color: $background-color;
             color: $font-color-terciario;
         }
+        small.text-muted a {
+            background-color: rgba(0,0,0,.03);
+            text-decoration: none;
+            color: $font-color-terciario;
+        }
 
         .card-img-top {
             background-color: $background-color;
@@ -66,7 +71,7 @@
             background-color: $background-color;
 
             .card-footer {
-                background-color: rgb(241, 245, 249);
+                background-color: rgba(0,0,0,.03);
 
                 &:hover {
                     background-color: #fa9d50;
@@ -76,7 +81,75 @@
     }
 }
 
-/*-----------------Sobre mi--------------------*/
+    /*----------------QUERIES Arte-dos-----------------------------*/
+    @media screen and (max-width: 490px) {
+        .home-arte {
+            padding: 8% 4%;
+            height: auto;
+            width: 394px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        
+
+            .card {
+                width: 315px;
+                flex-direction: row;
+                align-items: center;
+            }
+          
+
+            .col {
+                display: flex;
+                justify-content: center;
+            }
+
+            .col .card-img-top {
+                background-color: white;
+                padding: 0% 4% 0% 4%;
+                width: 112px;
+            }
+
+            .card-footer {
+                display: flex;
+                align-content: center;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                width: 168px;
+                background-color: $background-color;
+                border-top: none;
+
+              
+             
+
+            }
+        }
+    }
+    @media screen and (min-width: 491px) and (max-width: 992px) {
+        body {
+            width: 600px;
+        
+
+        .home-arte {
+            block-size: 710px;
+            padding: 0;
+            display: flex;
+                       align-items: center;
+            justify-content: center;
+            margin-top: 5%;
+            .row{
+                width: 654px;
+            }
+        }}
+    }
+    
+    @media screen and (min-width: 969px) {
+
+    }
+
+
+/*---------------------------Sobre mi--------------------------------*/
 .home-sobremi {
     block-size: 600px;
     padding: 0px 9%;
@@ -940,45 +1013,3 @@ h4 {
                 }
             }}
         }
-
-    /*-------querie mobile Arte-dos-------*/
-    @media screen and (max-width: 490px) {
-        .home-arte {
-            padding: 8% 4%;
-            height: auto;
-
-            .card {
-                width: 315px;
-                flex-direction: row;
-                align-items: center;
-            }
-
-            .col {
-                display: flex;
-                justify-content: center;
-            }
-
-            .col .card-img-top {
-                background-color: white;
-                padding: 0% 4% 0% 4%;
-                width: 112px;
-            }
-
-            .card-footer {
-                display: flex;
-                align-content: center;
-                flex-direction: column;
-                justify-content: center;
-                align-items: flex-start;
-                width: 168px;
-                background-color: $background-color;
-                border-top: none;
-
-                .text-muted a {
-                    background-color: $background-color;
-                    text-decoration: none;
-                    color: $font-color-terciario;
-                }
-            }
-        }
-    }
