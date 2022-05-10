@@ -367,8 +367,7 @@ body header #navbarDropdownMenuLink {
     margin: 2%;
   }
   body .home-sobremi {
-    block-size: 550px;
-    width: 326px;
+    width: 395px;
     height: auto;
     padding: 6% 2%;
     display: flex;
