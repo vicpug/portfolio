@@ -5,7 +5,7 @@
     width: 98%;
 }
 
-/*----------QUERIE INDEX----------*/
+/*-----------------------------------QUERIE INDEX------------------------------------*/
 @media screen and (max-width: 490px) {
 
     body {
@@ -14,21 +14,51 @@
         margin: 0;
 
         .home {
-            width: 190px;
-            height: 240px;
-
+            height: 700px;
+            width: 394px;
             padding: 0px 12%;
             flex-direction: column-reverse;
             justify-content: flex-end;
             align-items: stretch;
-        }
 
-        .home-txt {
-            font-size: 12px;
+            .mockup {
+                margin-top: 26%;
+                margin-left: 23%;
+            }
+
+            .contenedor-animacion {
+                margin: 135% 0 0 9%;
+                width: 86%;
+                height: 30px;
+                font-size: 16px;
+
+                p.home-txt {
+                    font-size: 16px;
+                }
+
+                li.enlace-animacion {
+                    font-size: 16px;
+                }
+            }
+
         }
     }
 }
+@media screen and (min-width: 491px) and (max-width: 992px) {
+    body {
+        width: 600px;
 
+
+        .home {
+            block-size: 710px;
+            padding: 0;
+            width: 98%;
+            height: 734px;
+            .contenedor-animacion{
+                margin: 49% auto auto 9%;
+            }
+}
+    }}
 
 
 
@@ -56,8 +86,9 @@
             background-color: $background-color;
             color: $font-color-terciario;
         }
+
         small.text-muted a {
-            background-color: rgba(0,0,0,.03);
+            background-color: rgba(0, 0, 0, .03);
             text-decoration: none;
             color: $font-color-terciario;
         }
@@ -71,7 +102,7 @@
             background-color: $background-color;
 
             .card-footer {
-                background-color: rgba(0,0,0,.03);
+                background-color: rgba(0, 0, 0, .03);
 
                 &:hover {
                     background-color: #fa9d50;
@@ -81,72 +112,73 @@
     }
 }
 
-    /*----------------QUERIES Arte-dos-----------------------------*/
-    @media screen and (max-width: 490px) {
-        .home-arte {
-            padding: 8% 4%;
-            height: auto;
-            width: 394px;
+/*----------------QUERIES Arte-dos-----------------------------*/
+@media screen and (max-width: 490px) {
+    .home-arte {
+        padding: 8% 4%;
+        height: auto;
+        width: 394px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+
+        .card {
+            width: 315px;
+            flex-direction: row;
+            align-items: center;
+        }
+
+
+        .col {
             display: flex;
             justify-content: center;
+        }
+
+        .col .card-img-top {
+            background-color: white;
+            padding: 0% 4% 0% 4%;
+            width: 112px;
+        }
+
+        .card-footer {
+            display: flex;
+            align-content: center;
             flex-direction: column;
-        
+            justify-content: center;
+            align-items: flex-start;
+            width: 168px;
+            background-color: $background-color;
+            border-top: none;
 
-            .card {
-                width: 315px;
-                flex-direction: row;
-                align-items: center;
-            }
-          
 
-            .col {
-                display: flex;
-                justify-content: center;
-            }
 
-            .col .card-img-top {
-                background-color: white;
-                padding: 0% 4% 0% 4%;
-                width: 112px;
-            }
 
-            .card-footer {
-                display: flex;
-                align-content: center;
-                flex-direction: column;
-                justify-content: center;
-                align-items: flex-start;
-                width: 168px;
-                background-color: $background-color;
-                border-top: none;
-
-              
-             
-
-            }
         }
     }
-    @media screen and (min-width: 491px) and (max-width: 992px) {
-        body {
-            width: 600px;
-        
+}
+
+@media screen and (min-width: 491px) and (max-width: 992px) {
+    body {
+        width: 600px;
+
 
         .home-arte {
             block-size: 710px;
             padding: 0;
             display: flex;
-                       align-items: center;
+            align-items: center;
             justify-content: center;
             margin-top: 5%;
-            .row{
+
+            .row {
                 width: 654px;
             }
-        }}
+        }
     }
-    
-    @media screen and (min-width: 969px) {
+}
 
-    }
+@media screen and (min-width: 969px) {}
 
 
 /*---------------------------Sobre mi--------------------------------*/
@@ -498,6 +530,7 @@ h4 {
 
     }
 }
+
 @media screen and (min-width: 491px) and (max-width: 992px) {
     body {
         margin: 2%;
@@ -623,16 +656,20 @@ h4 {
     .item-mobile {
         display: none
     }
+
     .print-vsc img {
         display: none;
     }
-    h4.txt-vsc{
+
+    h4.txt-vsc {
         display: none;
     }
-    h4.txt-programas{
+
+    h4.txt-programas {
         display: none;
     }
-    .icons{
+
+    .icons {
         display: none;
     }
 }
@@ -653,7 +690,247 @@ h4 {
 
 
 
-    /*--------------------------------UX----------------------------------*/
+/*--------------------------------UX----------------------------------*/
+.home-ux {
+    border: 2px solid $border-color;
+    border-radius: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 4%;
+    width: 1216px;
+    height: 60%;
+
+    .img-intro-contenedor {
+        display: flex;
+        flex-direction: row;
+        background-color: $background-color;
+
+        .img-intro {
+            width: 80%;
+            height: auto;
+            border-radius: 6px;
+            order: 1;
+            background-color: $background-color;
+        }
+    }
+
+    .lateral {
+        background-color: $background-color;
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-left: 3%;
+        padding-top: 5%;
+        font-weight: 300;
+
+        .intro-txt {
+            font-size: 12px;
+            color: $font-color-secundario;
+            order: -1;
+            font-size: 16px;
+            background-color: $background-color;
+            padding-left: 18%;
+            font-weight: 400;
+        }
+
+        .descripcion-txt {
+            background-color: $background-color;
+            font-size: 16px;
+            color: $font-color-terciario;
+            font-weight: 300;
+        }
+
+        p {
+            background-color: $background-color;
+        }
+    }
+
+    .iconos {
+
+        display: flex;
+
+        padding-top: 0;
+        align-items: center;
+        size: 50%;
+        align-content: center;
+    }
+
+    .figma {
+        width: 55%;
+        padding: 15%;
+        background-color: $background-color;
+    }
+
+    .mac {
+        width: 55%;
+        padding: 10%;
+        background-color: $background-color;
+    }
+
+    .photoshop {
+        width: 70%;
+        padding: 10%;
+        background-color: $background-color
+    }
+
+    .img-ux3-contenedor {
+        width: 100%;
+        display: flex;
+        padding: 6% 0;
+        background-color: $background-color;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+
+        .img-ux3 {
+            width: 90%;
+            height: auto;
+            order: 1;
+            background-color: $background-color;
+            padding-top: 2%;
+        }
+
+        .txt-ux3 {
+            background-color: $background-color;
+            border: 2px solid $font-hover;
+            border-radius: 10px;
+            padding: 8px;
+        }
+    }
+
+    .img-ux4-contenedor {
+        width: 100%;
+        display: flex;
+        background-color: $background-color;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+
+        .img-ux4 {
+            width: 80%;
+            height: auto;
+            order: 1;
+            background-color: $background-color;
+        }
+
+        .txt-ux4 {
+            background-color: $background-color;
+            border: 2px solid $font-hover;
+            border-radius: 10px;
+            padding: 8px;
+        }
+    }
+
+    .img-ux5-contenedor {
+        width: 100%;
+        display: flex;
+        padding: 4% 0;
+        background-color: $background-color;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+
+        .img-ux5 {
+            width: 88%;
+            height: auto;
+            order: 1;
+            background-color: $background-color;
+        }
+
+        .txt-ux5 {
+            background-color: $background-color;
+            border: 2px solid $font-hover;
+            border-radius: 10px;
+            padding: 8px;
+        }
+    }
+
+    .img-ux6-contenedor {
+        width: 100%;
+        display: flex;
+        background-color: $background-color;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+
+        .img-ux6 {
+            width: 80%;
+            height: auto;
+            order: 1;
+            background-color: $background-color;
+            padding-top: 2%;
+        }
+
+        .txt-ux6 {
+            background-color: $background-color;
+            border: 2px solid $font-hover;
+            border-radius: 10px;
+            padding: 8px;
+        }
+    }
+
+    .img-ux7-contenedor {
+        width: 100%;
+        display: flex;
+        padding: 6% 0;
+        background-color: $background-color;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+
+        .img-ux7 {
+            width: 80%;
+            height: auto;
+            order: 1;
+            background-color: $background-color;
+            padding-top: 2%;
+        }
+
+        .txt-ux7 {
+            background-color: $background-color;
+            border: 2px solid $font-hover;
+            border-radius: 10px;
+            padding: 8px;
+        }
+    }
+
+    .txt-ux8 {
+        width: 90%;
+        height: auto;
+        padding: 6% 0% 2% 0;
+        text-align: center;
+        padding-right: 11%;
+    }
+}
+
+.txt-ux9 {
+    width: 90%;
+    height: auto;
+    text-align: center;
+    padding-right: 10%;
+}
+
+.behance-enlace {
+    background-color: $background-color;
+
+    .behance {
+        width: 6%;
+        height: auto;
+    }
+}
+
+/*------------------------ QUERIES UX-----------------------*/
+@media screen and (max-width: 490px) {
     .home-ux {
         border: 2px solid $border-color;
         border-radius: 4px;
@@ -662,354 +939,116 @@ h4 {
         justify-content: space-around;
         align-items: center;
         justify-content: flex-end;
-        padding: 4%;
-        width: 1216px;
+        padding: 6% 2%;
+        width: 390px;
         height: 60%;
 
+        .iconos {
+            justify-content: space-evenly;
+
+            img.photoshop {
+                width: 30px;
+            }
+
+            img.figma {
+                width: 30px;
+            }
+
+            img.mac {
+                width: 30px;
+            }
+        }
+
+
         .img-intro-contenedor {
-            display: flex;
-            flex-direction: row;
-            background-color: $background-color;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            order: -1;
 
             .img-intro {
-                width: 80%;
-                height: auto;
-                border-radius: 6px;
-                order: 1;
-                background-color: $background-color;
-            }
-        }
-
-        .lateral {
-            background-color: $background-color;
-            display: flex;
-            align-content: center;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            margin-left: 3%;
-            padding-top: 5%;
-            font-weight: 300;
-
-            .intro-txt {
-                font-size: 12px;
-                color: $font-color-secundario;
                 order: -1;
-                font-size: 16px;
-                background-color: $background-color;
-                padding-left: 18%;
-                font-weight: 400;
             }
 
-            .descripcion-txt {
-                background-color: $background-color;
-                font-size: 16px;
-                color: $font-color-terciario;
-                font-weight: 300;
+
+            .lateral {
+                align-content: center;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                margin-left: 0;
+                padding-left: 0;
+
+                .intro-txt {
+                    padding-left: 0;
+                }
             }
 
-            p {
-                background-color: $background-color;
+            .img-ux3-contenedor .txt-ux3 {
+                padding: 4px;
+                width: 87%;
+                font-size: 14px;
+                text-align: center;
+            }
+
+            .img-ux4-contenedor .txt-ux4 {
+                padding: 4px;
+                width: 87%;
+                font-size: 14px;
+                text-align: center;
+            }
+
+            .img-ux5-contenedor .txt-ux5 {
+                padding: 4px;
+                width: 87%;
+                font-size: 14px;
+                text-align: center;
+            }
+
+            .img-ux6-contenedor .txt-ux6 {
+                padding: 4px;
+                width: 87%;
+                font-size: 14px;
+                text-align: center;
+            }
+
+            .txt-ux8 {
+                width: 100%;
+                padding: 6% 0% 0 0;
+                text-align: center;
             }
         }
 
-        .iconos {
-
+        .txt-ux9 {
+            width: 97%;
             display: flex;
-
-            padding-top: 0;
-            align-items: center;
-            size: 50%;
-            align-content: center;
-        }
-
-        .figma {
-            width: 55%;
-            padding: 15%;
-            background-color: $background-color;
-        }
-
-        .mac {
-            width: 55%;
-            padding: 10%;
-            background-color: $background-color;
-        }
-
-        .photoshop {
-            width: 70%;
-            padding: 10%;
-            background-color: $background-color
-        }
-
-        .img-ux3-contenedor {
-            width: 100%;
-            display: flex;
-            padding: 6% 0;
-            background-color: $background-color;
-            flex-direction: column;
-            align-content: center;
             justify-content: center;
-            align-items: center;
-
-            .img-ux3 {
-                width: 90%;
-                height: auto;
-                order: 1;
-                background-color: $background-color;
-                padding-top: 2%;
-            }
-
-            .txt-ux3 {
-                background-color: $background-color;
-                border: 2px solid $font-hover;
-                border-radius: 10px;
-                padding: 8px;
-            }
-        }
-
-        .img-ux4-contenedor {
-            width: 100%;
-            display: flex;
-            background-color: $background-color;
             flex-direction: column;
-            align-content: center;
-            justify-content: center;
-            align-items: center;
-
-            .img-ux4 {
-                width: 80%;
-                height: auto;
-                order: 1;
-                background-color: $background-color;
-            }
-
-            .txt-ux4 {
-                background-color: $background-color;
-                border: 2px solid $font-hover;
-                border-radius: 10px;
-                padding: 8px;
-            }
-        }
-
-        .img-ux5-contenedor {
-            width: 100%;
-            display: flex;
-            padding: 4% 0;
-            background-color: $background-color;
-            flex-direction: column;
-            align-content: center;
-            justify-content: center;
-            align-items: center;
-
-            .img-ux5 {
-                width: 88%;
-                height: auto;
-                order: 1;
-                background-color: $background-color;
-            }
-
-            .txt-ux5 {
-                background-color: $background-color;
-                border: 2px solid $font-hover;
-                border-radius: 10px;
-                padding: 8px;
-            }
-        }
-
-        .img-ux6-contenedor {
-            width: 100%;
-            display: flex;
-            background-color: $background-color;
-            flex-direction: column;
-            align-content: center;
-            justify-content: center;
-            align-items: center;
-
-            .img-ux6 {
-                width: 80%;
-                height: auto;
-                order: 1;
-                background-color: $background-color;
-                padding-top: 2%;
-            }
-
-            .txt-ux6 {
-                background-color: $background-color;
-                border: 2px solid $font-hover;
-                border-radius: 10px;
-                padding: 8px;
-            }
-        }
-
-        .img-ux7-contenedor {
-            width: 100%;
-            display: flex;
-            padding: 6% 0;
-            background-color: $background-color;
-            flex-direction: column;
-            align-content: center;
-            justify-content: center;
-            align-items: center;
-
-            .img-ux7 {
-                width: 80%;
-                height: auto;
-                order: 1;
-                background-color: $background-color;
-                padding-top: 2%;
-            }
-
-            .txt-ux7 {
-                background-color: $background-color;
-                border: 2px solid $font-hover;
-                border-radius: 10px;
-                padding: 8px;
-            }
-        }
-
-        .txt-ux8 {
-            width: 90%;
-            height: auto;
-            padding: 6% 0% 2% 0;
-            text-align: center;
-            padding-right: 11%;
         }
     }
 
-    .txt-ux9 {
-        width: 90%;
+    .behance-enlace .behance {
+        width: 14%;
         height: auto;
-        text-align: center;
-        padding-right: 10%;
     }
 
     .behance-enlace {
-        background-color: $background-color;
-
-        .behance {
-            width: 6%;
-            height: auto;
-        }
+        background-color: $background-color-body;
     }
+}
 
-    /*------------------------ QUERIES UX-----------------------*/
-    @media screen and (max-width: 490px) {
+@media screen and (min-width: 491px) and (max-width: 992px) {
+    body {
+        margin: 2%;
+        width: 790px;
+
         .home-ux {
-            border: 2px solid $border-color;
-            border-radius: 4px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            align-items: center;
-            justify-content: flex-end;
             padding: 6% 2%;
-            width: 390px;
-            height: 60%;
+            width: 792px;
 
-            .iconos {
-                justify-content: space-evenly;
-
-                img.photoshop {
-                    width: 30px;
-                }
-
-                img.figma {
-                    width: 30px;
-                }
-
-                img.mac {
-                    width: 30px;
-                }
+            .img-intro-contenedor .img-intro {
+                width: 70%;
+                height: auto;
             }
-
-
-            .img-intro-contenedor {
-                justify-content: flex-end;
-                flex-wrap: wrap;
-                order: -1;
-
-                .img-intro {
-                    order: -1;
-                }
-
-
-                .lateral {
-                    align-content: center;
-                    justify-content: center;
-                    align-items: center;
-                    text-align: center;
-                    margin-left: 0;
-                    padding-left: 0;
-
-                    .intro-txt {
-                        padding-left: 0;
-                    }
-                }
-
-                .img-ux3-contenedor .txt-ux3 {
-                    padding: 4px;
-                    width: 87%;
-                    font-size: 14px;
-                    text-align: center;
-                }
-
-                .img-ux4-contenedor .txt-ux4 {
-                    padding: 4px;
-                    width: 87%;
-                    font-size: 14px;
-                    text-align: center;
-                }
-
-                .img-ux5-contenedor .txt-ux5 {
-                    padding: 4px;
-                    width: 87%;
-                    font-size: 14px;
-                    text-align: center;
-                }
-
-                .img-ux6-contenedor .txt-ux6 {
-                    padding: 4px;
-                    width: 87%;
-                    font-size: 14px;
-                    text-align: center;
-                }
-
-                .txt-ux8 {
-                    width: 100%;
-                    padding: 6% 0% 0 0;
-                    text-align: center;
-                }
-            }
-
-            .txt-ux9 {
-                width: 97%;
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-            }
-        }
-
-        .behance-enlace .behance {
-            width: 14%;
-            height: auto;
-        }
-
-        .behance-enlace {
-            background-color: $background-color-body;
         }
     }
-    @media screen and (min-width: 491px) and (max-width: 992px) {
-        body {
-            margin: 2%;
-            width: 790px;
-    
-            .home-ux {
-                padding: 6% 2%;
-                width: 792px;
-
-.img-intro-contenedor .img-intro {
-                    width: 70%;
-                    height: auto;
-                }
-            }}
-        }
+}

@@ -162,15 +162,16 @@ body header #navbarDropdownMenuLink {
   /*----------------------TABLET-------------------------------*/
 }
 @media screen and (max-width: 490px) and (min-width: 491px) and (max-width: 992px) {
-  body header {
+  header {
     width: 790px;
+    margin-bottom: 8px;
   }
-  body header h1 {
+  header h1 {
     font-size: 30px;
     margin-top: 3%;
     margin-left: 2%;
   }
-  body header a.navbar-brand {
+  header a.navbar-brand {
     color: white;
     font-weight: 200;
     font-size: 30px;
@@ -178,16 +179,16 @@ body header #navbarDropdownMenuLink {
     margin-left: 2%;
     width: auto;
   }
-  body header .navbar-toggler {
+  header .navbar-toggler {
     width: 11%;
   }
-  body header .navbar-toggler-icon {
+  header .navbar-toggler-icon {
     width: 2em;
     height: 2em;
   }
 }
 /*---------------------------DESKTOP--------------------------*/
-@media desktop and (min-width: 992px) {
+@media screen and (min-width: 992px) {
   a.nav-link:active {
     margin: 0 2%;
     width: 200%;
@@ -208,7 +209,7 @@ body header #navbarDropdownMenuLink {
   width: 98%;
 }
 
-/*----------QUERIE INDEX----------*/
+/*-----------------------------------QUERIE INDEX------------------------------------*/
 @media screen and (max-width: 490px) {
   body {
     width: 192px;
@@ -216,15 +217,42 @@ body header #navbarDropdownMenuLink {
     margin: 0;
   }
   body .home {
-    width: 190px;
-    height: 240px;
+    height: 700px;
+    width: 394px;
     padding: 0px 12%;
     flex-direction: column-reverse;
     justify-content: flex-end;
     align-items: stretch;
   }
-  body .home-txt {
-    font-size: 12px;
+  body .home .mockup {
+    margin-top: 26%;
+    margin-left: 23%;
+  }
+  body .home .contenedor-animacion {
+    margin: 135% 0 0 9%;
+    width: 86%;
+    height: 30px;
+    font-size: 16px;
+  }
+  body .home .contenedor-animacion p.home-txt {
+    font-size: 16px;
+  }
+  body .home .contenedor-animacion li.enlace-animacion {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 491px) and (max-width: 992px) {
+  body {
+    width: 600px;
+  }
+  body .home {
+    block-size: 710px;
+    padding: 0;
+    width: 98%;
+    height: 734px;
+  }
+  body .home .contenedor-animacion {
+    margin: 49% auto auto 9%;
   }
 }
 /*-------------------------Arte-----------------------------------*/

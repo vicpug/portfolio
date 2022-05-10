@@ -119,9 +119,10 @@ body {
     }
    
     /*----------------------TABLET-------------------------------*/
-    @media screen and (min-width: 491px) and (max-width: 992px) {
-       body header{
+    @media screen and (min-width: 491px) and (max-width: 992px){
+      header{
            width: 790px;
+           margin-bottom: 8px;
      
         h1 {
             font-size: 30px;
@@ -147,7 +148,7 @@ body {
             }
     }}}
     /*---------------------------DESKTOP--------------------------*/
-@media desktop and (min-width: 992px) {
+@media screen and (min-width: 992px) {
     a.nav-link:active {
         margin: 0 2%;
         width: 200%
