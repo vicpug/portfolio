@@ -7,53 +7,31 @@
     <meta name="description" content=" Diseñando soluciones. Diseño UX/UI. Desarrollo Web. Arte.">
     <meta name="keywords"content= ux design, diseño ux, arte, escenografia, vestuario, desarrollo web, html, css,scss, figma, photoshop, diseño, design, designer, experiencia de usuario>
     <title>Victoria Pugliese</title>
+      <!----favicon ---->
+  <link rel="shortcut icon" href="../../Recursosvisuales/imagenes/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../../css/style.css">
 
-    <body>
-       <header>
-    <nav class="navbar navbar-expand-lg navbar-light borrar">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="../../index.html"><h1>Victoria Pugliese</h1></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+<body class="contacto" >
+    <header class="header-contacto">
+    <div>
+        <button>
+            <img src="../../Recursosvisuales/imagenes/arrow.png" alt="volver"><a href="../../index.html"><h2>Volver</h2></a>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../primarias/ux.html">Diseño
-                        UX/UI</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../primarias/web.html">Desarrollo web</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../primarias/arte-dos.html">Arte</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../primarias/sobremi.html">Sobre mí</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../primarias/contacto.html">Contacto</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Español
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item" href="#">Inglés</a></li>
-                        <li><a class="dropdown-item" href="#">Francés</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
     </div>
-</nav>
-</header>
-
+    </header>
+<div class="contact-us">
+    <form action="#">
+      <label for="customerName">Nombre <em>&#x2a;</em></label><input id="customerName" name="customerName" required="" type="text" />
+      <label for="customerEmail">Email <em>&#x2a;</em></label><input id="customerEmail" name="customerEmail" required="" type="email" />
+      
+      
+      <label for="customerNote">Escribe aquí tu mensaje, gracias! <em>&#x2a;</em></label><textarea id="customerNote" name="customerNote" required="" rows="4"></textarea>
+      
+     <button id="customerOrder">Enviar</button>
+    </form>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

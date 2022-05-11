@@ -56,6 +56,10 @@
             height: 734px;
             .contenedor-animacion{
                 margin: 49% auto auto 9%;
+               
+                    width: 49%;
+                    
+                
             }
 }
     }}
@@ -178,7 +182,7 @@
     }
 }
 
-@media screen and (min-width: 969px) {}
+
 
 
 /*---------------------------Sobre mi--------------------------------*/
@@ -203,7 +207,7 @@
 /*-----------------QUERIE  SOBRE MI-------------------------------------*/
 @media screen and (max-width: 490px) {
     body {
-        width: 328px;
+        width: 326px;
         margin: 2%;
 
          
@@ -225,14 +229,19 @@
 
             .text-perfil {
                 display: none;
+                
             }
 
             .text-perfil1 {
                 width: 54%;
+                width: 54%;
+                height: 12%;
+                margin-top: 6%;
             }
 
             .text-perfil2 {
-                display: block
+                display: block;
+                margin-top: 2%;
             }
 
 
@@ -1045,7 +1054,7 @@ h4 {
         .home-ux {
             padding: 6% 2%;
             width: 792px;
-
+          
             .img-intro-contenedor .img-intro {
                 width: 70%;
                 height: auto;

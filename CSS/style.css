@@ -6,6 +6,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@100;200;300;400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@100;200;300;400;600;700&family=Share+Tech+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@100;200;300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Spartan&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@100;200;300;400;600;700&family=Share+Tech+Mono&display=swap");
 .home-web, .home {
   border: 2px solid white;
   border-radius: 4px;
@@ -78,6 +80,9 @@ body header h1 a {
   margin-bottom: 12px;
   text-decoration: none;
 }
+body header .nav-link a.enlace-activo {
+  color: #5D0E0E;
+}
 body header .navbar-light .navbar-brand {
   color: white;
 }
@@ -109,6 +114,7 @@ body header #navbarDropdownMenuLink {
   margin-top: 5%;
 }
 
+/*---------------HEADER-CONTACTO--------------------*/
 /*--------------------------MOBILE--------------------------------*/
 @media screen and (max-width: 490px) {
   header {
@@ -134,7 +140,7 @@ body header #navbarDropdownMenuLink {
   }
   header .navbar > .container-fluid {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
     width: 100%;
     padding-left: 0;
@@ -253,6 +259,7 @@ body header #navbarDropdownMenuLink {
   }
   body .home .contenedor-animacion {
     margin: 49% auto auto 9%;
+    width: 49%;
   }
 }
 /*-------------------------Arte-----------------------------------*/
@@ -363,7 +370,7 @@ body header #navbarDropdownMenuLink {
 /*-----------------QUERIE  SOBRE MI-------------------------------------*/
 @media screen and (max-width: 490px) {
   body {
-    width: 328px;
+    width: 326px;
     margin: 2%;
   }
   body .home-sobremi {
@@ -385,9 +392,13 @@ body header #navbarDropdownMenuLink {
   }
   body .home-sobremi .text-perfil1 {
     width: 54%;
+    width: 54%;
+    height: 12%;
+    margin-top: 6%;
   }
   body .home-sobremi .text-perfil2 {
     display: block;
+    margin-top: 2%;
   }
   body .home-sobremi p {
     margin-bottom: 0;
@@ -1246,6 +1257,210 @@ footer .disclaimer {
   background-color: #e0e5ea;
   border-color: white;
   box-shadow: 0 0 0 0.25rem rgba(130, 138, 145, 0.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body .contacto {
+  block-size: 600px;
+  padding: 0px 18%;
+  width: 98%;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  font-size: 12pt;
+  font-family: "lexend peta";
+  color: #2A293E;
+}
+
+.header-contacto {
+  padding: 0px 18%;
+  width: 98%;
+  display: block;
+  font-size: 12pt;
+  font-family: "lexend peta";
+}
+.header-contacto button {
+  width: 100px;
+  display: flex;
+  border: none;
+}
+.header-contacto button img {
+  width: 26px;
+}
+.header-contacto button h2 {
+  font-size: 14px;
+  font-family: Lexend Peta;
+  color: white;
+  padding-left: 12px;
+}
+
+.contact-us {
+  padding: 50px 263px;
+  background-color: white;
+  width: 726px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border: 4px solid #97bfbf;
+  border-radius: 8px;
+}
+.contact-us label,
+.contact-us input,
+.contact-us textarea {
+  display: block;
+  width: 100%;
+  font-size: 12pt;
+  line-height: 24pt;
+  font-family: "lexend peta";
+  border-radius: 4px;
+  background-color: white;
+}
+.contact-us form {
+  width: 500px;
+  background-color: white;
+}
+.contact-us input {
+  margin-bottom: 24pt;
+  width: 400px;
+}
+.contact-us h3 {
+  font-weight: normal;
+  font-size: 10pt;
+  line-height: 24pt;
+  font-style: italic;
+  margin: 0 0 0.5em 0;
+}
+.contact-us span {
+  font-size: 8pt;
+}
+.contact-us em {
+  display: none;
+}
+.contact-us input,
+.contact-us textarea {
+  border: none;
+  border: 1px solid white;
+  border-radius: 2px;
+  background: #B2F0F0;
+  padding-left: 5px;
+  outline: none;
+}
+.contact-us input:focus,
+.contact-us textarea:focus {
+  border: 1px solid #6bd4b1;
+}
+.contact-us input#customerName,
+.contact-us #customerEmail {
+  border: 2px solid #B2F0F0;
+  border-radius: 8px;
+  background-color: white;
+}
+.contact-us #customerOrder {
+  margin-top: 8px;
+  background-color: #e99d0b;
+  color: #343333;
+  border-radius: 6px;
+  padding: 0;
+  padding: 0 6px;
+}
+.contact-us textarea {
+  resize: none;
+  border: 2px solid #B2F0F0;
+  border-radius: 8px;
+  background-color: white;
+}
+.contact-us button {
+  display: block;
+  float: right;
+  line-height: 24pt;
+  padding: 0 20px;
+  border: none;
+  background: #5D0E0E;
+  color: white;
+  letter-spacing: 2px;
+  transition: 0.2s all ease-in-out;
+  border-bottom: 2px solid transparent;
+  outline: none;
+}
+.contact-us button:hover {
+  background: inherit;
+  color: #f45702;
+  border-bottom: 2px solid #f45702;
+}
+.contact-us ::selection {
+  background: #ffc7b8;
+}
+.contact-us input:-webkit-autofill,
+.contact-us input:-webkit-autofill:hover,
+.contact-us input:-webkit-autofill:focus,
+.contact-us textarea:-webkit-autofill,
+.contact-us textarea:-webkit-autofill:hover,
+.contact-us textarea:-webkit-autofill:focus {
+  border: 1px solid #6bd4b1;
+  -webkit-text-fill-color: #2A293E;
+  -webkit-box-shadow: 0 0 0px 1000px #f8f4e5 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/*------------------------queries---------------------------------------*/
+@media screen and (max-width: 490px) {
+  body.contacto {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  body.contacto .header-contacto {
+    block-size: auto;
+    padding: 48px 25px 26px 25px;
+    width: 100%;
+  }
+  body.contacto .contact-us {
+    width: 92%;
+    padding: 0;
+    display: flex;
+    margin: 0 18px;
+  }
+  body.contacto .contact-us form {
+    width: 100%;
+    height: 600px;
+    background-color: white;
+    padding: 28px 23px;
+  }
+  body.contacto .contact-us input#customerName,
+body.contacto .contact-us #customerEmail {
+    border: 2px solid #B2F0F0;
+    border-radius: 8px;
+    background-color: white;
+    width: 323px;
+  }
+}
+@media screen and (min-width: 491px) and (max-width: 992px) {
+  body.contacto {
+    height: 970px;
+    width: 780px;
+  }
+  body.contacto .header-contacto {
+    block-size: auto;
+    padding: 20px 18% 20px 46px;
+    margin-top: 87px;
+  }
+  body.contacto .contact-us {
+    padding: 0 161px;
+    width: 726px;
+    height: 700px;
+    margin: 0px 4px auto 30px;
+  }
+}
+@media screen and (min-width: 969px) {
+  .contact-us {
+    margin-left: 207px;
+    margin-top: 33px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
