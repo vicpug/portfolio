@@ -33,7 +33,7 @@ body header a.navbar-brand {
 
 .iconos {
   background-color: white;
-  width: 20%;
+  width: 45%;
 }
 
 * {
@@ -114,7 +114,6 @@ body header #navbarDropdownMenuLink {
   margin-top: 5%;
 }
 
-/*---------------HEADER-CONTACTO--------------------*/
 /*--------------------------MOBILE--------------------------------*/
 @media screen and (max-width: 490px) {
   header {
@@ -207,6 +206,22 @@ body header #navbarDropdownMenuLink {
 
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 1.5rem !important;
+  }
+
+  body header .navbar-light .navbar-nav .nav-link.active.en-ux {
+    color: #5D0E0E;
+  }
+
+  body header .navbar-light .navbar-nav .nav-link.en-web {
+    color: #5D0E0E;
+  }
+
+  body header .navbar-light .navbar-nav .nav-link.en-arte {
+    color: #5D0E0E;
+  }
+
+  body header .navbar-light .navbar-nav .nav-link.en-sobremi {
+    color: #5D0E0E;
   }
 }
 .home {
@@ -758,10 +773,6 @@ h4 p {
   h4.txt-programas {
     display: none;
   }
-
-  .icons {
-    display: none;
-  }
 }
 .carousel-indicators-mobile {
   display: none;
@@ -786,13 +797,13 @@ h4 p {
   background-color: white;
 }
 .home-ux .img-intro-contenedor .img-intro {
-  width: 80%;
+  width: 62%;
   height: auto;
   border-radius: 6px;
   order: 1;
   background-color: white;
 }
-.home-ux .lateral {
+.home-ux .img-intro-contenedor .lateral {
   background-color: white;
   display: flex;
   align-content: center;
@@ -803,7 +814,7 @@ h4 p {
   padding-top: 5%;
   font-weight: 300;
 }
-.home-ux .lateral .intro-txt {
+.home-ux .img-intro-contenedor .lateral .intro-txt {
   font-size: 12px;
   color: black;
   order: -1;
@@ -812,38 +823,47 @@ h4 p {
   padding-left: 18%;
   font-weight: 400;
 }
-.home-ux .lateral .descripcion-txt {
+.home-ux .img-intro-contenedor .lateral .descripcion-txt {
   background-color: white;
   font-size: 16px;
   color: #343333;
   font-weight: 300;
 }
-.home-ux .lateral p {
+.home-ux .img-intro-contenedor .lateral p {
   background-color: white;
 }
-.home-ux .iconos {
+.home-ux .img-intro-contenedor .iconos {
   display: flex;
+  padding-right: 57px;
   padding-top: 0;
   align-items: center;
-  size: 50%;
   align-content: center;
 }
-.home-ux .figma {
+.home-ux .img-intro-contenedor .figma {
   width: 55%;
   padding: 15%;
   background-color: white;
 }
-.home-ux .mac {
+.home-ux .img-intro-contenedor .mac {
   width: 55%;
   padding: 10%;
   background-color: white;
 }
-.home-ux .photoshop {
+.home-ux .img-intro-contenedor .photoshop {
   width: 70%;
   padding: 10%;
   background-color: white;
 }
-.home-ux .img-ux3-contenedor {
+.home-ux .img-intro-contenedor .whimsical {
+  width: 78%;
+  background-color: white;
+}
+.home-ux .img-intro-contenedor .optimal {
+  width: 70%;
+  background-color: white;
+}
+
+.img-ux3-contenedor {
   width: 100%;
   display: flex;
   padding: 6% 0;
@@ -853,20 +873,21 @@ h4 p {
   justify-content: center;
   align-items: center;
 }
-.home-ux .img-ux3-contenedor .img-ux3 {
+.img-ux3-contenedor .img-ux3 {
   width: 90%;
   height: auto;
   order: 1;
   background-color: white;
   padding-top: 2%;
 }
-.home-ux .img-ux3-contenedor .txt-ux3 {
+.img-ux3-contenedor .txt-ux3 {
   background-color: white;
   border: 2px solid #5D0E0E;
   border-radius: 10px;
   padding: 8px;
 }
-.home-ux .img-ux4-contenedor {
+
+.img-ux4-contenedor {
   width: 100%;
   display: flex;
   background-color: white;
@@ -875,19 +896,20 @@ h4 p {
   justify-content: center;
   align-items: center;
 }
-.home-ux .img-ux4-contenedor .img-ux4 {
+.img-ux4-contenedor .img-ux4 {
   width: 80%;
   height: auto;
   order: 1;
   background-color: white;
 }
-.home-ux .img-ux4-contenedor .txt-ux4 {
+.img-ux4-contenedor .txt-ux4 {
   background-color: white;
   border: 2px solid #5D0E0E;
   border-radius: 10px;
   padding: 8px;
 }
-.home-ux .img-ux5-contenedor {
+
+.img-ux5-contenedor {
   width: 100%;
   display: flex;
   padding: 4% 0;
@@ -897,19 +919,20 @@ h4 p {
   justify-content: center;
   align-items: center;
 }
-.home-ux .img-ux5-contenedor .img-ux5 {
+.img-ux5-contenedor .img-ux5 {
   width: 88%;
   height: auto;
   order: 1;
   background-color: white;
 }
-.home-ux .img-ux5-contenedor .txt-ux5 {
+.img-ux5-contenedor .txt-ux5 {
   background-color: white;
   border: 2px solid #5D0E0E;
   border-radius: 10px;
   padding: 8px;
 }
-.home-ux .img-ux6-contenedor {
+
+.img-ux6-contenedor {
   width: 100%;
   display: flex;
   background-color: white;
@@ -918,20 +941,21 @@ h4 p {
   justify-content: center;
   align-items: center;
 }
-.home-ux .img-ux6-contenedor .img-ux6 {
+.img-ux6-contenedor .img-ux6 {
   width: 80%;
   height: auto;
   order: 1;
   background-color: white;
   padding-top: 2%;
 }
-.home-ux .img-ux6-contenedor .txt-ux6 {
+.img-ux6-contenedor .txt-ux6 {
   background-color: white;
   border: 2px solid #5D0E0E;
   border-radius: 10px;
   padding: 8px;
 }
-.home-ux .img-ux7-contenedor {
+
+.img-ux7-contenedor {
   width: 100%;
   display: flex;
   padding: 6% 0;
@@ -941,20 +965,21 @@ h4 p {
   justify-content: center;
   align-items: center;
 }
-.home-ux .img-ux7-contenedor .img-ux7 {
+.img-ux7-contenedor .img-ux7 {
   width: 80%;
   height: auto;
   order: 1;
   background-color: white;
   padding-top: 2%;
 }
-.home-ux .img-ux7-contenedor .txt-ux7 {
+.img-ux7-contenedor .txt-ux7 {
   background-color: white;
   border: 2px solid #5D0E0E;
   border-radius: 10px;
   padding: 8px;
 }
-.home-ux .txt-ux8 {
+
+.txt-ux8 {
   width: 90%;
   height: auto;
   padding: 6% 0% 2% 0;
@@ -979,6 +1004,10 @@ h4 p {
 
 /*------------------------ QUERIES UX-----------------------*/
 @media screen and (max-width: 490px) {
+  body {
+    width: 317px;
+  }
+
   .home-ux {
     border: 2px solid white;
     border-radius: 4px;
@@ -988,28 +1017,23 @@ h4 p {
     align-items: center;
     justify-content: flex-end;
     padding: 6% 2%;
-    width: 390px;
+    width: 395px;
     height: 60%;
   }
-  .home-ux .iconos {
-    justify-content: space-evenly;
-  }
-  .home-ux .iconos img.photoshop {
-    width: 30px;
-  }
-  .home-ux .iconos img.figma {
-    width: 30px;
-  }
-  .home-ux .iconos img.mac {
-    width: 30px;
-  }
   .home-ux .img-intro-contenedor {
+    width: 480px;
+    height: auto;
     justify-content: flex-end;
     flex-wrap: wrap;
     order: -1;
   }
   .home-ux .img-intro-contenedor .img-intro {
     order: -1;
+    width: 78%;
+    height: auto;
+    border-radius: 6px;
+    background-color: white;
+    margin-right: 12%;
   }
   .home-ux .img-intro-contenedor .lateral {
     align-content: center;
@@ -1022,51 +1046,79 @@ h4 p {
   .home-ux .img-intro-contenedor .lateral .intro-txt {
     padding-left: 0;
   }
-  .home-ux .img-intro-contenedor .img-ux3-contenedor .txt-ux3 {
+  .home-ux .img-intro-contenedor .lateral .iconos {
+    justify-content: space-evenly;
+    padding-right: 7%;
+    width: 44%;
+  }
+  .home-ux .img-intro-contenedor .lateral .iconos img.photoshop {
+    width: 48px;
+    padding: 0;
+  }
+  .home-ux .img-intro-contenedor .lateral .iconos img.figma {
+    width: 31px;
+    padding: 6% 0 6% 6%;
+  }
+  .home-ux .img-intro-contenedor .lateral .iconos img.mac {
+    width: 43px;
+    padding: 0 7px;
+  }
+  .home-ux .img-intro-contenedor .lateral .iconos img.optimal {
+    width: 56%;
+  }
+  .home-ux .img-intro-contenedor .lateral .iconos img.whimsical {
+    width: 59%;
+  }
+  .home-ux .img-ux3-contenedor .txt-ux3 {
     padding: 4px;
     width: 87%;
     font-size: 14px;
     text-align: center;
+    margin: 0 6px;
   }
-  .home-ux .img-intro-contenedor .img-ux4-contenedor .txt-ux4 {
+  .home-ux .img-ux4-contenedor .txt-ux4 {
     padding: 4px;
     width: 87%;
     font-size: 14px;
     text-align: center;
+    margin: 0 6px;
   }
-  .home-ux .img-intro-contenedor .img-ux5-contenedor .txt-ux5 {
+  .home-ux .img-ux5-contenedor .txt-ux5 {
     padding: 4px;
     width: 87%;
     font-size: 14px;
     text-align: center;
+    margin: 0 6px;
   }
-  .home-ux .img-intro-contenedor .img-ux6-contenedor .txt-ux6 {
+  .home-ux .img-ux6-contenedor .txt-ux6 {
     padding: 4px;
     width: 87%;
     font-size: 14px;
     text-align: center;
+    margin: 0 6px;
   }
-  .home-ux .img-intro-contenedor .txt-ux8 {
+  .home-ux .txt-ux8 {
     width: 100%;
     padding: 6% 0% 0 0;
     text-align: center;
   }
-  .home-ux .txt-ux9 {
+
+  .txt-ux9 {
     width: 97%;
     display: flex;
     justify-content: center;
     flex-direction: column;
   }
-
-  .behance-enlace .behance {
-    width: 14%;
-    height: auto;
-  }
-
-  .behance-enlace {
-    background-color: #ac932d;
-  }
 }
+.behance-enlace .behance {
+  width: 14%;
+  height: auto;
+}
+
+.behance-enlace {
+  background-color: #ac932d;
+}
+
 @media screen and (min-width: 491px) and (max-width: 992px) {
   body {
     margin: 2%;

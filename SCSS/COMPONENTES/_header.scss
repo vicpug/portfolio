@@ -69,7 +69,7 @@ body {
         }
     }
 }
-/*---------------HEADER-CONTACTO--------------------*/
+
 
 /*--------------------------MOBILE--------------------------------*/
 @media screen and (max-width: 490px) {
@@ -165,4 +165,16 @@ body {
     .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: 1.5rem !important;
     }
-}
+    body header .navbar-light .navbar-nav .nav-link.active.en-ux {
+        color: $font-hover;
+    }
+    body header .navbar-light .navbar-nav .nav-link.en-web  {
+        color: $font-hover;
+    }
+    body header .navbar-light .navbar-nav .nav-link.en-arte  {
+        color: $font-hover;
+    }
+    body header .navbar-light .navbar-nav .nav-link.en-sobremi  {
+        color: $font-hover;
+    }
+    }

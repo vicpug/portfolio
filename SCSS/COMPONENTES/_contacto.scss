@@ -5,7 +5,6 @@
     padding: 0;
 }
 body .contacto {
-    
     block-size: 600px;
     padding: 0px 18%;
     width: 98%;
@@ -18,8 +17,7 @@ body .contacto {
     color: #2A293E;
 }
 .header-contacto {
-   
-    padding: 0px 18%;
+       padding: 0px 18%;
     width: 98%;
     display: block;
     font-size: 12pt;
@@ -48,8 +46,6 @@ body .contacto {
     justify-content: center;
     border: 4px solid #97bfbf;
     border-radius: 8px;
-
-
     label,
     input,
     textarea {
@@ -60,19 +56,15 @@ body .contacto {
         font-family: "lexend peta";
         border-radius: 4px;
         background-color: $font-color-principal;
-
     }
-
     form {
         width: 500px;
         background-color: $font-color-principal;
     }
-
     input {
         margin-bottom: 24pt;
         width: 400px;
     }
-
     h3 {
         font-weight: normal;
         font-size: 10pt;
@@ -80,15 +72,12 @@ body .contacto {
         font-style: italic;
         margin: 0 0 0.5em 0;
     }
-
     span {
         font-size: 8pt;
     }
-
     em {
         display: none;
     }
-
     input,
     textarea {
         border: none;
@@ -104,14 +93,12 @@ body .contacto {
     textarea:focus {
         border: 1px solid #6bd4b1;
     }
-
     input#customerName,
     #customerEmail {
         border: 2px solid $h1-color-hover;
         border-radius: 8px;
         background-color: $font-color-principal;
     }
-
     #customerOrder {
         margin-top: 8px;
         background-color: #e99d0b;
@@ -120,14 +107,12 @@ body .contacto {
         padding: 0;
         padding: 0 6px;
     }
-
     textarea {
         resize: none;
         border: 2px solid $h1-color-hover;
         border-radius: 8px;
         background-color: $font-color-principal;
     }
-
     button {
         display: block;
         float: right;
@@ -141,17 +126,14 @@ body .contacto {
         border-bottom: 2px solid transparent;
         outline: none;
     }
-
     button:hover {
         background: inherit;
         color: #f45702;
         border-bottom: 2px solid #f45702;
     }
-
     ::selection {
         background: #ffc7b8;
     }
-
     input:-webkit-autofill,
     input:-webkit-autofill:hover,
     input:-webkit-autofill:focus,
@@ -164,7 +146,6 @@ body .contacto {
         transition: background-color 5000s ease-in-out 0s;
     }
 }
-
 /*------------------------queries---------------------------------------*/
 @media screen and (max-width: 490px) {
     body.contacto {
@@ -190,7 +171,6 @@ body .contacto {
                 background-color: white;
                 padding: 28px 23px;
             }
-
             input#customerName,
             #customerEmail {
                 border: 2px solid #B2F0F0;
@@ -200,22 +180,17 @@ body .contacto {
 
             }
         }
-
-
     }
 }
-
 @media screen and (min-width: 491px) and (max-width: 992px) {
     body.contacto {
         height: 970px;
         width: 780px;
-
         .header-contacto {
             block-size: auto;
             padding: 20px 18% 20px 46px;
             margin-top: 87px;
         }
-
         .contact-us {
             padding: 0 161px;
             width: 726px;
