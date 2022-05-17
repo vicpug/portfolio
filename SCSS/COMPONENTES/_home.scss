@@ -632,6 +632,9 @@ h4 {
     }
 }
 @media screen and (min-width: 969px) {
+   .media-mobile-web{
+       display: none;
+   }
     .item-mobile {
         display: none
     }
