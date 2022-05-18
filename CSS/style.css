@@ -1875,13 +1875,16 @@ body.body-sec .cards p.card-desc h2.abc {
 /*--------------------------MOBILE--------------------------------*/
 @media screen and (max-width: 490px) {
   body.body-sec {
+    width: 383px;
     align-items: flex-start;
     flex-wrap: wrap;
-    width: 383px;
+    /*---header secundario------*/
+    /*-----nav secundario------*/
+    /*-----cards------*/
   }
   body.body-sec header.header-secundario {
-    margin-left: 11px;
     width: 331px;
+    margin-left: 11px;
   }
   body.body-sec section.nav-secundario {
     width: 392px;
@@ -1912,14 +1915,11 @@ body.body-sec .cards p.card-desc h2.abc {
     margin-bottom: 4px;
   }
   body.body-sec div.cards {
-    margin-left: 16px;
+    margin-left: 8px;
   }
   body.body-sec div.cards div.card-sec-i {
-    max-width: auto;
+    width: 290px;
     background-color: white;
-  }
-  body.body-sec div.cards div.card-sec-i p.card-desc {
-    display: none;
   }
   body.body-sec div.cards div.card-sec-i-lev {
     background-color: white;
@@ -1928,6 +1928,7 @@ body.body-sec .cards p.card-desc h2.abc {
     width: 290px;
     background-color: white;
     text-align: center;
+    font-size: 1rem;
   }
   body.body-sec div.cards img.img-i {
     width: 290px;
@@ -1940,6 +1941,23 @@ body.body-sec .cards p.card-desc h2.abc {
     height: auto;
     background-color: white;
   }
+  body.body-sec div.cards div.card-sec {
+    width: 290px;
+    height: auto;
+    background-color: white;
+  }
+  body.body-sec div.cards div.card-sec img {
+    width: 280px;
+    height: auto;
+    border: 2px solid white;
+    background-color: white;
+  }
+  body.body-sec div.cards div.card-sec img.img-vest {
+    width: 280px;
+    height: auto;
+    border: 2px solid white;
+    background-color: white;
+  }
   body.body-sec footer p {
     margin-left: 30px;
     text-align: center;
@@ -1948,19 +1966,20 @@ body.body-sec .cards p.card-desc h2.abc {
 /*----------------------TABLET-------------------------------*/
 @media screen and (min-width: 491px) and (max-width: 992px) {
   body.body-sec {
-    width: 891px;
-    margin-left: 28px;
+    width: 103%;
   }
   body.body-sec header.header-secundario {
     margin-bottom: 8px;
     margin-top: 45px;
-    width: 790px;
+    width: 757px;
   }
   body.body-sec header.header-secundario h1 {
     font-size: 171%;
   }
   body.body-sec section.nav-secundario {
     justify-content: center;
+    width: 814px;
+    margin-right: 37px;
   }
   body.body-sec section.nav-secundario ul li a {
     font-size: 1.5rem;
@@ -1972,21 +1991,38 @@ body.body-sec .cards p.card-desc h2.abc {
   body.body-sec h2 {
     font-size: 1.5rem;
   }
-  body.body-sec div.card-sec-i-lev {
+  body.body-sec .cards {
+    width: 103%;
+  }
+  body.body-sec .cards div.card-sec-i-lev {
     height: 714px;
     margin: 40px 0;
     background-color: white;
   }
-  body.body-sec div.card-sec-i-lev img.img-i-lev {
+  body.body-sec .cards div.card-sec-i-lev img.img-i-lev {
     width: 539px;
     height: auto;
   }
-  body.body-sec h2.card-title {
+  body.body-sec .cards h2.card-title {
     text-align: center;
     background-color: white;
   }
-  body.body-sec p.card-desc {
-    display: none;
+  body.body-sec .cards div.card-sec {
+    max-width: 539px;
+    height: auto;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+  }
+  body.body-sec .cards div.card-sec img {
+    max-width: 539px;
+    border: 10px solid white;
+  }
+  body.body-sec .cards div.card-sec .card-title {
+    width: 539px;
+    text-align: center;
   }
   body.body-sec footer p {
     margin-left: 30px;
