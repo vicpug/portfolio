@@ -137,7 +137,7 @@ body.body-sec {
         padding: 2%;
         border-top-right-radius: 4px;
         border-top-left-radius: 4px;
-      }
+      }}
 
       p.card-desc {
         display: block;
@@ -152,10 +152,7 @@ body.body-sec {
         transition: 0.8s ease;
       }
 
-      div.card-sec-i:hover .card-desc {
-        opacity: 1;
-        height: 100%;
-      }
+      
 
       img.img-i {
         max-width: 539px;
@@ -171,9 +168,7 @@ body.body-sec {
       }
 
     }
-  }
   
-
   img.smallerpls {
     width: 300px;
     height: auto;
@@ -188,8 +183,27 @@ body.body-sec {
     width: auto;
     height: 350px;
   }
-
-  div.card-sec:hover .card-desc {
+  .card:hover .card-desc {
+    opacity: 1;
+    height: 100%;
+  }
+ .card-sec:hover .card-desc {
+    opacity: 1;
+    height: 100%;
+  }
+ .cards p.card-desc {
+    display: block;
+    font-size: 1rem;
+    position: absolute;
+    height: 0;
+    top: 0;
+    opacity: 0;
+    padding: 18px 8%;
+    background-color: white;
+    overflow-y: scroll;
+    transition: 0.8s ease;
+ 
+  .card-sec-i:hover .card-desc {
     opacity: 1;
     height: 100%;
   }
@@ -204,9 +218,7 @@ body.body-sec {
     height: auto;
   }
 }
-
-
-/*------------------QUERIES-------------------*/
+}
 /*--------------------------MOBILE--------------------------------*/
 @media screen and (max-width: 490px) {
    body.body-sec {
@@ -250,19 +262,48 @@ body.body-sec {
        div.cards{
          margin-left: 16px;
     div.card-sec-i{
-        max-width: 70%;}
+        max-width:auto;
+        background-color: $background-color;
+        p.card-desc {
+          display: none;
+         }}
+    div.card-sec-i-lev{
+      background-color: $background-color
+    }   
+    h2.card-title {
+          width: 290px;
+          background-color: $background-color;
+          text-align: center;
+        }
      img.img-i {
-        max-width: 160px;
-        border: 2px solid white;}
+        width: 290px;
+        height: auto;
+        border: 2px solid white;
+        background-color: $background-color;
+      }
+      img.img-i-lev{
+          width: 290px;
+          height: auto;
+          background-color: $background-color;
+      }
+       
     
+  
     }
-  }} 
+  
+  footer p{
+      margin-left: 30px;
+      text-align: center;
+     }
+  }}
+  
   
   
 /*----------------------TABLET-------------------------------*/
 @media screen and (min-width: 491px) and (max-width: 992px) {
     body.body-sec{
       width: 891px;
+      margin-left: 28px;
       header.header-secundario{
         margin-bottom: 8px;
         margin-top: 45px;
@@ -289,43 +330,21 @@ body.body-sec {
       height: 714px;
       margin: 40px 0;
       background-color: $font-color-principal;
+      img.img-i-lev {
+        width: 539px;
+        height: auto;}}
       h2.card-title{
         text-align: center;
         background-color: $font-color-principal;
       }
-
+    p.card-desc {
+        display: none;  
     }
-    
-      }
-/*---------------------------DESKTOP--------------------------*/
+    footer p{
+      margin-left: 30px;
+      text-align: center;
+     }
+    }}
+    /*---------------------------DESKTOP--------------------------*/
 @media screen and (min-width: 992px) {
-  a.nav-link:active {
-    margin: 0 2%;
-    width: 200%
-  }
-
-  a.nav-link {
-    margin: 0 2%;
-    width: 200%
-  }
-
-  .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 1.5rem !important;
-  }
-
-  body header .navbar-light .navbar-nav .nav-link.active.en-ux {
-    color: $font-hover;
-  }
-
-  body header .navbar-light .navbar-nav .nav-link.en-web {
-    color: $font-hover;
-  }
-
-  body header .navbar-light .navbar-nav .nav-link.en-arte {
-    color: $font-hover;
-  }
-
-  body header .navbar-light .navbar-nav .nav-link.en-sobremi {
-    color: $font-hover;
-  }
-}}
+}

@@ -59,7 +59,6 @@ body {
 }
 
 body {
-  margin: 6%;
   background-color: transparent;
 }
 body header {
@@ -325,7 +324,7 @@ body header #navbarDropdownMenuLink {
   .home-arte {
     padding: 8% 4%;
     height: auto;
-    width: 364px;
+    width: 397px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -1526,7 +1525,6 @@ body.contacto .contact-us #customerEmail {
 }
 
 body {
-  margin: 6%;
   background-color: transparent;
 }
 body header {
@@ -1809,7 +1807,7 @@ body.body-sec .cards div.card-sec-i h2.card-title {
   border-top-right-radius: 4px;
   border-top-left-radius: 4px;
 }
-body.body-sec .cards div.card-sec-i p.card-desc {
+body.body-sec .cards p.card-desc {
   display: block;
   font-size: 1rem;
   position: absolute;
@@ -1821,15 +1819,11 @@ body.body-sec .cards div.card-sec-i p.card-desc {
   overflow-y: scroll;
   transition: 0.8s ease;
 }
-body.body-sec .cards div.card-sec-i div.card-sec-i:hover .card-desc {
-  opacity: 1;
-  height: 100%;
-}
-body.body-sec .cards div.card-sec-i img.img-i {
+body.body-sec .cards img.img-i {
   max-width: 539px;
   border: 10px solid white;
 }
-body.body-sec .cards div.card-sec-i img.img-i-lev {
+body.body-sec .cards img.img-i-lev {
   max-width: 539px;
   height: 433px;
   border: 10px solid white;
@@ -1846,19 +1840,38 @@ body.body-sec div.smallerpls {
   width: auto;
   height: 350px;
 }
-body.body-sec div.card-sec:hover .card-desc {
+body.body-sec .card:hover .card-desc {
   opacity: 1;
   height: 100%;
 }
-body.body-sec h2 {
+body.body-sec .card-sec:hover .card-desc {
+  opacity: 1;
+  height: 100%;
+}
+body.body-sec .cards p.card-desc {
+  display: block;
+  font-size: 1rem;
+  position: absolute;
+  height: 0;
+  top: 0;
+  opacity: 0;
+  padding: 18px 8%;
+  background-color: white;
+  overflow-y: scroll;
+  transition: 0.8s ease;
+}
+body.body-sec .cards p.card-desc .card-sec-i:hover .card-desc {
+  opacity: 1;
+  height: 100%;
+}
+body.body-sec .cards p.card-desc h2 {
   font-size: 1rem;
 }
-body.body-sec h2.abc {
+body.body-sec .cards p.card-desc h2.abc {
   width: 328px;
   height: auto;
 }
 
-/*------------------QUERIES-------------------*/
 /*--------------------------MOBILE--------------------------------*/
 @media screen and (max-width: 490px) {
   body.body-sec {
@@ -1902,17 +1915,41 @@ body.body-sec h2.abc {
     margin-left: 16px;
   }
   body.body-sec div.cards div.card-sec-i {
-    max-width: 70%;
+    max-width: auto;
+    background-color: white;
+  }
+  body.body-sec div.cards div.card-sec-i p.card-desc {
+    display: none;
+  }
+  body.body-sec div.cards div.card-sec-i-lev {
+    background-color: white;
+  }
+  body.body-sec div.cards h2.card-title {
+    width: 290px;
+    background-color: white;
+    text-align: center;
   }
   body.body-sec div.cards img.img-i {
-    max-width: 160px;
+    width: 290px;
+    height: auto;
     border: 2px solid white;
+    background-color: white;
+  }
+  body.body-sec div.cards img.img-i-lev {
+    width: 290px;
+    height: auto;
+    background-color: white;
+  }
+  body.body-sec footer p {
+    margin-left: 30px;
+    text-align: center;
   }
 }
 /*----------------------TABLET-------------------------------*/
 @media screen and (min-width: 491px) and (max-width: 992px) {
   body.body-sec {
     width: 891px;
+    margin-left: 28px;
   }
   body.body-sec header.header-secundario {
     margin-bottom: 8px;
@@ -1940,43 +1977,22 @@ body.body-sec h2.abc {
     margin: 40px 0;
     background-color: white;
   }
-  body.body-sec div.card-sec-i-lev h2.card-title {
+  body.body-sec div.card-sec-i-lev img.img-i-lev {
+    width: 539px;
+    height: auto;
+  }
+  body.body-sec h2.card-title {
     text-align: center;
     background-color: white;
   }
-
-  /*---------------------------DESKTOP--------------------------*/
-}
-@media screen and (min-width: 491px) and (max-width: 992px) and (min-width: 992px) {
-  a.nav-link:active {
-    margin: 0 2%;
-    width: 200%;
+  body.body-sec p.card-desc {
+    display: none;
   }
-
-  a.nav-link {
-    margin: 0 2%;
-    width: 200%;
-  }
-
-  .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 1.5rem !important;
-  }
-
-  body header .navbar-light .navbar-nav .nav-link.active.en-ux {
-    color: #5D0E0E;
-  }
-
-  body header .navbar-light .navbar-nav .nav-link.en-web {
-    color: #5D0E0E;
-  }
-
-  body header .navbar-light .navbar-nav .nav-link.en-arte {
-    color: #5D0E0E;
-  }
-
-  body header .navbar-light .navbar-nav .nav-link.en-sobremi {
-    color: #5D0E0E;
+  body.body-sec footer p {
+    margin-left: 30px;
+    text-align: center;
   }
 }
+/*---------------------------DESKTOP--------------------------*/
 
 /*# sourceMappingURL=style.css.map */
