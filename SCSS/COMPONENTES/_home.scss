@@ -44,6 +44,7 @@
         }
     }
 }
+
 @media screen and (min-width: 491px) and (max-width: 992px) {
     body {
         width: 600px;
@@ -54,15 +55,17 @@
             padding: 0;
             width: 98%;
             height: 734px;
-            .contenedor-animacion{
+
+            .contenedor-animacion {
                 margin: 49% auto auto 9%;
-               
-                    width: 49%;
-                    
-                
+
+                width: 49%;
+
+
             }
+        }
+    }
 }
-    }}
 
 
 
@@ -210,9 +213,9 @@
         width: 326px;
         margin: 2%;
 
-         
+
         .home-sobremi {
-           
+
             width: 395px;
             height: auto;
             padding: 6% 2%;
@@ -229,7 +232,7 @@
 
             .text-perfil {
                 display: none;
-                
+
             }
 
             .text-perfil1 {
@@ -455,14 +458,14 @@ h4 {
                     margin-top: 2px;
 
                     p {
-                        color: $font-color-terciario;
+                        color: black;
                         font-size: 12px;
-                        font-weight: 200;
-                        font-family: menlo;
+                        font-weight: 300;
+                        font-family: 'Lexend Peta';
                         background-color: $background-color-body;
 
                         &.fw {
-                            color: $h1-color-hover;
+                            color: rgb(3, 27, 149);
                             margin-bottom: 1px;
                         }
 
@@ -472,6 +475,10 @@ h4 {
 
                         &.fr {
                             margin-bottom: 1px;
+                            color: black;
+                            font-size: 12px;
+                            font-weight: 300;
+                            font-family: 'Lexend Peta';
                         }
 
                         &.fc {
@@ -483,7 +490,8 @@ h4 {
                         }
 
                         &.fp {
-                            color: rgb(64, 1, 71);
+                            color: rgb(40, 1, 44);
+                            font-weight: 300;
                             display: inline;
                             background-color: $background-color-body;
                         }
@@ -532,53 +540,65 @@ h4 {
         width: 100%;
         height: auto
     }
+
     div.txt-contenedor-vsc p .fw .fc .fp {
         background-color: $background-color;
         color: $font-color-principal;
     }
 }
+
 @media screen and (min-width: 491px) and (max-width: 992px) {
     body {
         margin: 2%;
         width: 790px;
+
         .home-web {
             padding: 6% 2%;
             width: 792px;
+
             .media-mobile-web {
                 width: 100%;
                 display: flex;
                 justify-content: center;
                 flex-direction: column;
                 padding-left: 4px;
+
                 .print-vsc img {
                     width: 100%;
                     margin-left: 0;
 
                 }
+
                 h4 {
                     padding: 4% 1%;
                     background-color: $background-color-body;
                     font-size: 12px;
                     color: $font-color-terciario;
                 }
+
                 .txt-vsc {
                     margin-top: 2px;
+
                     p {
                         color: $font-color-terciario;
                         font-size: 12px;
                         font-weight: 200;
                         font-family: menlo;
                         background-color: $background-color-body;
+
                         &.fw {
                             color: $h1-color-hover;
                             margin-bottom: 1px;
                         }
+
                         &.fj {
                             margin-top: 8px;
                         }
+
                         &.fr {
                             margin-bottom: 1px;
                         }
+
                         &.fc {
                             color: black;
                             background-color: rgb(214, 214, 10);
@@ -586,6 +606,7 @@ h4 {
                             width: 50%;
                             display: inline;
                         }
+
                         &.fp {
                             color: rgb(64, 1, 71);
                             display: inline;
@@ -593,17 +614,21 @@ h4 {
                         }
                     }
                 }
+
                 div.programas-contenedor {
                     background-color: $h1-color-hover;
+
                     .txt-programas {
                         background-color: $h1-color-hover;
                     }
+
                     .icons {
                         background-color: $h1-color-hover;
                         display: flex;
                         flex-wrap: wrap;
                         justify-content: center;
                         align-content: center;
+
                         img {
                             background-color: $h1-color-hover;
                             margin: 3px 8px;
@@ -615,39 +640,49 @@ h4 {
         }
 
     }
+
     #carouselExampleIndicators {
         display: none
     }
+
     .icons img {
         width: 18%;
         height: auto;
     }
+
     img {
         width: 100%;
         height: auto
     }
+
     div.txt-contenedor-vsc p .fw .fc .fp {
         background-color: $background-color;
         color: $font-color-principal;
     }
 }
+
 @media screen and (min-width: 969px) {
-   .media-mobile-web{
-       display: none;
-   }
+    .media-mobile-web {
+        display: none;
+    }
+
     .item-mobile {
         display: none
     }
+
     .print-vsc img {
         display: none;
     }
+
     h4.txt-vsc {
         display: none;
     }
+
     h4.txt-programas {
         display: none;
     }
 }
+
 .carousel-indicators-mobile {
     display: none;
 }
@@ -664,10 +699,12 @@ h4 {
     padding: 4%;
     width: 1216px;
     height: 60%;
+
     .img-intro-contenedor {
         display: flex;
         flex-direction: row;
         background-color: $background-color;
+
         .img-intro {
             width: 62%;
             height: auto;
@@ -675,203 +712,212 @@ h4 {
             order: 1;
             background-color: $background-color;
         }
-       .lateral {
-        background-color: $background-color;
-        display: flex;
-        align-content: center;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        margin-left: 3%;
-        padding-top: 5%;
-        font-weight: 300;
-        .intro-txt {
-            font-size: 12px;
-            color: $font-color-secundario;
-            order: -1;
-            font-size: 16px;
+
+        .lateral {
             background-color: $background-color;
-            padding-left: 18%;
-            font-weight: 400;
-        }
-        .descripcion-txt {
-            background-color: $background-color;
-            font-size: 16px;
-            color: $font-color-terciario;
+            display: flex;
+            align-content: center;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin-left: 3%;
+            padding-top: 5%;
             font-weight: 300;
-        }
-        p {
-            background-color: $background-color;
-        }
-    }
-    .iconos {
-        display: flex;
-        padding-right: 57px;
-        padding-top: 0;
-        align-items: center;
-        align-content: center;
-    }
-    .figma {
-        width: 55%;
-        padding: 15%;
-        background-color: $background-color;
-    }
 
-    .mac {
-        width: 55%;
-        padding: 10%;
-        background-color: $background-color;
-    }
+            .intro-txt {
+                font-size: 12px;
+                color: $font-color-secundario;
+                order: -1;
+                font-size: 16px;
+                background-color: $background-color;
+                padding-left: 18%;
+                font-weight: 400;
+            }
 
-    .photoshop {
-        width: 70%;
-        padding: 10%;
-        background-color: $background-color;
-    }
-    .whimsical{
-        width: 78%;
-        background-color: $background-color;
-    }
-    .optimal{
-        width: 70%;
-        background-color:$background-color;
-    }
-    }}
-    
+            .descripcion-txt {
+                background-color: $background-color;
+                font-size: 16px;
+                color: $font-color-terciario;
+                font-weight: 300;
+            }
 
-    .img-ux3-contenedor {
-        width: 100%;
-        display: flex;
-        padding: 6% 0;
-        background-color: $background-color;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-
-        .img-ux3 {
-            width: 90%;
-            height: auto;
-            order: 1;
-            background-color: $background-color;
-            padding-top: 2%;
+            p {
+                background-color: $background-color;
+            }
         }
 
-        .txt-ux3 {
-            background-color: $background-color;
-            border: 2px solid $font-hover;
-            border-radius: 10px;
-            padding: 8px;
+        .iconos {
+            display: flex;
+            padding-right: 57px;
+            padding-top: 0;
+            align-items: center;
+            align-content: center;
         }
-    }
 
-    .img-ux4-contenedor {
-        width: 100%;
-        display: flex;
-        background-color: $background-color;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-
-        .img-ux4 {
-            width: 80%;
-            height: auto;
-            order: 1;
+        .figma {
+            width: 55%;
+            padding: 15%;
             background-color: $background-color;
         }
 
-        .txt-ux4 {
+        .mac {
+            width: 55%;
+            padding: 10%;
             background-color: $background-color;
-            border: 2px solid $font-hover;
-            border-radius: 10px;
-            padding: 8px;
+        }
+
+        .photoshop {
+            width: 70%;
+            padding: 10%;
+            background-color: $background-color;
+        }
+
+        .whimsical {
+            width: 78%;
+            background-color: $background-color;
+        }
+
+        .optimal {
+            width: 70%;
+            background-color: $background-color;
         }
     }
+}
 
-    .img-ux5-contenedor {
-        width: 100%;
-        display: flex;
-        padding: 4% 0;
-        background-color: $background-color;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
 
-        .img-ux5 {
-            width: 88%;
-            height: auto;
-            order: 1;
-            background-color: $background-color;
-        }
+.img-ux3-contenedor {
+    width: 100%;
+    display: flex;
+    padding: 6% 0;
+    background-color: $background-color;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 
-        .txt-ux5 {
-            background-color: $background-color;
-            border: 2px solid $font-hover;
-            border-radius: 10px;
-            padding: 8px;
-        }
-    }
-
-    .img-ux6-contenedor {
-        width: 100%;
-        display: flex;
-        background-color: $background-color;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-
-        .img-ux6 {
-            width: 80%;
-            height: auto;
-            order: 1;
-            background-color: $background-color;
-            padding-top: 2%;
-        }
-
-        .txt-ux6 {
-            background-color: $background-color;
-            border: 2px solid $font-hover;
-            border-radius: 10px;
-            padding: 8px;
-        }
-    }
-
-    .img-ux7-contenedor {
-        width: 100%;
-        display: flex;
-        padding: 6% 0;
-        background-color: $background-color;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-
-        .img-ux7 {
-            width: 80%;
-            height: auto;
-            order: 1;
-            background-color: $background-color;
-            padding-top: 2%;
-        }
-
-        .txt-ux7 {
-            background-color: $background-color;
-            border: 2px solid $font-hover;
-            border-radius: 10px;
-            padding: 8px;
-        }
-    }
-
-    .txt-ux8 {
+    .img-ux3 {
         width: 90%;
         height: auto;
-        padding: 6% 0% 2% 0;
-        text-align: center;
-        padding-right: 11%;
+        order: 1;
+        background-color: $background-color;
+        padding-top: 2%;
     }
+
+    .txt-ux3 {
+        background-color: $background-color;
+        border: 2px solid $font-hover;
+        border-radius: 10px;
+        padding: 8px;
+    }
+}
+
+.img-ux4-contenedor {
+    width: 100%;
+    display: flex;
+    background-color: $background-color;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    .img-ux4 {
+        width: 80%;
+        height: auto;
+        order: 1;
+        background-color: $background-color;
+    }
+
+    .txt-ux4 {
+        background-color: $background-color;
+        border: 2px solid $font-hover;
+        border-radius: 10px;
+        padding: 8px;
+    }
+}
+
+.img-ux5-contenedor {
+    width: 100%;
+    display: flex;
+    padding: 4% 0;
+    background-color: $background-color;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    .img-ux5 {
+        width: 88%;
+        height: auto;
+        order: 1;
+        background-color: $background-color;
+    }
+
+    .txt-ux5 {
+        background-color: $background-color;
+        border: 2px solid $font-hover;
+        border-radius: 10px;
+        padding: 8px;
+    }
+}
+
+.img-ux6-contenedor {
+    width: 100%;
+    display: flex;
+    background-color: $background-color;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    .img-ux6 {
+        width: 80%;
+        height: auto;
+        order: 1;
+        background-color: $background-color;
+        padding-top: 2%;
+    }
+
+    .txt-ux6 {
+        background-color: $background-color;
+        border: 2px solid $font-hover;
+        border-radius: 10px;
+        padding: 8px;
+    }
+}
+
+.img-ux7-contenedor {
+    width: 100%;
+    display: flex;
+    padding: 6% 0;
+    background-color: $background-color;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    .img-ux7 {
+        width: 80%;
+        height: auto;
+        order: 1;
+        background-color: $background-color;
+        padding-top: 2%;
+    }
+
+    .txt-ux7 {
+        background-color: $background-color;
+        border: 2px solid $font-hover;
+        border-radius: 10px;
+        padding: 8px;
+    }
+}
+
+.txt-ux8 {
+    width: 90%;
+    height: auto;
+    padding: 6% 0% 2% 0;
+    text-align: center;
+    padding-right: 11%;
+}
 
 
 .txt-ux9 {
@@ -892,10 +938,11 @@ h4 {
 
 /*------------------------ QUERIES UX-----------------------*/
 @media screen and (max-width: 490px) {
-   
-   body{
-       width: 317px;
-   }
+
+    body {
+        width: 317px;
+    }
+
     .home-ux {
         border: 2px solid $border-color;
         border-radius: 4px;
@@ -907,105 +954,121 @@ h4 {
         padding: 6% 2%;
         width: 395px;
         height: 60%;
+
         .img-intro-contenedor {
             width: 480px;
             height: auto;
             justify-content: flex-end;
             flex-wrap: wrap;
             order: -1;
-                .img-intro {
+
+            .img-intro {
                 order: -1;
                 width: 78%;
-    height: auto;
-    border-radius: 6px;
-       background-color: white;
-    margin-right: 12%;
-                 }
-                .lateral {
-                    align-content: center;
-                    justify-content: center;
-                    align-items: center;
-                    text-align: center;
-                    margin-left: 0;
-                    padding-left: 0;
+                height: auto;
+                border-radius: 6px;
+                background-color: white;
+                margin-right: 12%;
+            }
+
+            .lateral {
+                align-content: center;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                margin-left: 0;
+                padding-left: 0;
+
                 .intro-txt {
-                        padding-left: 0;
-                    }
+                    padding-left: 0;
+                }
+
                 .iconos {
-                 justify-content: space-evenly;
-                 padding-right: 7%;
-                 width: 44%;
-                img.photoshop {
-                width:48px;
-                padding: 0;
-                  }
-                img.figma {
-                width:31px;
-                padding: 6% 0 6% 6%;
-                }
-                img.mac {
-                width: 43px;
-                padding:0 7px;
-                }
-                img.optimal{
-                width:56%;
-                }
-                img.whimsical{
-                width: 59%;
-                }
-        }}}
-            .img-ux3-contenedor .txt-ux3 {
-                padding: 4px;
-                width: 87%;
-                font-size: 14px;
-                text-align: center;
-                margin: 0 6px;}
-            .img-ux4-contenedor .txt-ux4 {
-                padding: 4px;
-                width: 87%;
-                font-size: 14px;
-                text-align: center;
-                margin: 0 6px;
-            }
-            .img-ux5-contenedor .txt-ux5 {
-                padding: 4px;
-                width: 87%;
-                font-size: 14px;
-                text-align: center;
-                margin: 0 6px;
-            }
+                    justify-content: space-evenly;
+                    padding-right: 7%;
+                    width: 44%;
 
-            .img-ux6-contenedor .txt-ux6 {
-                padding: 4px;
-                width: 87%;
-                font-size: 14px;
-                text-align: center;
-                margin: 0 6px;
-            }
+                    img.photoshop {
+                        width: 48px;
+                        padding: 0;
+                    }
 
-            .txt-ux8 {
-                width: 100%;
-                padding: 6% 0% 0 0;
-                text-align: center;
+                    img.figma {
+                        width: 31px;
+                        padding: 6% 0 6% 6%;
+                    }
+
+                    img.mac {
+                        width: 43px;
+                        padding: 0 7px;
+                    }
+
+                    img.optimal {
+                        width: 56%;
+                    }
+
+                    img.whimsical {
+                        width: 59%;
+                    }
+                }
             }
         }
 
-        .txt-ux9 {
-            width: 97%;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
+        .img-ux3-contenedor .txt-ux3 {
+            padding: 4px;
+            width: 87%;
+            font-size: 14px;
+            text-align: center;
+            margin: 0 6px;
+        }
+
+        .img-ux4-contenedor .txt-ux4 {
+            padding: 4px;
+            width: 87%;
+            font-size: 14px;
+            text-align: center;
+            margin: 0 6px;
+        }
+
+        .img-ux5-contenedor .txt-ux5 {
+            padding: 4px;
+            width: 87%;
+            font-size: 14px;
+            text-align: center;
+            margin: 0 6px;
+        }
+
+        .img-ux6-contenedor .txt-ux6 {
+            padding: 4px;
+            width: 87%;
+            font-size: 14px;
+            text-align: center;
+            margin: 0 6px;
+        }
+
+        .txt-ux8 {
+            width: 100%;
+            padding: 6% 0% 0 0;
+            text-align: center;
         }
     }
 
-    .behance-enlace .behance {
-        width: 14%;
-        height: auto;
+    .txt-ux9 {
+        width: 97%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
+}
 
-    .behance-enlace {
-        background-color: $background-color-body;
-    }
+.behance-enlace .behance {
+    width: 14%;
+    height: auto;
+}
+
+.behance-enlace {
+    background-color: $background-color-body;
+}
 
 
 @media screen and (min-width: 491px) and (max-width: 992px) {
@@ -1016,7 +1079,7 @@ h4 {
         .home-ux {
             padding: 6% 2%;
             width: 792px;
-          
+
             .img-intro-contenedor .img-intro {
                 width: 70%;
                 height: auto;
