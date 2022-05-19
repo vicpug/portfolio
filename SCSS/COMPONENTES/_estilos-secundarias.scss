@@ -20,6 +20,9 @@ body.body-sec {
   align-items: center;
   flex-direction: column;
   background-color: $background-color-body;
+  div.disclaimer{
+    visibility: hidden;
+  }
 
   header {
     h1 {
@@ -87,6 +90,7 @@ body.body-sec {
       align-items: center;
       justify-content: center;
       background-color: $font-color-principal;
+     
 
       h2.card-title {
         display: block;
@@ -99,7 +103,7 @@ body.body-sec {
       }
 
       img {
-        width: 534px;
+        width: 436px;
         height: auto;
         object-fit: cover;
         display: block;
@@ -108,9 +112,8 @@ body.body-sec {
       }
 
       .img-vest {
-        width: 483px;
-        max-height: 648px;
-
+        max-width: 483px;
+        max-height: 582px;
       }
 
       img.smallerpls-v {
@@ -130,6 +133,7 @@ body.body-sec {
       flex-direction: column;
       align-items: center;
       background-color: white;
+      margin-left: 120px;
 
       h2.card-title {
         display: block;
@@ -162,16 +166,24 @@ body.body-sec {
       border: 10px solid white;
 
     }
-
-    img.img-i-lev {
-      max-width: 539px;
-      height: 433px;
-      border: 10px solid white;
-
+    .card-sec-i-lev{
+      background-color: $background-color;
+      h2.card-title {
+        display: block;
+        text-align: center;
+        color: $font-color-terciario;
+        background-color: $font-color-principal;
+        padding: 2%;
+        border-top-right-radius: 4px;
+        border-top-left-radius: 4px;
+      }
+      img.img-i-lev {
+        width: 538px;
+        height: auto;
+        border: 28px solid white;
     }
-
-  }
-
+   
+    }}
   img.smallerpls {
     width: 300px;
     height: auto;
@@ -223,6 +235,7 @@ body.body-sec {
       width: 328px;
       height: auto;
     }
+    
   }
 }
 
@@ -405,4 +418,8 @@ body.body-sec {
 }
 
 /*---------------------------DESKTOP--------------------------*/
-@media screen and (min-width: 992px) {}
+@media screen and (min-width: 992px) {
+  div.card-sec .img-vest {
+    max-width: 483px;
+    max-height: 582px;
+}}
