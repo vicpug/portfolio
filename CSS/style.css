@@ -1844,6 +1844,14 @@ body.body-sec .cards img.img-i {
 }
 body.body-sec .cards .card-sec-i-lev {
   background-color: white;
+  width: 539px;
+  height: auto;
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  align-items: center;
+  margin-left: 120px;
 }
 body.body-sec .cards .card-sec-i-lev h2.card-title {
   display: block;
@@ -1907,7 +1915,7 @@ body.body-sec .cards p.card-desc h2.abc {
 /*--------------------------MOBILE--------------------------------*/
 @media screen and (max-width: 490px) {
   body.body-sec {
-    width: 383px;
+    width: 395px;
     align-items: flex-start;
     flex-wrap: wrap;
     /*---header secundario------*/
@@ -1948,12 +1956,21 @@ body.body-sec .cards p.card-desc h2.abc {
   }
   body.body-sec div.cards {
     margin-left: 8px;
+    flex-wrap: nowrap;
   }
   body.body-sec div.cards div.card-sec-i {
     width: 290px;
     background-color: white;
+    margin-left: 45px;
   }
   body.body-sec div.cards div.card-sec-i-lev {
+    width: 290px;
+    background-color: white;
+    margin-left: 45px;
+  }
+  body.body-sec div.cards div.card-sec-i-lev img.img-i-lev {
+    width: 270px;
+    height: auto;
     background-color: white;
   }
   body.body-sec div.cards h2.card-title {
@@ -1966,11 +1983,6 @@ body.body-sec .cards p.card-desc h2.abc {
     width: 290px;
     height: auto;
     border: 2px solid white;
-    background-color: white;
-  }
-  body.body-sec div.cards img.img-i-lev {
-    width: 290px;
-    height: auto;
     background-color: white;
   }
   body.body-sec div.cards div.card-sec {
@@ -2026,10 +2038,14 @@ body.body-sec .cards p.card-desc h2.abc {
   body.body-sec .cards {
     width: 103%;
   }
+  body.body-sec .cards div.card-sec-i {
+    margin-left: 60px;
+  }
   body.body-sec .cards div.card-sec-i-lev {
     height: 714px;
     margin: 40px 0;
     background-color: white;
+    margin-left: 60px;
   }
   body.body-sec .cards div.card-sec-i-lev img.img-i-lev {
     width: 539px;
