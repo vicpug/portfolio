@@ -202,6 +202,9 @@
         padding: 1%;
 
     }
+    p.text-perfil{
+        line-height: 500%;
+       }
 
 
 
@@ -237,7 +240,7 @@
 
             .text-perfil1 {
                 width: 54%;
-                width: 54%;
+           
                 height: 12%;
                 margin-top: 6%;
             }
@@ -298,7 +301,7 @@
         flex-direction: row-reverse;
         align-items: center;
         justify-content: center;
-    }
+    
 
     .foto-perfil {
         width: 30%;
@@ -312,8 +315,10 @@
     .text-perfil2 {
         display: none
     }
+   
+   
 
-}
+}} 
 
 /*-------------------------------Web--------------------------------------------*/
 .home-web {

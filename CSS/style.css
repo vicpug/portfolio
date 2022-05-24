@@ -385,6 +385,9 @@ body header #navbarDropdownMenuLink {
   border: 1px solid white;
   padding: 1%;
 }
+.home-sobremi p.text-perfil {
+  line-height: 500%;
+}
 
 /*-----------------QUERIE  SOBRE MI-------------------------------------*/
 @media screen and (max-width: 490px) {
@@ -410,7 +413,6 @@ body header #navbarDropdownMenuLink {
     display: none;
   }
   body .home-sobremi .text-perfil1 {
-    width: 54%;
     width: 54%;
     height: 12%;
     margin-top: 6%;
@@ -465,17 +467,14 @@ body header #navbarDropdownMenuLink {
     align-items: center;
     justify-content: center;
   }
-
-  .foto-perfil {
+  .home-sobremi .foto-perfil {
     width: 30%;
     height: auto;
   }
-
-  .text-perfil1 {
+  .home-sobremi .text-perfil1 {
     display: none;
   }
-
-  .text-perfil2 {
+  .home-sobremi .text-perfil2 {
     display: none;
   }
 }
