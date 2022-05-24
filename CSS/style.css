@@ -1786,6 +1786,7 @@ body.body-sec .cards div.card-sec h2.card-title {
   padding: 2%;
   border-top-right-radius: 4px;
   border-top-left-radius: 4px;
+  font-family: "Lexend Peta", sans-serif;
 }
 body.body-sec .cards div.card-sec img {
   width: 436px;
@@ -1823,6 +1824,7 @@ body.body-sec .cards div.card-sec-i h2.card-title {
   padding: 2%;
   border-top-right-radius: 4px;
   border-top-left-radius: 4px;
+  font-family: "Lexend Peta", sans-serif;
 }
 body.body-sec .cards p.card-desc {
   display: block;
@@ -1851,6 +1853,7 @@ body.body-sec .cards .card-sec-i-lev h2.card-title {
   padding: 2%;
   border-top-right-radius: 4px;
   border-top-left-radius: 4px;
+  font-family: "Lexend Peta", sans-serif;
 }
 body.body-sec .cards .card-sec-i-lev img.img-i-lev {
   width: 538px;
